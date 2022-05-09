@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "RookMotion" => "francisco.guerrero@rookmotion.com" }
   spec.swift_version = '5.0'
 
-  spec.source       = { :git =>  "https://gitlab.com/rooklinkforclients/rookmotionwatchlink.git, :tag => "1.0.0" }
+  spec.source       = { :git =>  "https://gitlab.com/rooklinkforclients/rookmotionwatchlink.git", :tag => "1.0.0" }
   spec.frameworks  = "WatchKit", "HealthKit", "WatchConnectivity"
 
   spec.watchos.deployment_target = '6.2'
