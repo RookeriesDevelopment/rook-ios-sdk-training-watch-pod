@@ -158,9 +158,10 @@ public struct RMRegisteredRooms : Swift.Decodable {
   @objc dynamic public var records: RookMotionWatchLink.RWTrainingStoragedRecords?
   @objc dynamic public var remoteClass: RookMotionWatchLink.RWRemoteClass?
   public var summaries: RealmSwift.List<RookMotionWatchLink.RWTrainingSummary>
+  @objc dynamic public var offset: Swift.String?
   @objc override public static func primaryKey() -> Swift.String?
   public enum CodingKeys : Swift.String, Swift.CodingKey {
-    case start, end
+    case start, end, offset
     case sensorUUID
     case trainingTypeUUID
     case deviceType
@@ -268,9 +269,8 @@ public struct HeartRate {
   public let energy: Swift.Double
   public init(timeStamp: Foundation.Date, bpm: Swift.Double, stepCount: Swift.Int, energy: Swift.Double)
 }
-public class RMSettings {
+@_hasMissingDesignatedInitializers public class RMSettings {
   public static let shared: RookMotionWatchLink.RMSettings
-  public init()
   public func getclientKey() -> Swift.String
   public func getToken() -> Swift.String
   public func setCredentials(client_key: Swift.String, token: Swift.String)
