@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "RookMotionWatchLink"
-  spec.version      = "1.0.2-wq"
+  spec.version      = "1.0.2"
   spec.summary      = "RookMotion Watch OS Lib"
 
   spec.description  = "RookMotion Watch link allows the implementation of the RookMotion functionalities required to add training measurement, tracking, and analysis to an watch app"
