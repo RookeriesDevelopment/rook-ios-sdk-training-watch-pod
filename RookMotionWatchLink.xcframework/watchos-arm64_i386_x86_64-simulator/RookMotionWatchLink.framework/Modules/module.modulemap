@@ -6,6 +6,6 @@ framework module RookMotionWatchLink {
 }
 
 module RookMotionWatchLink.Swift {
-    header "RookMotionWatchLink-Swift.h"
-    requires objc
+  header "RookMotionWatchLink-Swift.h"
+  requires objc
 }

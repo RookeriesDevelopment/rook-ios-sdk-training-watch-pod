@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "RookMotionWatchLink"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2-wq"
   spec.summary      = "RookMotion Watch OS Lib"
 
   spec.description  = "RookMotion Watch link allows the implementation of the RookMotion functionalities required to add training measurement, tracking, and analysis to an watch app"
@@ -23,6 +23,6 @@ Pod::Spec.new do |spec|
   spec.watchos.deployment_target = '6.2'
   spec.watchos.vendored_frameworks = 'RookMotionWatchLink.xcframework'
 
-  spec.dependency 'RealmSwift', '10.5.0'
+  spec.dependency 'RealmSwift', '10.32.0'
 
 end

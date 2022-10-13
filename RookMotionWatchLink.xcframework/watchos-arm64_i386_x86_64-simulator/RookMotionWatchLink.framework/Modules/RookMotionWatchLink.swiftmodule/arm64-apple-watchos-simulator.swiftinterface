@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target arm64-apple-watchos6.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RookMotionWatchLink
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreBluetooth
 import CoreData
 import Foundation
@@ -11,16 +12,18 @@ import Swift
 import UIKit
 import WatchConnectivity
 import WatchKit
+import _Concurrency
+import _StringProcessing
 public enum RoundingPrecision {
   case ones
   case tenths
   case hundredths
   case thousandths
   public static func == (a: RookMotionWatchLink.RoundingPrecision, b: RookMotionWatchLink.RoundingPrecision) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public func preciseRound(_ value: Swift.Float, precision: RookMotionWatchLink.RoundingPrecision = .ones) -> Swift.Float
 public func getWatchSensorName() -> Swift.String
@@ -43,15 +46,15 @@ public struct WorkoutType {
   @objc dynamic public var stepOptions: Swift.String
   @objc override public static func primaryKey() -> Swift.String?
   convenience required public init(classUUID: Swift.String, roomUUID: Swift.String, trainingName: Swift.String, classDelay: Swift.Int, useSteps: Swift.Int, stepOptions: Swift.String)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
-extension RWStorageManager {
+extension RookMotionWatchLink.RWStorageManager {
   public func storeTrainingtype(trainingType: RookMotionWatchLink.RWTrainingType) throws
   public func deleteAllTrainingTypes()
   public func readTrainingTypesList() -> [RookMotionWatchLink.RWTrainingType]
 }
-@objc public protocol RWCommunicationDelegate : AnyObject {
+@objc public protocol RWCommunicationDelegate {
   @objc func session(_ session: WatchConnectivity.WCSession, messageData: [Swift.String : Any])
   @objc func session(_ session: WatchConnectivity.WCSession, userInfo: [Swift.String : Any])
   @objc optional func session(_ session: WatchConnectivity.WCSession, message: [Swift.String : Any])
@@ -65,7 +68,7 @@ extension RWStorageManager {
   public func sendInfo(_ info: [Swift.String : Any])
   @objc deinit
 }
-extension RWCommunicationManager : WatchConnectivity.WCSessionDelegate {
+extension RookMotionWatchLink.RWCommunicationManager : WatchConnectivity.WCSessionDelegate {
   @objc dynamic public func session(_ session: WatchConnectivity.WCSession, activationDidCompleteWith activationState: WatchConnectivity.WCSessionActivationState, error: Swift.Error?)
   @objc dynamic public func session(_ session: WatchConnectivity.WCSession, didReceiveUserInfo userInfo: [Swift.String : Any] = [:])
   @objc dynamic public func session(_ session: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any], replyHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
@@ -94,10 +97,10 @@ public func generateMinValueFor(value: Swift.Int, globalVar: Swift.Int) -> Swift
   @objc dynamic public var weight: Swift.String?
   @objc dynamic public var height: Swift.String?
   @objc dynamic public var restingHeartRate: Swift.String?
-  @objc deinit
   @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public struct SensorPaginationResponse : Swift.Decodable {
   public let data: [RookMotionWatchLink.RMSensorAPI]
@@ -167,24 +170,24 @@ public struct RMRegisteredRooms : Swift.Decodable {
     case deviceType
     case groupalMode
     case records, summaries
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
     public var rawValue: Swift.String {
       get
     }
     public var stringValue: Swift.String {
       get
     }
-    public init?(stringValue: Swift.String)
-    public var intValue: Swift.Int? {
-      get
-    }
-    public init?(intValue: Swift.Int)
   }
-  @objc deinit
   @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @objc @_inheritsConvenienceInitializers public class RWStorageManager : ObjectiveC.NSObject {
   @objc override dynamic public init()
@@ -231,7 +234,7 @@ public struct StepData {
   public let timeStamp: Foundation.Date
   public let stepCount: Swift.Int
 }
-extension WorkoutManager {
+extension RookMotionWatchLink.WorkoutManager {
   public func startTraining()
   public func pauseTraining()
   public func finishTraining()
@@ -246,19 +249,19 @@ public struct AddUserToRoomResponse : Swift.Decodable {
     case result
     case remainingWaitingSeconds
     case remainingPlaces
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
     public var rawValue: Swift.String {
       get
     }
     public var stringValue: Swift.String {
       get
     }
-    public init?(stringValue: Swift.String)
-    public var intValue: Swift.Int? {
-      get
-    }
-    public init?(intValue: Swift.Int)
   }
   public init(from decoder: Swift.Decoder) throws
 }
@@ -340,7 +343,7 @@ public enum RWRealTimeApi {
   case sendData(classUUID: Swift.String, realTimeData: RookMotionWatchLink.RealTimeData, tokenUser: Swift.String? = nil)
   case disconnectUserFromClass(classUUID: Swift.String, userUUID: Swift.String, tokenUser: Swift.String? = nil)
 }
-extension RWRealTimeApi : RookMotionWatchLink.EndPointType {
+extension RookMotionWatchLink.RWRealTimeApi : RookMotionWatchLink.EndPointType {
   public var baseUrl: Foundation.URL? {
     get
   }
@@ -377,11 +380,11 @@ public struct URLParameterEncoder : RookMotionWatchLink.ParameterEncoder {
   public var cadence: Swift.Float?
   public var steps: Swift.Int?
   convenience public init(timestamp: Swift.String? = nil, cadence: Swift.Float? = nil, steps: Swift.Int? = nil)
-  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
-extension RMStepDerivedRecord : Swift.CustomStringConvertible {
+extension RookMotionWatchLink.RMStepDerivedRecord : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
@@ -396,19 +399,19 @@ public struct TrainingType : Swift.Decodable {
     case trainigName
     case useHeartRate
     case useSteps
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
     public var rawValue: Swift.String {
       get
     }
     public var stringValue: Swift.String {
       get
     }
-    public init?(stringValue: Swift.String)
-    public var intValue: Swift.Int? {
-      get
-    }
-    public init?(intValue: Swift.Int)
   }
   public init(from decoder: Swift.Decoder) throws
 }
@@ -418,19 +421,19 @@ public struct UseStepsResponse : Swift.Decodable {
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case enabled
     case stepsTypes
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
     public var rawValue: Swift.String {
       get
     }
     public var stringValue: Swift.String {
       get
     }
-    public init?(stringValue: Swift.String)
-    public var intValue: Swift.Int? {
-      get
-    }
-    public init?(intValue: Swift.Int)
   }
   public init(from decoder: Swift.Decoder) throws
 }
@@ -444,8 +447,8 @@ public struct RealTimeData : Swift.Codable {
   public let hr: Swift.Int
   public let effort: Swift.Int
   public let answerWithClusters: Swift.Bool
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 @objc @_inheritsConvenienceInitializers public class RWTrainingType : RealmSwift.Object, Swift.Codable {
   @objc dynamic public var trainingTypeUUID: Swift.String?
@@ -456,22 +459,22 @@ public struct RealTimeData : Swift.Codable {
   @objc dynamic public var useSteps: RookMotionWatchLink.UseSteps?
   @objc override public static func primaryKey() -> Swift.String?
   @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @objc @_inheritsConvenienceInitializers public class UseSteps : RealmSwift.Object, Swift.Codable {
   @objc dynamic public var enabled: RookMotionWatchLink.OptionalInt?
   @objc dynamic public var stepsTypes: Swift.String?
   @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @objc @_inheritsConvenienceInitializers public class AuthorizationManager : ObjectiveC.NSObject {
   final public let healthStore: HealthKit.HKHealthStore
   @objc override dynamic public init()
-  public func requestAuthorization(completionHandler: @escaping ((Swift.Bool) -> Swift.Void))
+  public func requestAuthorization(completionHandler: @escaping ((_ success: Swift.Bool) -> Swift.Void))
   @objc deinit
 }
 public typealias Parameters = [Swift.String : Any]
@@ -482,8 +485,8 @@ public enum NetworkError : Swift.String, Swift.Error {
   case parametersNil
   case encodingFailed
   case missingUrl
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -491,7 +494,7 @@ public enum NetworkError : Swift.String, Swift.Error {
 public enum RWTrainingTypeAPI {
   case getTrainingtypes(tokenUser: Swift.String? = nil, page: Swift.Int = 1)
 }
-extension RWTrainingTypeAPI : RookMotionWatchLink.EndPointType {
+extension RookMotionWatchLink.RWTrainingTypeAPI : RookMotionWatchLink.EndPointType {
   public var baseUrl: Foundation.URL? {
     get
   }
@@ -531,8 +534,8 @@ public enum NetworkResponse : Swift.String {
   case failed
   case noData
   case unableToDecode
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -540,20 +543,20 @@ public enum NetworkResponse : Swift.String {
 public struct NetworkManager<T> where T : RookMotionWatchLink.EndPointType {
   public init()
 }
-extension NetworkManager where T == RookMotionWatchLink.RWTrainingTypeAPI {
-  public func getTrainingTypes(userToken: Swift.String? = nil, completion: @escaping ([RookMotionWatchLink.RWTrainingType]?, Swift.String?) -> Swift.Void)
+extension RookMotionWatchLink.NetworkManager where T == RookMotionWatchLink.RWTrainingTypeAPI {
+  public func getTrainingTypes(userToken: Swift.String? = nil, completion: @escaping ([RookMotionWatchLink.RWTrainingType]?, _ error: Swift.String?) -> Swift.Void)
 }
-extension NetworkManager where T == RookMotionWatchLink.RWSensorAPI {
-  public func addSesnorToUser(tokenUser: Swift.String? = nil, sensor_name: Swift.String, sensor_mac: Swift.String, ownership_type: Swift.String, userUUID: Swift.String, completion: @escaping (Swift.Int, Swift.String?, Swift.String?) -> Swift.Void)
-  public func getUserSensor(userUUID: Swift.String, userToken: Swift.String? = nil, completion: @escaping ([RookMotionWatchLink.RMSensorAPI]?, Swift.String?) -> Swift.Void)
+extension RookMotionWatchLink.NetworkManager where T == RookMotionWatchLink.RWSensorAPI {
+  public func addSesnorToUser(tokenUser: Swift.String? = nil, sensor_name: Swift.String, sensor_mac: Swift.String, ownership_type: Swift.String, userUUID: Swift.String, completion: @escaping (Swift.Int, Swift.String?, _ error: Swift.String?) -> Swift.Void)
+  public func getUserSensor(userUUID: Swift.String, userToken: Swift.String? = nil, completion: @escaping ([RookMotionWatchLink.RMSensorAPI]?, _ error: Swift.String?) -> Swift.Void)
 }
-extension NetworkManager where T == RookMotionWatchLink.RWTrainingAPI {
-  public func addPendingTrainingToUser(userUUID: Swift.String, userToken: Swift.String? = nil, training: RookMotionWatchLink.RWTrainingInfo, completion: @escaping (Swift.Int, Swift.String?, Swift.String?) -> Swift.Void)
+extension RookMotionWatchLink.NetworkManager where T == RookMotionWatchLink.RWTrainingAPI {
+  public func addPendingTrainingToUser(userUUID: Swift.String, userToken: Swift.String? = nil, training: RookMotionWatchLink.RWTrainingInfo, completion: @escaping (Swift.Int, Swift.String?, _ error: Swift.String?) -> Swift.Void)
 }
-extension NetworkManager where T == RookMotionWatchLink.RWRealTimeApi {
-  public func getRemoteRooms(userUUID: Swift.String, tokenUser: Swift.String? = nil, completion: @escaping ([RookMotionWatchLink.RMRegisteredCenter]?, Swift.String?) -> Swift.Void)
-  public func connectUserToClass(userUUID: Swift.String, classUUID: Swift.String, userToken: Swift.String? = nil, completion: @escaping (Swift.Int, RookMotionWatchLink.AddUserToRoomResponse?, Swift.String?) -> Swift.Void)
-  public func sendRealTimeData(to classUUID: Swift.String, realTimeData: RookMotionWatchLink.RealTimeData, userToken: Swift.String? = nil, completion: @escaping (Swift.Int, Swift.String?, Swift.String?) -> Swift.Void)
+extension RookMotionWatchLink.NetworkManager where T == RookMotionWatchLink.RWRealTimeApi {
+  public func getRemoteRooms(userUUID: Swift.String, tokenUser: Swift.String? = nil, completion: @escaping ([RookMotionWatchLink.RMRegisteredCenter]?, _ error: Swift.String?) -> Swift.Void)
+  public func connectUserToClass(userUUID: Swift.String, classUUID: Swift.String, userToken: Swift.String? = nil, completion: @escaping (_ httpCode: Swift.Int, _ response: RookMotionWatchLink.AddUserToRoomResponse?, _ error: Swift.String?) -> Swift.Void)
+  public func sendRealTimeData(to classUUID: Swift.String, realTimeData: RookMotionWatchLink.RealTimeData, userToken: Swift.String? = nil, completion: @escaping (_ httpCode: Swift.Int, _ response: Swift.String?, _ error: Swift.String?) -> Swift.Void)
   public func disconnectUserFromClass(with classUUID: Swift.String, userUUID: Swift.String, userToken: Swift.String? = nil)
 }
 @objc @_inheritsConvenienceInitializers public class RWTrainingStoragedRecords : RealmSwift.Object, Swift.Codable {
@@ -562,24 +565,24 @@ extension NetworkManager where T == RookMotionWatchLink.RWRealTimeApi {
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case hrDerivedRecords
     case stepsDerivedRecords
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
     public var rawValue: Swift.String {
       get
     }
     public var stringValue: Swift.String {
       get
     }
-    public init?(stringValue: Swift.String)
-    public var intValue: Swift.Int? {
-      get
-    }
-    public init?(intValue: Swift.Int)
   }
   @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public struct PaginationTrainingResponse : Swift.Decodable {
   public let data: [RookMotionWatchLink.RWTrainingType]
@@ -592,19 +595,19 @@ public struct MetaResponse : Swift.Decodable {
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case lastPage
     case currentPage
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
     public var rawValue: Swift.String {
       get
     }
     public var stringValue: Swift.String {
       get
     }
-    public init?(stringValue: Swift.String)
-    public var intValue: Swift.Int? {
-      get
-    }
-    public init?(intValue: Swift.Int)
   }
   public init(from decoder: Swift.Decoder) throws
 }
@@ -617,7 +620,7 @@ public enum RWSensorAPI {
   case addSensorToUser(tokenUser: Swift.String? = nil, sensor_name: Swift.String, sensor_mac: Swift.String, ownership_type: Swift.String, userUUID: Swift.String)
   case getUserSensors(userUUID: Swift.String, userToken: Swift.String? = nil, page: Swift.Int = 1)
 }
-extension RWSensorAPI : RookMotionWatchLink.EndPointType {
+extension RookMotionWatchLink.RWSensorAPI : RookMotionWatchLink.EndPointType {
   public var baseUrl: Foundation.URL? {
     get
   }
@@ -641,8 +644,8 @@ extension RWSensorAPI : RookMotionWatchLink.EndPointType {
     set
   }
   required convenience public init(from decoder: Swift.Decoder) throws
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class OptionalInt : RealmSwift.Object, Swift.Codable {
   public var numeric: RealmSwift.RealmOptional<Swift.Int>
@@ -654,7 +657,7 @@ extension RWSensorAPI : RookMotionWatchLink.EndPointType {
 public enum RWTrainingAPI {
   case addPendingTrainingToUser(userUUID: Swift.String, userToken: Swift.String? = nil, training: RookMotionWatchLink.RWTrainingInfo)
 }
-extension RWTrainingAPI : RookMotionWatchLink.EndPointType {
+extension RookMotionWatchLink.RWTrainingAPI : RookMotionWatchLink.EndPointType {
   public var baseUrl: Foundation.URL? {
     get
   }
@@ -685,11 +688,11 @@ public struct JSON {
   @objc dynamic public var steps: Swift.Int
   @objc dynamic public var start: Swift.String
   @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
-extension RWStepDataRecords {
+extension RookMotionWatchLink.RWStepDataRecords {
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -699,12 +702,12 @@ public enum WorkoutState {
   case stopped
   case paused
   public static func == (a: RookMotionWatchLink.WorkoutState, b: RookMotionWatchLink.WorkoutState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
-extension WorkoutState {
+extension RookMotionWatchLink.WorkoutState {
   public func actionText() -> Swift.String
 }
 public protocol WorkoutManagerDelegate : AnyObject {
@@ -737,12 +740,12 @@ public let kTrainingPlayNotification: Swift.String
   public func restoreWorkout(with pendingTraining: RookMotionWatchLink.RWTrainingInfo)
   @objc deinit
 }
-extension WorkoutManager : HealthKit.HKWorkoutSessionDelegate {
+extension RookMotionWatchLink.WorkoutManager : HealthKit.HKWorkoutSessionDelegate {
   @objc dynamic public func workoutSession(_ workoutSession: HealthKit.HKWorkoutSession, didChangeTo toState: HealthKit.HKWorkoutSessionState, from fromState: HealthKit.HKWorkoutSessionState, date: Foundation.Date)
   @objc dynamic public func workoutSession(_ workoutSession: HealthKit.HKWorkoutSession, didFailWithError error: Swift.Error)
   @objc dynamic public func workoutSession(_ workoutSession: HealthKit.HKWorkoutSession, didGenerate event: HealthKit.HKWorkoutEvent)
 }
-extension WorkoutManager : HealthKit.HKLiveWorkoutBuilderDelegate {
+extension RookMotionWatchLink.WorkoutManager : HealthKit.HKLiveWorkoutBuilderDelegate {
   @objc dynamic public func workoutBuilder(_ workoutBuilder: HealthKit.HKLiveWorkoutBuilder, didCollectDataOf collectedTypes: Swift.Set<HealthKit.HKSampleType>)
   @objc dynamic public func workoutBuilderDidCollectEvent(_ workoutBuilder: HealthKit.HKLiveWorkoutBuilder)
 }
@@ -751,30 +754,30 @@ public enum TypeMessage : Swift.String {
   case refreshToken
   case logout
   case training
+  public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
-  public init?(rawValue: Swift.String)
 }
 public struct WatchMessage : RookMotionWatchLink.Convertable {
   public let type: Swift.String
   public let data: [Swift.String : Any]
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case type, data
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
     public var rawValue: Swift.String {
       get
     }
     public var stringValue: Swift.String {
       get
     }
-    public init?(stringValue: Swift.String)
-    public var intValue: Swift.Int? {
-      get
-    }
-    public init?(intValue: Swift.Int)
   }
   public init(type: Swift.String, data: [Swift.String : Any])
   public init(from decoder: Swift.Decoder) throws
@@ -782,7 +785,7 @@ public struct WatchMessage : RookMotionWatchLink.Convertable {
 }
 public protocol Convertable : Swift.Decodable, Swift.Encodable {
 }
-extension Convertable {
+extension RookMotionWatchLink.Convertable {
   public func convertToDict() -> [Swift.String : Any]
 }
 @objc @_inheritsConvenienceInitializers public class RWHeartRateDataRecords : RealmSwift.Object, Swift.Codable {
@@ -797,26 +800,26 @@ extension Convertable {
     case heartRate
     case heart_rate_variability
     case effort, calories
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
     public var rawValue: Swift.String {
       get
     }
     public var stringValue: Swift.String {
       get
     }
-    public init?(stringValue: Swift.String)
-    public var intValue: Swift.Int? {
-      get
-    }
-    public init?(intValue: Swift.Int)
   }
   public func encode(to encoder: Swift.Encoder) throws
   @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
+  required public init(from decoder: Swift.Decoder) throws
 }
-extension RWHeartRateDataRecords {
+extension RookMotionWatchLink.RWHeartRateDataRecords {
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -859,7 +862,7 @@ extension RWHeartRateDataRecords {
   @objc override dynamic public init()
   @objc deinit
 }
-extension RWTrainingSummaries {
+extension RookMotionWatchLink.RWTrainingSummaries {
   public var countElements: Swift.Int {
     get
   }
@@ -918,23 +921,23 @@ public struct RMHrDerivedRecord : RookMotionWatchLink.Convertable {
   public var effort: Swift.Float?
   public var heartRateVariability: Swift.Int?
   public init(timeStamp: Swift.String?, heartRate: Swift.Int?, calories: Swift.Float?, effort: Swift.Float?, heartRateVariability: Swift.Int? = 0)
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public enum HTTPMethod : Swift.String {
   case get
   case post
+  public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
-  public init?(rawValue: Swift.String)
 }
 public enum RWUserAPI {
   case getUserIndexes(userUUID: Swift.String, tokenUser: Swift.String? = nil)
   case checkTokenClient
 }
-extension RWUserAPI : RookMotionWatchLink.EndPointType {
+extension RookMotionWatchLink.RWUserAPI : RookMotionWatchLink.EndPointType {
   public var baseUrl: Foundation.URL? {
     get
   }
@@ -962,7 +965,7 @@ public struct WorkoutConfiguration {
     get
   }
 }
-public typealias NetworkRouterCompletion = (Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> ()
+public typealias NetworkRouterCompletion = (_ data: Foundation.Data?, _ response: Foundation.URLResponse?, _ error: Swift.Error?) -> ()
 public class CalculateDeltaTime {
   public init()
   public func setNewTimeStampReference()
@@ -980,17 +983,17 @@ public class CalculateDeltaTime {
   public func createSensorFromPeripheral(_ sensor: CoreBluetooth.CBPeripheral) -> RookMotionWatchLink.RMSensorAPI
   public func createSensorFromWatch(uuid: Swift.String) -> RookMotionWatchLink.RMSensorAPI
   @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @objc @_inheritsConvenienceInitializers public class RWTrainingSummary : RealmSwift.Object, Swift.Codable {
   @objc dynamic public var summaryTypeID: Swift.Int
   @objc dynamic public var value: Swift.Int
   @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public struct RemoteClass {
   public let id: Swift.Int
@@ -1009,7 +1012,7 @@ public struct RemoteClass {
   public var waitingTimeRemaining: Swift.Int
   public init(id: Swift.Int, uuid: Swift.String, name: Swift.String, trainingType: Swift.String, trainingTypeUUID: Swift.String, configurationUUID: Swift.String, channel: Swift.String, duration: Swift.Int, capacity: Swift.Int, classDelay: Swift.Int, dataOrder: Swift.String, useSteps: Swift.Int, typeSteps: Swift.String?, waitingTimeRemaining: Swift.Int = 0)
 }
-extension RWStorageManager {
+extension RookMotionWatchLink.RWStorageManager {
   public func storeUserInfo(user: RookMotionWatchLink.RMUser) throws
   public func deleteUserInfo()
   public func readUserInfo() -> RookMotionWatchLink.RMUser?
