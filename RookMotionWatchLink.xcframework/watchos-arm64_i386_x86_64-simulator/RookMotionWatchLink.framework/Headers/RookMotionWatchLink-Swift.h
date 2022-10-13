@@ -332,16 +332,19 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink28RMUserPhysiologicalVariables")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class RealmSwiftObjectId;
 
 /// RMAuxiliarSummary model helps to store the number of samples ant its value accumulated
 SWIFT_CLASS("_TtC19RookMotionWatchLink17RWAuxiliarSummary")
 @interface RWAuxiliarSummary : RealmSwiftObject
+@property (nonatomic, strong) RealmSwiftObjectId * _Nonnull id;
 @property (nonatomic) NSInteger hrElements;
 @property (nonatomic) NSInteger hrAccumulated;
 @property (nonatomic) NSInteger effortElements;
 @property (nonatomic) NSInteger effortAccumulated;
 @property (nonatomic) NSInteger cadenceElements;
 @property (nonatomic) NSInteger cadenceAccumulated;
++ (NSString * _Nullable)primaryKey SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -397,12 +400,14 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink22RWHeartRateDataRecords")
 
 SWIFT_CLASS("_TtC19RookMotionWatchLink13RWRemoteClass")
 @interface RWRemoteClass : RealmSwiftObject
+@property (nonatomic, strong) RealmSwiftObjectId * _Nonnull id;
 @property (nonatomic, copy) NSString * _Nonnull classUUID;
 @property (nonatomic, copy) NSString * _Nonnull roomUUID;
 @property (nonatomic, copy) NSString * _Nonnull trainingName;
 @property (nonatomic) NSInteger classDelay;
 @property (nonatomic) NSInteger useSteps;
 @property (nonatomic, copy) NSString * _Nonnull stepOptions;
++ (NSString * _Nullable)primaryKey SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -468,6 +473,7 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink25RWTrainingStoragedRecords")
 /// STORAGE.class this struct contains the training summaries on realtime
 SWIFT_CLASS("_TtC19RookMotionWatchLink19RWTrainingSummaries")
 @interface RWTrainingSummaries : RealmSwiftObject
+@property (nonatomic, strong) RealmSwiftObjectId * _Nonnull id;
 @property (nonatomic) NSInteger duration_time_tot;
 @property (nonatomic) float z1_time;
 @property (nonatomic) float z2_time;
@@ -500,6 +506,7 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink19RWTrainingSummaries")
 @property (nonatomic) NSInteger z3_cadence_tot;
 @property (nonatomic) NSInteger z4_cadence_tot;
 @property (nonatomic) NSInteger z5_cadence_tot;
++ (NSString * _Nullable)primaryKey SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -946,16 +953,19 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink28RMUserPhysiologicalVariables")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class RealmSwiftObjectId;
 
 /// RMAuxiliarSummary model helps to store the number of samples ant its value accumulated
 SWIFT_CLASS("_TtC19RookMotionWatchLink17RWAuxiliarSummary")
 @interface RWAuxiliarSummary : RealmSwiftObject
+@property (nonatomic, strong) RealmSwiftObjectId * _Nonnull id;
 @property (nonatomic) NSInteger hrElements;
 @property (nonatomic) NSInteger hrAccumulated;
 @property (nonatomic) NSInteger effortElements;
 @property (nonatomic) NSInteger effortAccumulated;
 @property (nonatomic) NSInteger cadenceElements;
 @property (nonatomic) NSInteger cadenceAccumulated;
++ (NSString * _Nullable)primaryKey SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1011,12 +1021,14 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink22RWHeartRateDataRecords")
 
 SWIFT_CLASS("_TtC19RookMotionWatchLink13RWRemoteClass")
 @interface RWRemoteClass : RealmSwiftObject
+@property (nonatomic, strong) RealmSwiftObjectId * _Nonnull id;
 @property (nonatomic, copy) NSString * _Nonnull classUUID;
 @property (nonatomic, copy) NSString * _Nonnull roomUUID;
 @property (nonatomic, copy) NSString * _Nonnull trainingName;
 @property (nonatomic) NSInteger classDelay;
 @property (nonatomic) NSInteger useSteps;
 @property (nonatomic, copy) NSString * _Nonnull stepOptions;
++ (NSString * _Nullable)primaryKey SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1082,6 +1094,7 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink25RWTrainingStoragedRecords")
 /// STORAGE.class this struct contains the training summaries on realtime
 SWIFT_CLASS("_TtC19RookMotionWatchLink19RWTrainingSummaries")
 @interface RWTrainingSummaries : RealmSwiftObject
+@property (nonatomic, strong) RealmSwiftObjectId * _Nonnull id;
 @property (nonatomic) NSInteger duration_time_tot;
 @property (nonatomic) float z1_time;
 @property (nonatomic) float z2_time;
@@ -1114,6 +1127,7 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink19RWTrainingSummaries")
 @property (nonatomic) NSInteger z3_cadence_tot;
 @property (nonatomic) NSInteger z4_cadence_tot;
 @property (nonatomic) NSInteger z5_cadence_tot;
++ (NSString * _Nullable)primaryKey SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1560,16 +1574,19 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink28RMUserPhysiologicalVariables")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class RealmSwiftObjectId;
 
 /// RMAuxiliarSummary model helps to store the number of samples ant its value accumulated
 SWIFT_CLASS("_TtC19RookMotionWatchLink17RWAuxiliarSummary")
 @interface RWAuxiliarSummary : RealmSwiftObject
+@property (nonatomic, strong) RealmSwiftObjectId * _Nonnull id;
 @property (nonatomic) NSInteger hrElements;
 @property (nonatomic) NSInteger hrAccumulated;
 @property (nonatomic) NSInteger effortElements;
 @property (nonatomic) NSInteger effortAccumulated;
 @property (nonatomic) NSInteger cadenceElements;
 @property (nonatomic) NSInteger cadenceAccumulated;
++ (NSString * _Nullable)primaryKey SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1625,12 +1642,14 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink22RWHeartRateDataRecords")
 
 SWIFT_CLASS("_TtC19RookMotionWatchLink13RWRemoteClass")
 @interface RWRemoteClass : RealmSwiftObject
+@property (nonatomic, strong) RealmSwiftObjectId * _Nonnull id;
 @property (nonatomic, copy) NSString * _Nonnull classUUID;
 @property (nonatomic, copy) NSString * _Nonnull roomUUID;
 @property (nonatomic, copy) NSString * _Nonnull trainingName;
 @property (nonatomic) NSInteger classDelay;
 @property (nonatomic) NSInteger useSteps;
 @property (nonatomic, copy) NSString * _Nonnull stepOptions;
++ (NSString * _Nullable)primaryKey SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1696,6 +1715,7 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink25RWTrainingStoragedRecords")
 /// STORAGE.class this struct contains the training summaries on realtime
 SWIFT_CLASS("_TtC19RookMotionWatchLink19RWTrainingSummaries")
 @interface RWTrainingSummaries : RealmSwiftObject
+@property (nonatomic, strong) RealmSwiftObjectId * _Nonnull id;
 @property (nonatomic) NSInteger duration_time_tot;
 @property (nonatomic) float z1_time;
 @property (nonatomic) float z2_time;
@@ -1728,6 +1748,7 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink19RWTrainingSummaries")
 @property (nonatomic) NSInteger z3_cadence_tot;
 @property (nonatomic) NSInteger z4_cadence_tot;
 @property (nonatomic) NSInteger z5_cadence_tot;
++ (NSString * _Nullable)primaryKey SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

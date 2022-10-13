@@ -2479,6 +2479,84 @@
         "children": [
           {
             "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ObjectId",
+                "printedName": "RealmSwift.ObjectId",
+                "usr": "c:@M@RealmSwift@objc(cs)RealmSwiftObjectId"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RookMotionWatchLink@objc(cs)RWRemoteClass(py)id",
+            "mangledName": "$s19RookMotionWatchLink13RWRemoteClassC2id10RealmSwift8ObjectIdCvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "Dynamic",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectId",
+                    "printedName": "RealmSwift.ObjectId",
+                    "usr": "c:@M@RealmSwift@objc(cs)RealmSwiftObjectId"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookMotionWatchLink@objc(cs)RWRemoteClass(im)id",
+                "mangledName": "$s19RookMotionWatchLink13RWRemoteClassC2id10RealmSwift8ObjectIdCvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectId",
+                    "printedName": "RealmSwift.ObjectId",
+                    "usr": "c:@M@RealmSwift@objc(cs)RealmSwiftObjectId"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookMotionWatchLink@objc(cs)RWRemoteClass(im)setId:",
+                "mangledName": "$s19RookMotionWatchLink13RWRemoteClassC2id10RealmSwift8ObjectIdCvs",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "classUUID",
             "printedName": "classUUID",
             "children": [
@@ -2944,6 +3022,41 @@
                 "accessorKind": "set"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "primaryKey",
+            "printedName": "primaryKey()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookMotionWatchLink@objc(cs)RWRemoteClass(cm)primaryKey",
+            "mangledName": "$s19RookMotionWatchLink13RWRemoteClassC10primaryKeySSSgyFZ",
+            "moduleName": "RookMotionWatchLink",
+            "static": true,
+            "overriding": true,
+            "objc_name": "primaryKey",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Constructor",
@@ -16510,6 +16623,84 @@
         "children": [
           {
             "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ObjectId",
+                "printedName": "RealmSwift.ObjectId",
+                "usr": "c:@M@RealmSwift@objc(cs)RealmSwiftObjectId"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RookMotionWatchLink@objc(cs)RWAuxiliarSummary(py)id",
+            "mangledName": "$s19RookMotionWatchLink17RWAuxiliarSummaryC2id10RealmSwift8ObjectIdCvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "Dynamic",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectId",
+                    "printedName": "RealmSwift.ObjectId",
+                    "usr": "c:@M@RealmSwift@objc(cs)RealmSwiftObjectId"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookMotionWatchLink@objc(cs)RWAuxiliarSummary(im)id",
+                "mangledName": "$s19RookMotionWatchLink17RWAuxiliarSummaryC2id10RealmSwift8ObjectIdCvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectId",
+                    "printedName": "RealmSwift.ObjectId",
+                    "usr": "c:@M@RealmSwift@objc(cs)RealmSwiftObjectId"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookMotionWatchLink@objc(cs)RWAuxiliarSummary(im)setId:",
+                "mangledName": "$s19RookMotionWatchLink17RWAuxiliarSummaryC2id10RealmSwift8ObjectIdCvs",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "hrElements",
             "printedName": "hrElements",
             "children": [
@@ -16975,6 +17166,41 @@
                 "accessorKind": "set"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "primaryKey",
+            "printedName": "primaryKey()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookMotionWatchLink@objc(cs)RWAuxiliarSummary(cm)primaryKey",
+            "mangledName": "$s19RookMotionWatchLink17RWAuxiliarSummaryC10primaryKeySSSgyFZ",
+            "moduleName": "RookMotionWatchLink",
+            "static": true,
+            "overriding": true,
+            "objc_name": "primaryKey",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Constructor",
@@ -35342,6 +35568,84 @@
         "children": [
           {
             "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ObjectId",
+                "printedName": "RealmSwift.ObjectId",
+                "usr": "c:@M@RealmSwift@objc(cs)RealmSwiftObjectId"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RookMotionWatchLink@objc(cs)RWTrainingSummaries(py)id",
+            "mangledName": "$s19RookMotionWatchLink19RWTrainingSummariesC2id10RealmSwift8ObjectIdCvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "Dynamic",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectId",
+                    "printedName": "RealmSwift.ObjectId",
+                    "usr": "c:@M@RealmSwift@objc(cs)RealmSwiftObjectId"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookMotionWatchLink@objc(cs)RWTrainingSummaries(im)id",
+                "mangledName": "$s19RookMotionWatchLink19RWTrainingSummariesC2id10RealmSwift8ObjectIdCvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectId",
+                    "printedName": "RealmSwift.ObjectId",
+                    "usr": "c:@M@RealmSwift@objc(cs)RealmSwiftObjectId"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookMotionWatchLink@objc(cs)RWTrainingSummaries(im)setId:",
+                "mangledName": "$s19RookMotionWatchLink19RWTrainingSummariesC2id10RealmSwift8ObjectIdCvs",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "duration_time_tot",
             "printedName": "duration_time_tot",
             "children": [
@@ -37835,6 +38139,41 @@
                 "accessorKind": "set"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "primaryKey",
+            "printedName": "primaryKey()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookMotionWatchLink@objc(cs)RWTrainingSummaries(cm)primaryKey",
+            "mangledName": "$s19RookMotionWatchLink19RWTrainingSummariesC10primaryKeySSSgyFZ",
+            "moduleName": "RookMotionWatchLink",
+            "static": true,
+            "overriding": true,
+            "objc_name": "primaryKey",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Constructor",
@@ -43964,42 +44303,42 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWRemoteClass.swift",
       "kind": "StringLiteral",
-      "offset": 254,
+      "offset": 318,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWRemoteClass.swift",
       "kind": "StringLiteral",
-      "offset": 306,
+      "offset": 370,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWRemoteClass.swift",
       "kind": "StringLiteral",
-      "offset": 362,
+      "offset": 426,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWRemoteClass.swift",
       "kind": "IntegerLiteral",
-      "offset": 413,
+      "offset": 477,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWRemoteClass.swift",
       "kind": "IntegerLiteral",
-      "offset": 461,
+      "offset": 525,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWRemoteClass.swift",
       "kind": "StringLiteral",
-      "offset": 515,
+      "offset": 579,
       "length": 2,
       "value": "\"\""
     },
@@ -44951,42 +45290,42 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWAuxiliarSummary.swift",
       "kind": "IntegerLiteral",
-      "offset": 356,
+      "offset": 419,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWAuxiliarSummary.swift",
       "kind": "IntegerLiteral",
-      "offset": 411,
+      "offset": 474,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWAuxiliarSummary.swift",
       "kind": "IntegerLiteral",
-      "offset": 470,
+      "offset": 533,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWAuxiliarSummary.swift",
       "kind": "IntegerLiteral",
-      "offset": 529,
+      "offset": 592,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWAuxiliarSummary.swift",
       "kind": "IntegerLiteral",
-      "offset": 588,
+      "offset": 651,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWAuxiliarSummary.swift",
       "kind": "IntegerLiteral",
-      "offset": 647,
+      "offset": 710,
       "length": 1,
       "value": "0"
     },
@@ -46008,448 +46347,448 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 345,
+      "offset": 409,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 393,
+      "offset": 457,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 441,
+      "offset": 505,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 489,
+      "offset": 553,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 537,
+      "offset": 601,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 585,
+      "offset": 649,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 636,
+      "offset": 700,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 682,
+      "offset": 746,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 731,
+      "offset": 795,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 786,
+      "offset": 850,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 836,
+      "offset": 900,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 889,
+      "offset": 953,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 943,
+      "offset": 1007,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 999,
+      "offset": 1063,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 1055,
+      "offset": 1119,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 1111,
+      "offset": 1175,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 1167,
+      "offset": 1231,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 1223,
+      "offset": 1287,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 1278,
+      "offset": 1342,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 1329,
+      "offset": 1393,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 1380,
+      "offset": 1444,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 1431,
+      "offset": 1495,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 1482,
+      "offset": 1546,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 1533,
+      "offset": 1597,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "FloatLiteral",
-      "offset": 1590,
+      "offset": 1654,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "FloatLiteral",
-      "offset": 1644,
+      "offset": 1708,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "FloatLiteral",
-      "offset": 1701,
+      "offset": 1765,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 1761,
+      "offset": 1825,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 1814,
+      "offset": 1878,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 1867,
+      "offset": 1931,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 1920,
+      "offset": 1984,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 1973,
+      "offset": 2037,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 4458,
+      "offset": 4611,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 4495,
+      "offset": 4648,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 4532,
+      "offset": 4685,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 4569,
+      "offset": 4722,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 4606,
+      "offset": 4759,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 4643,
+      "offset": 4796,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 4685,
+      "offset": 4838,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 4724,
+      "offset": 4877,
       "length": 3,
       "value": "101"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 4763,
+      "offset": 4916,
       "length": 3,
       "value": "102"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 4803,
+      "offset": 4956,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 4838,
+      "offset": 4991,
       "length": 3,
       "value": "301"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 4873,
+      "offset": 5026,
       "length": 3,
       "value": "302"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 4913,
+      "offset": 5066,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 4950,
+      "offset": 5103,
       "length": 3,
       "value": "402"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 4987,
+      "offset": 5140,
       "length": 3,
       "value": "403"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 5024,
+      "offset": 5177,
       "length": 3,
       "value": "404"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 5061,
+      "offset": 5214,
       "length": 3,
       "value": "405"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 5098,
+      "offset": 5251,
       "length": 3,
       "value": "406"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 5136,
+      "offset": 5289,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 5172,
+      "offset": 5325,
       "length": 3,
       "value": "502"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 5208,
+      "offset": 5361,
       "length": 3,
       "value": "503"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 5244,
+      "offset": 5397,
       "length": 3,
       "value": "504"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 5280,
+      "offset": 5433,
       "length": 3,
       "value": "505"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 5316,
+      "offset": 5469,
       "length": 3,
       "value": "506"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 5355,
+      "offset": 5508,
       "length": 3,
       "value": "600"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 5389,
+      "offset": 5542,
       "length": 3,
       "value": "601"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 5423,
+      "offset": 5576,
       "length": 3,
       "value": "602"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 5464,
+      "offset": 5617,
       "length": 3,
       "value": "604"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 5500,
+      "offset": 5653,
       "length": 3,
       "value": "605"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 5536,
+      "offset": 5689,
       "length": 3,
       "value": "606"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 5572,
+      "offset": 5725,
       "length": 3,
       "value": "607"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/Realm\/Training\/RWTrainingSummaries.swift",
       "kind": "IntegerLiteral",
-      "offset": 5608,
+      "offset": 5761,
       "length": 3,
       "value": "608"
     },

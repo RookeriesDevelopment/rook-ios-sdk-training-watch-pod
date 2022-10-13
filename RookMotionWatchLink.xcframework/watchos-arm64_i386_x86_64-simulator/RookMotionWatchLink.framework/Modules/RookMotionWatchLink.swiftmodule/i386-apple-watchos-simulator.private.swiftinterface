@@ -75,12 +75,14 @@ public struct WorkoutType {
   public init(uuid: Swift.String, name: Swift.String, useSteps: Swift.Bool, typeSteps: Swift.String?)
 }
 @objc @_inheritsConvenienceInitializers public class RWRemoteClass : RealmSwift.Object {
+  @objc dynamic public var id: RealmSwift.ObjectId
   @objc dynamic public var classUUID: Swift.String
   @objc dynamic public var roomUUID: Swift.String
   @objc dynamic public var trainingName: Swift.String
   @objc dynamic public var classDelay: Swift.Int
   @objc dynamic public var useSteps: Swift.Int
   @objc dynamic public var stepOptions: Swift.String
+  @objc override public static func primaryKey() -> Swift.String?
   convenience required public init(classUUID: Swift.String, roomUUID: Swift.String, trainingName: Swift.String, classDelay: Swift.Int, useSteps: Swift.Int, stepOptions: Swift.String)
   @objc override dynamic public init()
   @objc deinit
@@ -399,12 +401,14 @@ public struct RWStepDataRecordsTransfer : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 @objc @_inheritsConvenienceInitializers public class RWAuxiliarSummary : RealmSwift.Object {
+  @objc dynamic public var id: RealmSwift.ObjectId
   @objc dynamic public var hrElements: Swift.Int
   @objc dynamic public var hrAccumulated: Swift.Int
   @objc dynamic public var effortElements: Swift.Int
   @objc dynamic public var effortAccumulated: Swift.Int
   @objc dynamic public var cadenceElements: Swift.Int
   @objc dynamic public var cadenceAccumulated: Swift.Int
+  @objc override public static func primaryKey() -> Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -927,6 +931,7 @@ extension RookMotionWatchLink.RWHeartRateDataRecords {
   }
 }
 @objc @_inheritsConvenienceInitializers public class RWTrainingSummaries : RealmSwift.Object {
+  @objc dynamic public var id: RealmSwift.ObjectId
   @objc dynamic public var duration_time_tot: Swift.Int
   @objc dynamic public var z1_time: Swift.Float
   @objc dynamic public var z2_time: Swift.Float
@@ -959,6 +964,7 @@ extension RookMotionWatchLink.RWHeartRateDataRecords {
   @objc dynamic public var z3_cadence_tot: Swift.Int
   @objc dynamic public var z4_cadence_tot: Swift.Int
   @objc dynamic public var z5_cadence_tot: Swift.Int
+  @objc override public static func primaryKey() -> Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
