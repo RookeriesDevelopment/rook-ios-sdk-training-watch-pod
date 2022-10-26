@@ -14,7 +14,7 @@ import WatchConnectivity
 import WatchKit
 import _Concurrency
 import _StringProcessing
-public struct RWTrainingSummariesTransfer : Swift.Codable {
+public struct RWTrainingSummariesTransfer : RookMotionWatchLink.Convertable {
   public let duration_time_tot: Swift.Int
   public let z1_time: Swift.Float
   public let z2_time: Swift.Float
@@ -228,7 +228,7 @@ public struct RMRegisteredRooms : Swift.Decodable {
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
-public struct RWRemoteClassTransfer : Swift.Codable {
+public struct RWRemoteClassTransfer : RookMotionWatchLink.Convertable {
   public let classUUID: Swift.String
   public let roomUUID: Swift.String
   public let trainingName: Swift.String
@@ -375,7 +375,7 @@ public struct RMSummariesID {
   @objc override dynamic public init()
   @objc deinit
 }
-public struct RWTrainingStoragedRecordsTransfer : Swift.Codable {
+public struct RWTrainingStoragedRecordsTransfer : RookMotionWatchLink.Convertable {
   public init(hrRecords: [RookMotionWatchLink.RWHeartRateDataRecordsTrasnfer], stepRecords: [RookMotionWatchLink.RWStepDataRecordsTransfer])
   public init()
   public func encode(to encoder: Swift.Encoder) throws
@@ -435,7 +435,7 @@ extension RookMotionWatchLink.RWRealTimeApi : RookMotionWatchLink.EndPointType {
     get
   }
 }
-public struct RWTrainingTransfer : Swift.Codable {
+public struct RWTrainingTransfer : RookMotionWatchLink.Convertable {
   public let start: Swift.String
   public let end: Swift.String
   public let trainingTypeUUID: Swift.String
@@ -709,7 +709,7 @@ public struct PaginationResponse<T> : Swift.Decodable where T : Swift.Decodable 
   public let meta: RookMotionWatchLink.MetaResponse
   public init(from decoder: Swift.Decoder) throws
 }
-public struct RWAuxSummaryTransfer : Swift.Codable {
+public struct RWAuxSummaryTransfer : RookMotionWatchLink.Convertable {
   public let hrElements: Swift.Int
   public let hrAccumulated: Swift.Int
   public let effortElements: Swift.Int

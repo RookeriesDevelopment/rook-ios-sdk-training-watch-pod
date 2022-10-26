@@ -1723,6 +1723,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Convertable",
+            "printedName": "Convertable",
+            "usr": "s:19RookMotionWatchLink11ConvertableP",
+            "mangledName": "$s19RookMotionWatchLink11ConvertableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -11117,6 +11124,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Convertable",
+            "printedName": "Convertable",
+            "usr": "s:19RookMotionWatchLink11ConvertableP",
+            "mangledName": "$s19RookMotionWatchLink11ConvertableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -15938,6 +15952,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Convertable",
+            "printedName": "Convertable",
+            "usr": "s:19RookMotionWatchLink11ConvertableP",
+            "mangledName": "$s19RookMotionWatchLink11ConvertableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -18839,6 +18860,13 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Convertable",
+            "printedName": "Convertable",
+            "usr": "s:19RookMotionWatchLink11ConvertableP",
+            "mangledName": "$s19RookMotionWatchLink11ConvertableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -28444,6 +28472,13 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Convertable",
+            "printedName": "Convertable",
+            "usr": "s:19RookMotionWatchLink11ConvertableP",
+            "mangledName": "$s19RookMotionWatchLink11ConvertableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -44366,7 +44401,7 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Comunication\/RWCommunicationManager.swift",
       "kind": "Dictionary",
-      "offset": 4690,
+      "offset": 4746,
       "length": 3,
       "value": "[]"
     },
