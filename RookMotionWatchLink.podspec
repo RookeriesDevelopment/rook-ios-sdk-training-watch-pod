@@ -23,6 +23,6 @@ Pod::Spec.new do |spec|
   spec.watchos.deployment_target = '6.2'
   spec.watchos.vendored_frameworks = 'RookMotionWatchLink.xcframework'
 
-  spec.dependency 'RealmSwift', '10.32.0'
+  spec.dependency 'RealmSwift', '10.32.2'
 
 end
