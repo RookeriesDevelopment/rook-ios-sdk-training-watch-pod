@@ -1,57 +1,101 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target i386-apple-watchos6.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RookMotionWatchLink
-import CoreBluetooth
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreData
 import Foundation
 import HealthKit
-import RealmSwift
 @_exported import RookMotionWatchLink
 import Swift
 import UIKit
 import WatchConnectivity
 import WatchKit
+import _Concurrency
+import _StringProcessing
+extension RookMotionWatchLink.RookHeartRateRecords {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<RookMotionWatchLink.RookHeartRateRecords>
+  @objc @NSManaged dynamic public var timeStamp: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var heartRate: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var calories: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var effort: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var start: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var heartRateVariability: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var rookTraining: RookMotionWatchLink.RookTraining? {
+    @objc get
+    @objc set
+  }
+}
+extension RookMotionWatchLink.RookHeartRateRecords : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+extension RookMotionWatchLink.RookTrainingType {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<RookMotionWatchLink.RookTrainingType>
+  @objc @NSManaged dynamic public var uuid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var trainigName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var useHeartRate: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var useCycling: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var useGps: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var useSteps: RookMotionWatchLink.RookUseSteps? {
+    @objc get
+    @objc set
+  }
+}
+extension RookMotionWatchLink.RookTrainingType : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 public enum RoundingPrecision {
   case ones
   case tenths
   case hundredths
   case thousandths
   public static func == (a: RookMotionWatchLink.RoundingPrecision, b: RookMotionWatchLink.RoundingPrecision) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public func preciseRound(_ value: Swift.Float, precision: RookMotionWatchLink.RoundingPrecision = .ones) -> Swift.Float
 public func getWatchSensorName() -> Swift.String
 public func getHours(from lastRecordTime: Swift.String?) -> Swift.Int
 public func goToSync()
-public struct WorkoutType {
-  public let uuid: Swift.String
-  public let name: Swift.String
-  public let useSteps: Swift.Bool
-  public let typeSteps: Swift.String?
-  public init(uuid: Swift.String, name: Swift.String, useSteps: Swift.Bool, typeSteps: Swift.String?)
-}
-@objc @_inheritsConvenienceInitializers public class RWRemoteClass : RealmSwift.Object {
-  @objc dynamic public var id: Swift.Int
-  @objc dynamic public var classUUID: Swift.String
-  @objc dynamic public var roomUUID: Swift.String
-  @objc dynamic public var trainingName: Swift.String
-  @objc dynamic public var classDelay: Swift.Int
-  @objc dynamic public var useSteps: Swift.Int
-  @objc dynamic public var stepOptions: Swift.String
-  @objc override public static func primaryKey() -> Swift.String?
-  convenience required public init(classUUID: Swift.String, roomUUID: Swift.String, trainingName: Swift.String, classDelay: Swift.Int, useSteps: Swift.Int, stepOptions: Swift.String)
+@_inheritsConvenienceInitializers @objc(RookRemoteClass) public class RookRemoteClass : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
-  @objc override dynamic public init()
 }
-extension RWStorageManager {
-  public func storeTrainingtype(trainingType: RookMotionWatchLink.RWTrainingType) throws
-  public func deleteAllTrainingTypes()
-  public func readTrainingTypesList() -> [RookMotionWatchLink.RWTrainingType]
-}
-@objc public protocol RWCommunicationDelegate : AnyObject {
+@objc public protocol RWCommunicationDelegate {
   @objc func session(_ session: WatchConnectivity.WCSession, messageData: [Swift.String : Any])
   @objc func session(_ session: WatchConnectivity.WCSession, userInfo: [Swift.String : Any])
   @objc optional func session(_ session: WatchConnectivity.WCSession, message: [Swift.String : Any])
@@ -65,44 +109,87 @@ extension RWStorageManager {
   public func sendInfo(_ info: [Swift.String : Any])
   @objc deinit
 }
-extension RWCommunicationManager : WatchConnectivity.WCSessionDelegate {
+extension RookMotionWatchLink.RWCommunicationManager : WatchConnectivity.WCSessionDelegate {
   @objc dynamic public func session(_ session: WatchConnectivity.WCSession, activationDidCompleteWith activationState: WatchConnectivity.WCSessionActivationState, error: Swift.Error?)
   @objc dynamic public func session(_ session: WatchConnectivity.WCSession, didReceiveUserInfo userInfo: [Swift.String : Any] = [:])
   @objc dynamic public func session(_ session: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any], replyHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
 }
-public func generateMaxValueFor(value: Swift.Int, globalVar: Swift.Int) -> Swift.Int
-public func generateMinValueFor(value: Swift.Int, globalVar: Swift.Int) -> Swift.Int
-@objc @_inheritsConvenienceInitializers public class RMUser : RealmSwift.Object {
-  @objc dynamic public var id: Swift.Int
-  @objc dynamic public var userUUID: Swift.String?
-  @objc dynamic public var userToken: Swift.String?
-  @objc dynamic public var name: Swift.String?
-  @objc dynamic public var lastName: Swift.String?
-  @objc dynamic public var email: Swift.String?
-  @objc dynamic public var pseudonym: Swift.String?
-  @objc dynamic public var userEmail: Swift.String?
-  @objc dynamic public var userImage: Swift.String?
-  @objc dynamic public var physiologicalVariables: RookMotionWatchLink.RMUserPhysiologicalVariables?
-  @objc override public static func primaryKey() -> Swift.String?
-  public func updatePhysiologicalVariables(weight: Swift.Double, height: Swift.Double, restingHeartRate: Swift.Int)
-  public func setUserUpdatePending(with updatePending: Swift.Bool)
-  public func updateUserProperties(uuid: Swift.String?, name: Swift.String?, lastName: Swift.String?, email: Swift.String?, userToken: Swift.String?, pseudonym: Swift.String?, urlImage: Swift.String?)
-  @objc override dynamic public init()
-  @objc deinit
+public struct RWRookPhysiologicalVariablesDTO {
+  public let weight: Swift.String
+  public let height: Swift.String
+  public let restingHeartRate: Swift.String
+  public init(weight: Swift.String, height: Swift.String, restingHeartRate: Swift.String)
 }
-@objc @_inheritsConvenienceInitializers public class RMUserPhysiologicalVariables : RealmSwift.Object, Swift.Codable {
-  @objc dynamic public var weight: Swift.String?
-  @objc dynamic public var height: Swift.String?
-  @objc dynamic public var restingHeartRate: Swift.String?
+@_inheritsConvenienceInitializers @objc(RookTraining) public class RookTraining : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
-  @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
 }
 public struct SensorPaginationResponse : Swift.Decodable {
-  public let data: [RookMotionWatchLink.RMSensorAPI]
+  public let data: [RookMotionWatchLink.SensorResponse]
   public let meta: RookMotionWatchLink.MetaResponse
   public init(from decoder: Swift.Decoder) throws
+}
+public struct SensorResponse : Swift.Decodable {
+  public let uuid: Swift.String
+  public let sensorName: Swift.String
+  public let sensorMac: Swift.String
+  public let ownershipType: Swift.String
+  public let updatedAt: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case uuid
+    case sensorName
+    case sensorMac
+    case ownershipType
+    case updatedAt
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct RWRookTrainingSummaryDTO {
+  public let durationTimeTot: Swift.Int64
+  public let z1Time: Swift.Float
+  public let z2Time: Swift.Float
+  public let z3Time: Swift.Float
+  public let z4Time: Swift.Float
+  public let z5Time: Swift.Float
+  public let hrMax: Swift.Int64
+  public let hrAvg: Swift.Int64
+  public let hrMin: Swift.Int64
+  public let effortMax: Swift.Int64
+  public let effortAvg: Swift.Int64
+  public let effortMin: Swift.Int64
+  public let calories: Swift.Int64
+  public let z1Calories: Swift.Float
+  public let z2Calories: Swift.Float
+  public let z3Calories: Swift.Float
+  public let z4Calories: Swift.Float
+  public let z5Calories: Swift.Float
+  public let stepsTotal: Swift.Int64
+  public let z1Steps: Swift.Int64
+  public let z2Steps: Swift.Int64
+  public let z3Steps: Swift.Int64
+  public let z4Steps: Swift.Int64
+  public let z5Steps: Swift.Int64
+  public let cadenceMax: Swift.Float
+  public let cadenceAvg: Swift.Float
+  public let cadenceMin: Swift.Float
+  public let z1Cadence: Swift.Int64
+  public let z2Cadence: Swift.Int64
+  public let z3Cadence: Swift.Int64
+  public let z4Cadence: Swift.Int64
+  public let z5Cadence: Swift.Int64
 }
 public struct RMRegisteredCenter : Swift.Decodable {
   public let chain: RookMotionWatchLink.RMRegisteredChain
@@ -144,99 +231,48 @@ public struct RMRegisteredRooms : Swift.Decodable {
   public init(id: Swift.Int, roomUuid: Swift.String, roomName: Swift.String, description: Swift.String, typeRoom: Swift.String, trainingType: Swift.String?, trainingTypeUUID: Swift.String?, configurationUUID: Swift.String?, channel: Swift.String?, duration: Swift.Int?, capacity: Swift.Int?, classDelay: Swift.Int?, dataOrder: Swift.String?, stepOptions: Swift.String?, useSteps: Swift.Int?, remoteState: Swift.Int?)
   public init(from decoder: Swift.Decoder) throws
 }
-@objc @_inheritsConvenienceInitializers public class RWTrainingInfo : RealmSwift.Object, Swift.Codable {
-  @objc dynamic public var start: Swift.String?
-  @objc dynamic public var end: Swift.String?
-  @objc dynamic public var trainingTypeUUID: Swift.String?
-  @objc dynamic public var sensorUUID: Swift.String?
-  @objc dynamic public var sensorName: Swift.String?
-  @objc dynamic public var deviceType: Swift.String?
-  @objc dynamic public var uploadedAt: Swift.String
-  @objc dynamic public var groupalMode: Swift.Int
-  @objc dynamic public var auxSummary: RookMotionWatchLink.RWAuxiliarSummary?
-  @objc dynamic public var summary: RookMotionWatchLink.RWTrainingSummaries?
-  @objc dynamic public var records: RookMotionWatchLink.RWTrainingStoragedRecords?
-  @objc dynamic public var remoteClass: RookMotionWatchLink.RWRemoteClass?
-  public var summaries: RealmSwift.List<RookMotionWatchLink.RWTrainingSummary>
-  @objc dynamic public var offset: Swift.String?
-  @objc override public static func primaryKey() -> Swift.String?
-  public enum CodingKeys : Swift.String, Swift.CodingKey {
-    case start, end, offset
-    case sensorUUID
-    case trainingTypeUUID
-    case deviceType
-    case groupalMode
-    case records, summaries
-    public typealias RawValue = Swift.String
-    public init?(rawValue: Swift.String)
-    public var rawValue: Swift.String {
-      get
-    }
-    public var stringValue: Swift.String {
-      get
-    }
-    public init?(stringValue: Swift.String)
-    public var intValue: Swift.Int? {
-      get
-    }
-    public init?(intValue: Swift.Int)
-  }
+@_inheritsConvenienceInitializers @objc(RookTrainingType) public class RookTrainingType : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
-  @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
+}
+public struct RWRookTrainingSummaryById : Swift.Encodable {
+  public let summaryTypeID: Swift.Int
+  public let value: Swift.Int
   public func encode(to encoder: Swift.Encoder) throws
 }
-@objc @_inheritsConvenienceInitializers public class RWStorageManager : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  public func saveStepRecord(object: RookMotionWatchLink.RWStepDataRecords)
-  public func saveHeartRateRecord(object: RookMotionWatchLink.RWHeartRateDataRecords)
-  public func saveTrainingInfoRecord(object: RookMotionWatchLink.RWTrainingInfo)
-  public func saveTrainingSummary(object: RookMotionWatchLink.RWTrainingSummaries)
-  public func getAllStepsRecords() -> [RookMotionWatchLink.RMStepDerivedRecord]
-  public func getAllHeartRateRecords() -> [RookMotionWatchLink.RMHrDerivedRecord]
-  public func getAllTrainingInfoRecords() -> [RookMotionWatchLink.RWTrainingInfo]
-  public func getAllTrainingSummaries() -> [RookMotionWatchLink.RWTrainingSummaries]
-  public func cleanDataBase()
-  public func deleteAllStepsRecords()
-  public func deleteAllHeartRateRecords()
-  public func deleteAllTrainingInfoRecords()
-  public func deleteAllTrainingSummaries()
-  public func deleteSpecificStepRecord(object: RealmSwift.Results<RookMotionWatchLink.RWStepDataRecords>)
-  public func deleteSpecificHeartRateRecord(object: RealmSwift.Results<RookMotionWatchLink.RWHeartRateDataRecords>)
-  public func deleteSpecificTrainingRecord(object: RookMotionWatchLink.RWTrainingInfo)
-  public func deleteSpecificTrainingInfoReference(object: RealmSwift.ThreadSafeReference<RookMotionWatchLink.RWTrainingInfo>)
-  public func deleteSpecificTrainingSummary(object: RealmSwift.Results<RookMotionWatchLink.RWTrainingSummaries>)
-  public func generateSummaries(summary: RookMotionWatchLink.RWTrainingSummaries, _ heartRateRecordsData: RookMotionWatchLink.RWHeartRateDataRecords?, _ stepsRecordsData: RookMotionWatchLink.RWStepDataRecords?, time: Swift.Int)
-  public func storeHrSummaries(summary: RookMotionWatchLink.RWTrainingSummaries, record: RookMotionWatchLink.RWHeartRateDataRecords, time: Swift.Int)
-  public func storeStepsSummaries(summary: RookMotionWatchLink.RWTrainingSummaries, record: RookMotionWatchLink.RWStepDataRecords, time: Swift.Int)
-  public func storeZonesSummaries(summary: RookMotionWatchLink.RWTrainingSummaries, deltaTime: Swift.Float, _ delta_calories: Swift.Float, effort: Swift.Int, time: Swift.Int)
-  public func storeStepsZonesSummaries(summary: RookMotionWatchLink.RWTrainingSummaries, delta_steps: Swift.Int, cadence: Swift.Float, cadenceElements: Swift.Int, effort: Swift.Int, time: Swift.Int)
-  public func storeTrainingDuration(time: Swift.Int, summary: RookMotionWatchLink.RWTrainingSummaries)
-  public func addRecordForTraining(hrRecord: RookMotionWatchLink.RWHeartRateDataRecords? = nil, stepRecord: RookMotionWatchLink.RWStepDataRecords? = nil, _ training: RookMotionWatchLink.RWTrainingInfo)
-  public func updateTrainingInfo(_ stop: Swift.String = "", sensorUUID: Swift.String? = nil, trainingTypeUUID: Swift.String? = nil, _ training: RookMotionWatchLink.RWTrainingInfo)
-  public func updateTrainingSummariesToSend(summaryElement: RookMotionWatchLink.RWTrainingSummary, _ training: RookMotionWatchLink.RWTrainingInfo)
-  public func updateTrainingAuxSummaries(_ training: RookMotionWatchLink.RWTrainingInfo, auxSummary: RookMotionWatchLink.RMTrainingAuxiliarSummary)
-  public func updateTrainingSensorProperties(name: Swift.String?, sensorUUID: Swift.String?, training: RookMotionWatchLink.RWTrainingInfo)
-  public func updateTrainingUploadDate(for training: RookMotionWatchLink.RWTrainingInfo)
-  public func updateTrainingInfo(classUUID: Swift.String, roomUUID: Swift.String, trainingName: Swift.String, classDelay: Swift.Int, useSteps: Swift.Int, stepOptions: Swift.String, _ training: RookMotionWatchLink.RWTrainingInfo)
-  public func storeSensor(sensor: RookMotionWatchLink.RMSensorAPI) throws
-  public func readSensorsList() -> [RookMotionWatchLink.RMSensorAPI]
-  public func getSensorUUID(sensorName: Swift.String) -> Swift.String
-  public func getSensorsWithoutUUID() -> [RookMotionWatchLink.RMSensorAPI]
-  public func getPendingTrainings() -> [RookMotionWatchLink.RWTrainingInfo]
-  public func getUnfinishedTrainings() -> [RookMotionWatchLink.RWTrainingInfo]
+@_inheritsConvenienceInitializers @objc(RookUserIndexes) public class RookUserIndexes : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-public struct StepData {
-  public let timeStamp: Foundation.Date
-  public let stepCount: Swift.Int
+public struct RWRookSensorDTO {
+  public let sensorName: Swift.String
+  public let sensorUUID: Swift.String?
+  public let sensorMac: Swift.String?
+  public let updatedAt: Foundation.Date?
+  public let ownershipType: Swift.String
+  public init(sensorName: Swift.String, sensorUUID: Swift.String?, sensorMac: Swift.String?, updatedAt: Foundation.Date?)
 }
-extension WorkoutManager {
-  public func startTraining()
-  public func pauseTraining()
-  public func finishTraining()
-  public func cancelTraining()
-  public func setSummariesData()
+@_inheritsConvenienceInitializers @objc(RookSensor) public class RookSensor : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+public struct RWRookUserDTO {
+  public let userUUID: Swift.String
+  public let userToken: Swift.String?
+  public let name: Swift.String
+  public let lastName: Swift.String?
+  public let pseudonym: Swift.String?
+  public let userEmail: Swift.String
+  public let userImage: Swift.String?
+  public let physiologicalVariables: RookMotionWatchLink.RWRookPhysiologicalVariablesDTO?
+  public init(userUUID: Swift.String, userToken: Swift.String?, name: Swift.String, lastName: Swift.String?, pseudonym: Swift.String?, userEmail: Swift.String, userImage: Swift.String?, physiologicalVariables: RookMotionWatchLink.RWRookPhysiologicalVariablesDTO?)
+}
+public class RookTrainingStorage {
+  public init()
+  public func getUnfinishedTrainings(context: RookMotionWatchLink.ContextType) -> [RookMotionWatchLink.RWRookTrainingDTO]
+  public func getPendingTrainings(context: RookMotionWatchLink.ContextType) -> [RookMotionWatchLink.RWRookTrainingDTO]
+  public func deleteTraining(_ training: RookMotionWatchLink.RWRookTrainingDTO, context: RookMotionWatchLink.ContextType)
+  @objc deinit
 }
 public struct AddUserToRoomResponse : Swift.Decodable {
   public let result: Swift.String
@@ -246,31 +282,58 @@ public struct AddUserToRoomResponse : Swift.Decodable {
     case result
     case remainingWaitingSeconds
     case remainingPlaces
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
     public var rawValue: Swift.String {
       get
     }
     public var stringValue: Swift.String {
       get
     }
-    public init?(stringValue: Swift.String)
-    public var intValue: Swift.Int? {
-      get
-    }
-    public init?(intValue: Swift.Int)
   }
   public init(from decoder: Swift.Decoder) throws
 }
-public struct HeartRate {
-  public let timeStamp: Foundation.Date
-  public let bpm: Swift.Double
-  public let stepCount: Swift.Int
-  public let energy: Swift.Double
-  public init(timeStamp: Foundation.Date, bpm: Swift.Double, stepCount: Swift.Int, energy: Swift.Double)
+extension RookMotionWatchLink.RookAuxiliarSummary {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<RookMotionWatchLink.RookAuxiliarSummary>
+  @objc @NSManaged dynamic public var hrElements: Swift.Int32 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var hrAccumulated: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var effortElements: Swift.Int32 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var effortAccumulated: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cadenceElements: Swift.Int32 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cadenceAccumulated: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var rookTraining: RookMotionWatchLink.RookTraining? {
+    @objc get
+    @objc set
+  }
 }
-@_hasMissingDesignatedInitializers public class RMSettings {
-  public static let shared: RookMotionWatchLink.RMSettings
+extension RookMotionWatchLink.RookAuxiliarSummary : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_hasMissingDesignatedInitializers public class RWRookSettings {
+  public static let shared: RookMotionWatchLink.RWRookSettings
   public func getclientKey() -> Swift.String
   public func getToken() -> Swift.String
   public func setCredentials(client_key: Swift.String, token: Swift.String)
@@ -282,65 +345,52 @@ public struct HeartRate {
   @objc deinit
 }
 public struct RMSummariesID {
-  public let duration_time_tot: Swift.Int
-  public let z1_time_tot: Swift.Int
-  public let z2_time_tot: Swift.Int
-  public let z3_time_tot: Swift.Int
-  public let z4_time_tot: Swift.Int
-  public let z5_time_tot: Swift.Int
-  public let heart_rate_min: Swift.Int
-  public let heart_rate_avg: Swift.Int
-  public let heart_rate_max: Swift.Int
-  public let effort_min: Swift.Int
-  public let effort_avg: Swift.Int
-  public let effort_max: Swift.Int
-  public let calories_tot: Swift.Int
-  public let z1_calories_tot: Swift.Int
-  public let z2_calories_tot: Swift.Int
-  public let z3_calories_tot: Swift.Int
-  public let z4_calories_tot: Swift.Int
-  public let z5_calories_tot: Swift.Int
-  public let steps_tot: Swift.Int
-  public let z1_steps_tot: Swift.Int
-  public let z2_steps_tot: Swift.Int
-  public let z3_steps_tot: Swift.Int
-  public let z4_steps_tot: Swift.Int
-  public let z5_steps_tot: Swift.Int
-  public let cadence_min: Swift.Int
-  public let cadence_avg: Swift.Int
-  public let cadence_max: Swift.Int
-  public let z1_cadence_avg: Swift.Int
-  public let z2_cadence_avg: Swift.Int
-  public let z3_cadence_avg: Swift.Int
-  public let z4_cadence_avg: Swift.Int
-  public let z5_cadence_avg: Swift.Int
+  public static let durationTimeTot: Swift.Int
+  public static let z1Time: Swift.Int
+  public static let z2Time: Swift.Int
+  public static let z3Time: Swift.Int
+  public static let z4Time: Swift.Int
+  public static let z5Time: Swift.Int
+  public static let hrMin: Swift.Int
+  public static let hrAvg: Swift.Int
+  public static let hrMax: Swift.Int
+  public static let effortMin: Swift.Int
+  public static let effortAvg: Swift.Int
+  public static let effortMax: Swift.Int
+  public static let calories: Swift.Int
+  public static let z1Calories: Swift.Int
+  public static let z2Calories: Swift.Int
+  public static let z3Calories: Swift.Int
+  public static let z4Calories: Swift.Int
+  public static let z5Calories: Swift.Int
+  public static let stepsTotal: Swift.Int
+  public static let z1Steps: Swift.Int
+  public static let z2Steps: Swift.Int
+  public static let z3Steps: Swift.Int
+  public static let z4Steps: Swift.Int
+  public static let z5Steps: Swift.Int
+  public static let cadenceMin: Swift.Int
+  public static let cadenceAvg: Swift.Int
+  public static let cadenceMax: Swift.Int
+  public static let z1Cadence: Swift.Int
+  public static let z2Cadence: Swift.Int
+  public static let z3Cadence: Swift.Int
+  public static let z4Cadence: Swift.Int
+  public static let z5Cadence: Swift.Int
   public init()
 }
-@objc @_inheritsConvenienceInitializers public class BackGroundTasks : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BackGroundTasks : ObjectiveC.NSObject {
   public static let shared: RookMotionWatchLink.BackGroundTasks
-  public func uploadPendingTraining(delete: Swift.Bool = true, completion: @escaping (RookMotionWatchLink.RMResponse) -> Swift.Void)
-  @objc override dynamic public init()
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers public class RWAuxiliarSummary : RealmSwift.Object {
-  @objc dynamic public var id: Swift.Int
-  @objc dynamic public var hrElements: Swift.Int
-  @objc dynamic public var hrAccumulated: Swift.Int
-  @objc dynamic public var effortElements: Swift.Int
-  @objc dynamic public var effortAccumulated: Swift.Int
-  @objc dynamic public var cadenceElements: Swift.Int
-  @objc dynamic public var cadenceAccumulated: Swift.Int
-  @objc override public static func primaryKey() -> Swift.String?
-  @objc override dynamic public init()
+  public func uploadPendingTraining(delete: Swift.Bool = true, completion: @escaping (RookMotionWatchLink.RMWResponse) -> Swift.Void)
   @objc deinit
 }
 public enum RWRealTimeApi {
   case retriveRemoteRooms(userUUID: Swift.String, tokenUser: Swift.String? = nil, page: Swift.Int = 1)
   case connectUserToClass(classUUID: Swift.String, userUUID: Swift.String, tokenUser: Swift.String? = nil)
-  case sendData(classUUID: Swift.String, realTimeData: RookMotionWatchLink.RealTimeData, tokenUser: Swift.String? = nil)
+  case sendData(classUUID: Swift.String, realTimeData: RookMotionWatchLink.RWRookRealTimeData, tokenUser: Swift.String? = nil)
   case disconnectUserFromClass(classUUID: Swift.String, userUUID: Swift.String, tokenUser: Swift.String? = nil)
 }
-extension RWRealTimeApi : RookMotionWatchLink.EndPointType {
+extension RookMotionWatchLink.RWRealTimeApi : RookMotionWatchLink.EndPointType {
   public var baseUrl: Foundation.URL? {
     get
   }
@@ -357,10 +407,44 @@ extension RWRealTimeApi : RookMotionWatchLink.EndPointType {
     get
   }
 }
-public struct RMResponse {
+public struct RMWResponse {
   public var code: Swift.String
   public var message: Swift.String
   public var success: Swift.Bool
+}
+extension RookMotionWatchLink.RookRemoteClass {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<RookMotionWatchLink.RookRemoteClass>
+  @objc @NSManaged dynamic public var classUUID: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var roomUUID: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var trainingName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var classDelay: Swift.Int32 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var useSteps: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var stepOptions: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var rookTraining: RookMotionWatchLink.RookTraining? {
+    @objc get
+    @objc set
+  }
+}
+extension RookMotionWatchLink.RookRemoteClass : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
 public protocol EndPointType {
   var baseUrl: Foundation.URL? { get }
@@ -372,69 +456,87 @@ public protocol EndPointType {
 public struct URLParameterEncoder : RookMotionWatchLink.ParameterEncoder {
   public static func encode(urlRequest: inout Foundation.URLRequest, with parameters: RookMotionWatchLink.Parameters) throws
 }
-@_hasMissingDesignatedInitializers public class RMStepDerivedRecord : RookMotionWatchLink.Convertable {
-  public var timestamp: Swift.String?
-  public var cadence: Swift.Float?
-  public var steps: Swift.Int?
-  convenience public init(timestamp: Swift.String? = nil, cadence: Swift.Float? = nil, steps: Swift.Int? = nil)
-  required public init(from decoder: Swift.Decoder) throws
-  @objc deinit
+public struct RWRookRemoteClassDTO {
+  public let classUUID: Swift.String?
+  public let roomUUID: Swift.String?
+  public let trainingName: Swift.String?
+  public let classDelay: Swift.Int32
+  public let useSteps: Swift.Bool
+  public let stepOptions: Swift.String?
+}
+public struct StepRecordsDTO : Swift.Encodable {
+  public let timeStamp: Swift.String?
+  public let cadence: Swift.Float
+  public let steps: Swift.Int64
+  public let start: Swift.String?
   public func encode(to encoder: Swift.Encoder) throws
 }
-extension RMStepDerivedRecord : Swift.CustomStringConvertible {
-  public var description: Swift.String {
-    get
-  }
+public struct RMStepDerivedRecord : RookMotionWatchLink.Convertable {
+  public var timestamp: Swift.String
+  public var cadence: Swift.Float
+  public var steps: Swift.Int
+  public init(timestamp: Swift.String, cadence: Swift.Float?, steps: Swift.Int?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
-public struct TrainingType : Swift.Decodable {
+@_inheritsConvenienceInitializers @objc(RookUser) public class RookUser : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+public struct RWRookTrainingType : Swift.Decodable {
   public let trainingTypeUUID: Swift.String
   public let trainigName: Swift.String
   public let useHeartRate: Swift.Int?
-  public let useSteps: RookMotionWatchLink.UseStepsResponse?
+  public let useGps: Swift.Int?
+  public let useCycling: Swift.Int?
+  public let useSteps: RookMotionWatchLink.RWRookUseSteps?
+  public init(trainingTypeUUID: Swift.String, trainigName: Swift.String, useHeartRate: Swift.Int?, useGps: Swift.Int?, useCycling: Swift.Int?, useSteps: RookMotionWatchLink.RWRookUseSteps?)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case trainingTypeUUID
     case trainigName
     case useHeartRate
     case useSteps
-    public typealias RawValue = Swift.String
+    case useGps
+    case useCycling
     public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
     public var rawValue: Swift.String {
       get
     }
     public var stringValue: Swift.String {
       get
     }
-    public init?(stringValue: Swift.String)
-    public var intValue: Swift.Int? {
-      get
-    }
-    public init?(intValue: Swift.Int)
   }
   public init(from decoder: Swift.Decoder) throws
 }
-public struct UseStepsResponse : Swift.Decodable {
+public struct RWRookUseSteps : Swift.Decodable {
   public let enabled: Swift.Int
   public let stepsTypes: Swift.String
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case enabled
     case stepsTypes
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
     public var rawValue: Swift.String {
       get
     }
     public var stringValue: Swift.String {
       get
     }
-    public init?(stringValue: Swift.String)
-    public var intValue: Swift.Int? {
-      get
-    }
-    public init?(intValue: Swift.Int)
   }
   public init(from decoder: Swift.Decoder) throws
 }
-public struct RealTimeData : Swift.Codable {
+public struct RWRookRealTimeData : Swift.Codable {
   public let userUUID: Swift.String
   public let pseudonym: Swift.String
   public let email: Swift.String
@@ -444,35 +546,34 @@ public struct RealTimeData : Swift.Codable {
   public let hr: Swift.Int
   public let effort: Swift.Int
   public let answerWithClusters: Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
-}
-@objc @_inheritsConvenienceInitializers public class RWTrainingType : RealmSwift.Object, Swift.Codable {
-  @objc dynamic public var trainingTypeUUID: Swift.String?
-  @objc dynamic public var trainigName: Swift.String?
-  @objc dynamic public var useHeartRate: RookMotionWatchLink.OptionalInt?
-  @objc dynamic public var useCycling: RookMotionWatchLink.OptionalInt?
-  @objc dynamic public var useGps: RookMotionWatchLink.OptionalInt?
-  @objc dynamic public var useSteps: RookMotionWatchLink.UseSteps?
-  @objc override public static func primaryKey() -> Swift.String?
-  @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
-  @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-}
-@objc @_inheritsConvenienceInitializers public class UseSteps : RealmSwift.Object, Swift.Codable {
-  @objc dynamic public var enabled: RookMotionWatchLink.OptionalInt?
-  @objc dynamic public var stepsTypes: Swift.String?
-  @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
-  @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
 }
 @objc @_inheritsConvenienceInitializers public class AuthorizationManager : ObjectiveC.NSObject {
   final public let healthStore: HealthKit.HKHealthStore
   @objc override dynamic public init()
-  public func requestAuthorization(completionHandler: @escaping ((Swift.Bool) -> Swift.Void))
+  public func requestAuthorization(completionHandler: @escaping ((_ success: Swift.Bool) -> Swift.Void))
   @objc deinit
+}
+public struct SensorAddedResponse : Swift.Decodable {
+  public let uuid: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case uuid
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public init(from decoder: Swift.Decoder) throws
 }
 public typealias Parameters = [Swift.String : Any]
 public protocol ParameterEncoder {
@@ -482,16 +583,67 @@ public enum NetworkError : Swift.String, Swift.Error {
   case parametersNil
   case encodingFailed
   case missingUrl
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
+public struct HeartRateRecordsDTO : Swift.Encodable {
+  public let timeStamp: Swift.String?
+  public let heartRate: Swift.Int16
+  public let calories: Swift.Float
+  public let effort: Swift.Float
+  public let start: Swift.String?
+  public let heartRateVariability: Swift.Float
+  public func encode(to encoder: Swift.Encoder) throws
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case timeStamp
+    case heartRate
+    case heartRateVariability
+    case effort
+    case calories
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+}
+public struct RWRookTrainingRecordsDTO : Swift.Encodable {
+  public let hrDerivedRecords: [RookMotionWatchLink.HeartRateRecordsDTO]
+  public let stepsDerivedRecords: [RookMotionWatchLink.StepRecordsDTO]
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case hrDerivedRecords
+    case stepsDerivedRecords
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+}
 public enum RWTrainingTypeAPI {
   case getTrainingtypes(tokenUser: Swift.String? = nil, page: Swift.Int = 1)
 }
-extension RWTrainingTypeAPI : RookMotionWatchLink.EndPointType {
+extension RookMotionWatchLink.RWTrainingTypeAPI : RookMotionWatchLink.EndPointType {
   public var baseUrl: Foundation.URL? {
     get
   }
@@ -523,6 +675,42 @@ public struct RMTrainingAuxiliarSummary {
   public var cadenceAccumulated: Swift.Int
   public init()
 }
+public protocol RookUserStorageProtocol {
+  func storeUser(userToStore: RookMotionWatchLink.RWRookUserDTO, context: RookMotionWatchLink.ContextType)
+  func deleteUser(context: RookMotionWatchLink.ContextType)
+  func readUser(context: RookMotionWatchLink.ContextType) -> RookMotionWatchLink.RWRookUserDTO?
+}
+public class RookUserStorage : RookMotionWatchLink.RookUserStorageProtocol {
+  public init()
+  public func storeUser(userToStore: RookMotionWatchLink.RWRookUserDTO, context: RookMotionWatchLink.ContextType)
+  public func deleteUser(context: RookMotionWatchLink.ContextType)
+  public func readUser(context: RookMotionWatchLink.ContextType) -> RookMotionWatchLink.RWRookUserDTO?
+  @objc deinit
+}
+public protocol RookSensorStorageProtocol {
+  func createSensor(sensorToStore: RookMotionWatchLink.RWRookSensorDTO, context: RookMotionWatchLink.ContextType)
+  func deleteSensor(sensor: RookMotionWatchLink.RWRookSensorDTO, context: RookMotionWatchLink.ContextType)
+  func updateSensor(sensor: RookMotionWatchLink.RWRookSensorDTO, context: RookMotionWatchLink.ContextType)
+  func readSensors(context: RookMotionWatchLink.ContextType) -> [RookMotionWatchLink.RWRookSensorDTO]
+}
+public enum SensorErrors : Swift.Error {
+  case userEmpty
+  case sensorNotFoud
+  public static func == (a: RookMotionWatchLink.SensorErrors, b: RookMotionWatchLink.SensorErrors) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class RookSensorStorage : RookMotionWatchLink.RookSensorStorageProtocol {
+  public init()
+  public func createSensor(sensorToStore: RookMotionWatchLink.RWRookSensorDTO, context: RookMotionWatchLink.ContextType)
+  public func deleteSensor(sensor: RookMotionWatchLink.RWRookSensorDTO, context: RookMotionWatchLink.ContextType)
+  public func updateSensor(sensor: RookMotionWatchLink.RWRookSensorDTO, context: RookMotionWatchLink.ContextType)
+  public func readSensors(context: RookMotionWatchLink.ContextType) -> [RookMotionWatchLink.RWRookSensorDTO]
+  public func getSensorsWithoutUUID(context: RookMotionWatchLink.ContextType) -> [RookMotionWatchLink.RWRookSensorDTO]
+  @objc deinit
+}
 public enum NetworkResponse : Swift.String {
   case succes
   case authenticationError
@@ -531,8 +719,8 @@ public enum NetworkResponse : Swift.String {
   case failed
   case noData
   case unableToDecode
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -540,49 +728,46 @@ public enum NetworkResponse : Swift.String {
 public struct NetworkManager<T> where T : RookMotionWatchLink.EndPointType {
   public init()
 }
-extension NetworkManager where T == RookMotionWatchLink.RWTrainingTypeAPI {
-  public func getTrainingTypes(userToken: Swift.String? = nil, completion: @escaping ([RookMotionWatchLink.RWTrainingType]?, Swift.String?) -> Swift.Void)
+extension RookMotionWatchLink.NetworkManager where T == RookMotionWatchLink.RWTrainingTypeAPI {
+  public func getTrainingTypes(userToken: Swift.String? = nil, completion: @escaping ([RookMotionWatchLink.RWRookTrainingType], _ error: Swift.String?) -> Swift.Void)
 }
-extension NetworkManager where T == RookMotionWatchLink.RWSensorAPI {
-  public func addSesnorToUser(tokenUser: Swift.String? = nil, sensor_name: Swift.String, sensor_mac: Swift.String, ownership_type: Swift.String, userUUID: Swift.String, completion: @escaping (Swift.Int, Swift.String?, Swift.String?) -> Swift.Void)
-  public func getUserSensor(userUUID: Swift.String, userToken: Swift.String? = nil, completion: @escaping ([RookMotionWatchLink.RMSensorAPI]?, Swift.String?) -> Swift.Void)
+extension RookMotionWatchLink.NetworkManager where T == RookMotionWatchLink.RWSensorAPI {
+  public func addSensorToUser(tokenUser: Swift.String? = nil, sensor_name: Swift.String, sensor_mac: Swift.String?, ownership_type: Swift.String, userUUID: Swift.String, completion: @escaping (Swift.Int, RookMotionWatchLink.SensorAddedResponse?, _ error: Swift.String?) -> Swift.Void)
+  public func getUserSensors(userUUID: Swift.String, page: Swift.Int = 1, userToken: Swift.String? = nil, completion: @escaping (RookMotionWatchLink.SensorPaginationResponse?, _ error: Swift.String?) -> Swift.Void)
 }
-extension NetworkManager where T == RookMotionWatchLink.RWTrainingAPI {
-  public func addPendingTrainingToUser(userUUID: Swift.String, userToken: Swift.String? = nil, training: RookMotionWatchLink.RWTrainingInfo, completion: @escaping (Swift.Int, Swift.String?, Swift.String?) -> Swift.Void)
+extension RookMotionWatchLink.NetworkManager where T == RookMotionWatchLink.RWTrainingAPI {
+  public func addPendingTrainingToUser(userUUID: Swift.String, userToken: Swift.String? = nil, training: RookMotionWatchLink.RWRookTrainingDTO, completion: @escaping (Swift.Int, Swift.String?, _ error: Swift.String?) -> Swift.Void)
 }
-extension NetworkManager where T == RookMotionWatchLink.RWRealTimeApi {
-  public func getRemoteRooms(userUUID: Swift.String, tokenUser: Swift.String? = nil, completion: @escaping ([RookMotionWatchLink.RMRegisteredCenter]?, Swift.String?) -> Swift.Void)
-  public func connectUserToClass(userUUID: Swift.String, classUUID: Swift.String, userToken: Swift.String? = nil, completion: @escaping (Swift.Int, RookMotionWatchLink.AddUserToRoomResponse?, Swift.String?) -> Swift.Void)
-  public func sendRealTimeData(to classUUID: Swift.String, realTimeData: RookMotionWatchLink.RealTimeData, userToken: Swift.String? = nil, completion: @escaping (Swift.Int, Swift.String?, Swift.String?) -> Swift.Void)
+extension RookMotionWatchLink.NetworkManager where T == RookMotionWatchLink.RWRealTimeApi {
+  public func getRemoteRooms(userUUID: Swift.String, tokenUser: Swift.String? = nil, completion: @escaping ([RookMotionWatchLink.RMRegisteredCenter]?, _ error: Swift.String?) -> Swift.Void)
+  public func connectUserToClass(userUUID: Swift.String, classUUID: Swift.String, userToken: Swift.String? = nil, completion: @escaping (_ httpCode: Swift.Int, _ response: RookMotionWatchLink.AddUserToRoomResponse?, _ error: Swift.String?) -> Swift.Void)
+  public func sendRealTimeData(to classUUID: Swift.String, realTimeData: RookMotionWatchLink.RWRookRealTimeData, userToken: Swift.String? = nil, completion: @escaping (_ httpCode: Swift.Int, _ response: Swift.String?, _ error: Swift.String?) -> Swift.Void)
   public func disconnectUserFromClass(with classUUID: Swift.String, userUUID: Swift.String, userToken: Swift.String? = nil)
 }
-@objc @_inheritsConvenienceInitializers public class RWTrainingStoragedRecords : RealmSwift.Object, Swift.Codable {
-  public var hrDerivedRecords: RealmSwift.List<RookMotionWatchLink.RWHeartRateDataRecords>
-  public var stepsDerivedRecords: RealmSwift.List<RookMotionWatchLink.RWStepDataRecords>
-  public enum CodingKeys : Swift.String, Swift.CodingKey {
-    case hrDerivedRecords
-    case stepsDerivedRecords
-    public typealias RawValue = Swift.String
-    public init?(rawValue: Swift.String)
-    public var rawValue: Swift.String {
-      get
-    }
-    public var stringValue: Swift.String {
-      get
-    }
-    public init?(stringValue: Swift.String)
-    public var intValue: Swift.Int? {
-      get
-    }
-    public init?(intValue: Swift.Int)
-  }
-  @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
+@_inheritsConvenienceInitializers @objc(RookAuxiliarSummary) public class RookAuxiliarSummary : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
+}
+extension RookMotionWatchLink.RookUseSteps {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<RookMotionWatchLink.RookUseSteps>
+  @objc @NSManaged dynamic public var enable: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var stepTypes: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var trainingType: RookMotionWatchLink.RookTrainingType? {
+    @objc get
+    @objc set
+  }
+}
+extension RookMotionWatchLink.RookUseSteps : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
 public struct PaginationTrainingResponse : Swift.Decodable {
-  public let data: [RookMotionWatchLink.RWTrainingType]
+  public let data: [RookMotionWatchLink.RWRookTrainingType]
   public let meta: RookMotionWatchLink.MetaResponse
   public init(from decoder: Swift.Decoder) throws
 }
@@ -592,19 +777,19 @@ public struct MetaResponse : Swift.Decodable {
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case lastPage
     case currentPage
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
     public var rawValue: Swift.String {
       get
     }
     public var stringValue: Swift.String {
       get
     }
-    public init?(stringValue: Swift.String)
-    public var intValue: Swift.Int? {
-      get
-    }
-    public init?(intValue: Swift.Int)
   }
   public init(from decoder: Swift.Decoder) throws
 }
@@ -614,10 +799,10 @@ public struct PaginationResponse<T> : Swift.Decodable where T : Swift.Decodable 
   public init(from decoder: Swift.Decoder) throws
 }
 public enum RWSensorAPI {
-  case addSensorToUser(tokenUser: Swift.String? = nil, sensor_name: Swift.String, sensor_mac: Swift.String, ownership_type: Swift.String, userUUID: Swift.String)
+  case addSensorToUser(tokenUser: Swift.String? = nil, sensor_name: Swift.String, sensor_mac: Swift.String?, ownership_type: Swift.String, userUUID: Swift.String)
   case getUserSensors(userUUID: Swift.String, userToken: Swift.String? = nil, page: Swift.Int = 1)
 }
-extension RWSensorAPI : RookMotionWatchLink.EndPointType {
+extension RookMotionWatchLink.RWSensorAPI : RookMotionWatchLink.EndPointType {
   public var baseUrl: Foundation.URL? {
     get
   }
@@ -634,27 +819,10 @@ extension RWSensorAPI : RookMotionWatchLink.EndPointType {
     get
   }
 }
-@_inheritsConvenienceInitializers public class RealmOptionalCodable<Value> : RealmSwift.Object, Swift.Decodable where Value : RealmSwift.RealmOptionalType, Value : Swift.Decodable {
-  public var numeric: RealmSwift.RealmOptional<Value>
-  public var value: Value? {
-    get
-    set
-  }
-  required convenience public init(from decoder: Swift.Decoder) throws
-  @objc deinit
-  @objc override dynamic public init()
-}
-@objc @_inheritsConvenienceInitializers public class OptionalInt : RealmSwift.Object, Swift.Codable {
-  public var numeric: RealmSwift.RealmOptional<Swift.Int>
-  required convenience public init(from decoder: Swift.Decoder) throws
-  @objc override dynamic public init()
-  @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-}
 public enum RWTrainingAPI {
-  case addPendingTrainingToUser(userUUID: Swift.String, userToken: Swift.String? = nil, training: RookMotionWatchLink.RWTrainingInfo)
+  case addPendingTrainingToUser(userUUID: Swift.String, userToken: Swift.String? = nil, training: RookMotionWatchLink.RWRookTrainingDTO)
 }
-extension RWTrainingAPI : RookMotionWatchLink.EndPointType {
+extension RookMotionWatchLink.RWTrainingAPI : RookMotionWatchLink.EndPointType {
   public var baseUrl: Foundation.URL? {
     get
   }
@@ -679,32 +847,26 @@ public struct JSONCodingKeys : Swift.CodingKey {
 }
 public struct JSON {
 }
-@objc @_inheritsConvenienceInitializers public class RWStepDataRecords : RealmSwift.Object, Swift.Codable {
-  @objc dynamic public var timestamp: Swift.String
-  @objc dynamic public var cadence: Swift.Float
-  @objc dynamic public var steps: Swift.Int
-  @objc dynamic public var start: Swift.String
-  @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
-  @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
+public struct RookTrainingConfiguration {
+  public let trainingType: RookMotionWatchLink.RWRookTrainingType
+  public let remoteClass: RookMotionWatchLink.RWRookRemoteClass?
+  public init(trainingType: RookMotionWatchLink.RWRookTrainingType, remoteClass: RookMotionWatchLink.RWRookRemoteClass?)
 }
-extension RWStepDataRecords {
-  @objc override dynamic public var description: Swift.String {
-    @objc get
-  }
+@_inheritsConvenienceInitializers @objc(RookPhysiolocalVariables) public class RookPhysiolocalVariables : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
 }
 public enum WorkoutState {
   case started
   case stopped
   case paused
   public static func == (a: RookMotionWatchLink.WorkoutState, b: RookMotionWatchLink.WorkoutState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
-extension WorkoutState {
+extension RookMotionWatchLink.WorkoutState {
   public func actionText() -> Swift.String
 }
 public protocol WorkoutManagerDelegate : AnyObject {
@@ -723,58 +885,199 @@ public let kTrainingPlayNotification: Swift.String
 @objc @_inheritsConvenienceInitializers public class WorkoutManager : ObjectiveC.NSObject {
   weak public var delegate: RookMotionWatchLink.WorkoutManagerDelegate?
   public var state: RookMotionWatchLink.WorkoutState
-  public var training: RookMotionWatchLink.RWTrainingInfo
-  public var remoteClass: RookMotionWatchLink.RWRemoteClass?
   open var duration: Swift.Float
+  public var trainingSummaries: RookMotionWatchLink.RookSummariesDTO {
+    get
+  }
   @objc override dynamic public init()
-  public func start(configuration: RookMotionWatchLink.WorkoutConfiguration?)
-  public func pauseWorkout()
-  public func resumenWorkOut()
+  public func start(configuration: RookMotionWatchLink.RookTrainingConfiguration)
+  public func pauseTraining()
+  public func resumenTraining()
+  public func restoreTraining(with pendingTraining: RookMotionWatchLink.RWRookTrainingDTO)
   public func stop()
-  public func onHeartRateReceived(bpm: Swift.Int)
-  public func onStepsReceived(steps: Swift.Int, cadence: Swift.Float, deltaSteps: Swift.Int)
-  public func configureRemote(with remoteClass: RookMotionWatchLink.RemoteClass)
-  public func restoreWorkout(with pendingTraining: RookMotionWatchLink.RWTrainingInfo)
   @objc deinit
 }
-extension WorkoutManager : HealthKit.HKWorkoutSessionDelegate {
+extension RookMotionWatchLink.WorkoutManager : HealthKit.HKWorkoutSessionDelegate {
   @objc dynamic public func workoutSession(_ workoutSession: HealthKit.HKWorkoutSession, didChangeTo toState: HealthKit.HKWorkoutSessionState, from fromState: HealthKit.HKWorkoutSessionState, date: Foundation.Date)
   @objc dynamic public func workoutSession(_ workoutSession: HealthKit.HKWorkoutSession, didFailWithError error: Swift.Error)
   @objc dynamic public func workoutSession(_ workoutSession: HealthKit.HKWorkoutSession, didGenerate event: HealthKit.HKWorkoutEvent)
 }
-extension WorkoutManager : HealthKit.HKLiveWorkoutBuilderDelegate {
+extension RookMotionWatchLink.WorkoutManager : HealthKit.HKLiveWorkoutBuilderDelegate {
   @objc dynamic public func workoutBuilder(_ workoutBuilder: HealthKit.HKLiveWorkoutBuilder, didCollectDataOf collectedTypes: Swift.Set<HealthKit.HKSampleType>)
   @objc dynamic public func workoutBuilderDidCollectEvent(_ workoutBuilder: HealthKit.HKLiveWorkoutBuilder)
+}
+extension RookMotionWatchLink.RookUser {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<RookMotionWatchLink.RookUser>
+  @objc @NSManaged dynamic public var userUUID: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var userToken: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var name: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var pseudonym: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var userEmail: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var userImage: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var physiologicalVariables: RookMotionWatchLink.RookPhysiolocalVariables? {
+    @objc get
+    @objc set
+  }
+}
+extension RookMotionWatchLink.RookUser : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+public enum ContextType {
+  case viewContext
+  case backGroundContext
+  public static func == (a: RookMotionWatchLink.ContextType, b: RookMotionWatchLink.ContextType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension RookMotionWatchLink.RookTraining {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<RookMotionWatchLink.RookTraining>
+  @objc @NSManaged dynamic public var start: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var end: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var trainingTypeUUID: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sensorUUID: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sensorName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var deviceType: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var uploadedAt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var grupalMode: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var offset: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var rookAuxiliarSummary: RookMotionWatchLink.RookAuxiliarSummary? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var rookTrainingSummaries: RookMotionWatchLink.RookTrainingSummaries? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var rookHeartRateRecords: Foundation.NSSet? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var rookStepRecords: Foundation.NSSet? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var rookRemoteClass: RookMotionWatchLink.RookRemoteClass? {
+    @objc get
+    @objc set
+  }
+}
+extension RookMotionWatchLink.RookTraining {
+  @objc(addRookHeartRateRecordsObject:) @NSManaged dynamic public func addToRookHeartRateRecords(_ value: RookMotionWatchLink.RookHeartRateRecords)
+  @objc(removeRookHeartRateRecordsObject:) @NSManaged dynamic public func removeFromRookHeartRateRecords(_ value: RookMotionWatchLink.RookHeartRateRecords)
+  @objc(addRookHeartRateRecords:) @NSManaged dynamic public func addToRookHeartRateRecords(_ values: Foundation.NSSet)
+  @objc(removeRookHeartRateRecords:) @NSManaged dynamic public func removeFromRookHeartRateRecords(_ values: Foundation.NSSet)
+}
+extension RookMotionWatchLink.RookTraining {
+  @objc(addRookStepRecordsObject:) @NSManaged dynamic public func addToRookStepRecords(_ value: RookMotionWatchLink.RookStepRecords)
+  @objc(removeRookStepRecordsObject:) @NSManaged dynamic public func removeFromRookStepRecords(_ value: RookMotionWatchLink.RookStepRecords)
+  @objc(addRookStepRecords:) @NSManaged dynamic public func addToRookStepRecords(_ values: Foundation.NSSet)
+  @objc(removeRookStepRecords:) @NSManaged dynamic public func removeFromRookStepRecords(_ values: Foundation.NSSet)
+}
+extension RookMotionWatchLink.RookTraining : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+extension RookMotionWatchLink.RookPhysiolocalVariables {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<RookMotionWatchLink.RookPhysiolocalVariables>
+  @objc @NSManaged dynamic public var height: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var restingHeartRate: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var wieght: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var user: RookMotionWatchLink.RookUser? {
+    @objc get
+    @objc set
+  }
+}
+extension RookMotionWatchLink.RookPhysiolocalVariables : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
 public enum TypeMessage : Swift.String {
   case syncUser
   case refreshToken
   case logout
   case training
+  public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
-  public init?(rawValue: Swift.String)
 }
 public struct WatchMessage : RookMotionWatchLink.Convertable {
   public let type: Swift.String
   public let data: [Swift.String : Any]
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case type, data
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
     public var rawValue: Swift.String {
       get
     }
     public var stringValue: Swift.String {
       get
     }
-    public init?(stringValue: Swift.String)
-    public var intValue: Swift.Int? {
-      get
-    }
-    public init?(intValue: Swift.Int)
   }
   public init(type: Swift.String, data: [Swift.String : Any])
   public init(from decoder: Swift.Decoder) throws
@@ -782,159 +1085,334 @@ public struct WatchMessage : RookMotionWatchLink.Convertable {
 }
 public protocol Convertable : Swift.Decodable, Swift.Encodable {
 }
-extension Convertable {
+extension RookMotionWatchLink.Convertable {
   public func convertToDict() -> [Swift.String : Any]
 }
-@objc @_inheritsConvenienceInitializers public class RWHeartRateDataRecords : RealmSwift.Object, Swift.Codable {
-  @objc dynamic public var timestamp: Swift.String
-  @objc dynamic public var heartRate: Swift.Int
-  @objc dynamic public var calories: Swift.Float
-  @objc dynamic public var effort: Swift.Float
-  @objc dynamic public var start: Swift.String
-  @objc dynamic public var heart_rate_variability: Swift.Float
+extension RookMotionWatchLink.RookUserIndexes {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<RookMotionWatchLink.RookUserIndexes>
+  @objc @NSManaged dynamic public var a: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var b: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var c: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var d: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var e: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var f: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var g: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var h: Swift.Float {
+    @objc get
+    @objc set
+  }
+}
+extension RookMotionWatchLink.RookUserIndexes : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(RookHeartRateRecords) public class RookHeartRateRecords : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+public struct RWRookTrainingDTO : Swift.Encodable {
+  public var start: Swift.String?
+  public var end: Swift.String?
+  public var trainingTypeUUID: Swift.String?
+  public var sensorUUID: Swift.String?
+  public var sensorName: Swift.String?
+  public var deviceType: Swift.String?
+  public var uploadedAt: Swift.String?
+  public var grupalMode: Swift.Int16
+  public var offset: Swift.String?
+  public var rookAuxiliarSummary: RookMotionWatchLink.RWRookAuxiliarSummaryDTO
+  public var rookTrainingSummaries: RookMotionWatchLink.RWRookTrainingSummaryDTO
+  public var records: RookMotionWatchLink.RWRookTrainingRecordsDTO?
+  public var rookRemoteClass: RookMotionWatchLink.RWRookRemoteClassDTO?
+  public var roomUUID: Swift.String?
+  public var summaries: [RookMotionWatchLink.RWRookTrainingSummaryById]
+  public func encode(to encoder: Swift.Encoder) throws
   public enum CodingKeys : Swift.String, Swift.CodingKey {
-    case timestamp
-    case heartRate
-    case heart_rate_variability
-    case effort, calories
-    public typealias RawValue = Swift.String
+    case start
+    case end
+    case offset
+    case sensorUUID
+    case trainingTypeUUID
+    case deviceType
+    case groupalMode
+    case records
+    case summaries
+    case roomUUID
     public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
     public var rawValue: Swift.String {
       get
     }
     public var stringValue: Swift.String {
       get
     }
-    public init?(stringValue: Swift.String)
-    public var intValue: Swift.Int? {
-      get
-    }
-    public init?(intValue: Swift.Int)
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
-  @objc deinit
 }
-extension RWHeartRateDataRecords {
-  @objc override dynamic public var description: Swift.String {
+extension RookMotionWatchLink.RookTrainingSummaries {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<RookMotionWatchLink.RookTrainingSummaries>
+  @objc @NSManaged dynamic public var durationTimeTot: Swift.Int64 {
     @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z1Time: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z2Time: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z3Time: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z4Time: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z5Time: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var hrMax: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var hrAvg: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var hrMin: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var effortMax: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var effortAvg: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var effortMin: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var calories: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z1Calories: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z2Calories: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z3Calories: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z4Calories: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z5Calories: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var stepsTotal: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z1Steps: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z2Steps: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z3Steps: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z4Steps: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z5Steps: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cadenceMax: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cadenceAvg: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cadenceMin: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z1Cadence: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z2Cadence: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z3Cadence: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z4Cadence: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var z5Cadence: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var rookTraining: RookMotionWatchLink.RookTraining? {
+    @objc get
+    @objc set
   }
 }
-@objc @_inheritsConvenienceInitializers public class RWTrainingSummaries : RealmSwift.Object {
-  @objc dynamic public var id: Swift.Int
-  @objc dynamic public var duration_time_tot: Swift.Int
-  @objc dynamic public var z1_time: Swift.Float
-  @objc dynamic public var z2_time: Swift.Float
-  @objc dynamic public var z3_time: Swift.Float
-  @objc dynamic public var z4_time: Swift.Float
-  @objc dynamic public var z5_time: Swift.Float
-  @objc dynamic public var hr_max: Swift.Int
-  @objc dynamic public var hr_min: Swift.Int
-  @objc dynamic public var hr_avg: Swift.Int
-  @objc dynamic public var effort_max: Swift.Int
-  @objc dynamic public var effort_min: Swift.Int
-  @objc dynamic public var effort_avg: Swift.Int
-  @objc dynamic public var calories: Swift.Int
-  @objc dynamic public var z1_calories_tot: Swift.Float
-  @objc dynamic public var z2_calories_tot: Swift.Float
-  @objc dynamic public var z3_calories_tot: Swift.Float
-  @objc dynamic public var z4_calories_tot: Swift.Float
-  @objc dynamic public var z5_calories_tot: Swift.Float
-  @objc dynamic public var steptsTotal: Swift.Int
-  @objc dynamic public var z1_steps_tot: Swift.Int
-  @objc dynamic public var z2_steps_tot: Swift.Int
-  @objc dynamic public var z3_steps_tot: Swift.Int
-  @objc dynamic public var z4_steps_tot: Swift.Int
-  @objc dynamic public var z5_steps_tot: Swift.Int
-  @objc dynamic public var cadence_max: Swift.Float
-  @objc dynamic public var cadence_min: Swift.Float
-  @objc dynamic public var cadence_avg: Swift.Float
-  @objc dynamic public var z1_cadence_tot: Swift.Int
-  @objc dynamic public var z2_cadence_tot: Swift.Int
-  @objc dynamic public var z3_cadence_tot: Swift.Int
-  @objc dynamic public var z4_cadence_tot: Swift.Int
-  @objc dynamic public var z5_cadence_tot: Swift.Int
-  @objc override public static func primaryKey() -> Swift.String?
-  @objc override dynamic public init()
-  @objc deinit
-}
-extension RWTrainingSummaries {
-  public var countElements: Swift.Int {
-    get
-  }
-  public var toDictionary: [Swift.String : Swift.String] {
-    get
-  }
-}
-public struct RWSummariesID {
-  public let duration_time_tot: Swift.Int
-  public let z1_time_tot: Swift.Int
-  public let z2_time_tot: Swift.Int
-  public let z3_time_tot: Swift.Int
-  public let z4_time_tot: Swift.Int
-  public let z5_time_tot: Swift.Int
-  public let heart_rate_min: Swift.Int
-  public let heart_rate_avg: Swift.Int
-  public let heart_rate_max: Swift.Int
-  public let effort_min: Swift.Int
-  public let effort_avg: Swift.Int
-  public let effort_max: Swift.Int
-  public let calories_tot: Swift.Int
-  public let z1_calories_tot: Swift.Int
-  public let z2_calories_tot: Swift.Int
-  public let z3_calories_tot: Swift.Int
-  public let z4_calories_tot: Swift.Int
-  public let z5_calories_tot: Swift.Int
-  public let steps_tot: Swift.Int
-  public let z1_steps_tot: Swift.Int
-  public let z2_steps_tot: Swift.Int
-  public let z3_steps_tot: Swift.Int
-  public let z4_steps_tot: Swift.Int
-  public let z5_steps_tot: Swift.Int
-  public let cadence_min: Swift.Int
-  public let cadence_avg: Swift.Int
-  public let cadence_max: Swift.Int
-  public let z1_cadence_avg: Swift.Int
-  public let z2_cadence_avg: Swift.Int
-  public let z3_cadence_avg: Swift.Int
-  public let z4_cadence_avg: Swift.Int
-  public let z5_cadence_avg: Swift.Int
-  public init()
+extension RookMotionWatchLink.RookTrainingSummaries : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
 @objc @_inheritsConvenienceInitializers public class RepositoryTrainingTypes : ObjectiveC.NSObject {
   @objc override dynamic public init()
-  public func getTrainingTypes(completion: @escaping ([RookMotionWatchLink.WorkoutType]) -> Swift.Void)
-  public func getRemoteClasses(completion: @escaping ([RookMotionWatchLink.RemoteClass]) -> Swift.Void)
+  public func getTrainingTypes(completion: @escaping ([RookMotionWatchLink.RWRookTrainingType], Swift.Error?) -> Swift.Void)
+  public func getRemoteClasses(completion: @escaping ([RookMotionWatchLink.RWRookRemoteClass], Swift.Error?) -> Swift.Void)
   @objc deinit
 }
 public struct JSONParameterEncoder : RookMotionWatchLink.ParameterEncoder {
   public static func encode(urlRequest: inout Foundation.URLRequest, with parameters: RookMotionWatchLink.Parameters) throws
 }
+public struct RWRookAuxiliarSummaryDTO {
+  public let hrElements: Swift.Int32
+  public let hrAccumulated: Swift.Int64
+  public let effortElements: Swift.Int32
+  public let effortAccumulated: Swift.Int64
+  public let cadenceElements: Swift.Int32
+  public let cadenceAccumulated: Swift.Int64
+}
 public struct RMHrDerivedRecord : RookMotionWatchLink.Convertable {
-  public var timeStamp: Swift.String?
-  public var heartRate: Swift.Int?
-  public var calories: Swift.Float?
-  public var effort: Swift.Float?
-  public var heartRateVariability: Swift.Int?
-  public init(timeStamp: Swift.String?, heartRate: Swift.Int?, calories: Swift.Float?, effort: Swift.Float?, heartRateVariability: Swift.Int? = 0)
-  public init(from decoder: Swift.Decoder) throws
+  public var timeStamp: Swift.String
+  public var heartRate: Swift.Int
+  public var calories: Swift.Float
+  public var effort: Swift.Float
+  public var heartRateVariability: Swift.Int
+  public init(timeStamp: Swift.String, heartRate: Swift.Int?, calories: Swift.Float?, effort: Swift.Float?, heartRateVariability: Swift.Int? = 0)
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension RookMotionWatchLink.RookSensor {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<RookMotionWatchLink.RookSensor>
+  @objc @NSManaged dynamic public var sensorName: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sensorUUID: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sensorMac: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var updatedAt: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ownershipType: Swift.String {
+    @objc get
+    @objc set
+  }
+}
+extension RookMotionWatchLink.RookSensor : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
 public enum HTTPMethod : Swift.String {
   case get
   case post
+  public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
-  public init?(rawValue: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers public class RepositoryTraining : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  public func addSensor(sensorName: Swift.String, completion: @escaping (RookMotionWatchLink.RMWResponse) -> Swift.Void)
+  public func uploadPendingSensors(completion: @escaping (RookMotionWatchLink.RMWResponse) -> Swift.Void)
+  public func getUserSensors(completion: @escaping (RookMotionWatchLink.RMWResponse, [RookMotionWatchLink.RWRookSensorDTO]?) -> Swift.Void)
+  public func getSensorUUID(sensorName: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
+  public func uploadPendingTrainings(delete: Swift.Bool, completion: @escaping (RookMotionWatchLink.RMWResponse) -> Swift.Void)
+  @objc deinit
+}
+extension RookMotionWatchLink.RookStepRecords {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<RookMotionWatchLink.RookStepRecords>
+  @objc @NSManaged dynamic public var timeStamp: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var cadence: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var steps: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var start: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var rookTraining: RookMotionWatchLink.RookTraining? {
+    @objc get
+    @objc set
+  }
+}
+extension RookMotionWatchLink.RookStepRecords : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
 public enum RWUserAPI {
   case getUserIndexes(userUUID: Swift.String, tokenUser: Swift.String? = nil)
   case checkTokenClient
 }
-extension RWUserAPI : RookMotionWatchLink.EndPointType {
+extension RookMotionWatchLink.RWUserAPI : RookMotionWatchLink.EndPointType {
   public var baseUrl: Foundation.URL? {
     get
   }
@@ -951,6 +1429,44 @@ extension RWUserAPI : RookMotionWatchLink.EndPointType {
     get
   }
 }
+@_inheritsConvenienceInitializers @objc(RookTrainingSummaries) public class RookTrainingSummaries : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+public struct RookSummariesDTO {
+  public var durationTimeTot: Swift.Int64
+  public var z1Time: Swift.Float
+  public var z2Time: Swift.Float
+  public var z3Time: Swift.Float
+  public var z4Time: Swift.Float
+  public var z5Time: Swift.Float
+  public var hrMax: Swift.Int64
+  public var hrAvg: Swift.Int64
+  public var hrMin: Swift.Int64
+  public var effortMax: Swift.Int64
+  public var effortAvg: Swift.Int64
+  public var effortMin: Swift.Int64
+  public var calories: Swift.Int64
+  public var z1Calories: Swift.Float
+  public var z2Calories: Swift.Float
+  public var z3Calories: Swift.Float
+  public var z4Calories: Swift.Float
+  public var z5Calories: Swift.Float
+  public var stepsTotal: Swift.Int64
+  public var z1Steps: Swift.Int64
+  public var z2Steps: Swift.Int64
+  public var z3Steps: Swift.Int64
+  public var z4Steps: Swift.Int64
+  public var z5Steps: Swift.Int64
+  public var cadenceMax: Swift.Float
+  public var cadenceAvg: Swift.Float
+  public var cadenceMin: Swift.Float
+  public var z1Cadence: Swift.Int64
+  public var z2Cadence: Swift.Int64
+  public var z3Cadence: Swift.Int64
+  public var z4Cadence: Swift.Int64
+  public var z5Cadence: Swift.Int64
+}
 public struct WorkoutConfiguration {
   public let trainingTypeUUID: Swift.String
   public let useSteps: Swift.Bool
@@ -962,7 +1478,45 @@ public struct WorkoutConfiguration {
     get
   }
 }
-public typealias NetworkRouterCompletion = (Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> ()
+public struct AuxiliarSummaryCalculatorDTO {
+  public var hrElements: Swift.Int32
+  public var hrAccumulated: Swift.Int64
+  public var effortElements: Swift.Int32
+  public var effortAccumulated: Swift.Int64
+  public var cadenceElements: Swift.Int32
+  public var cadenceAccumulated: Swift.Int64
+}
+@_inheritsConvenienceInitializers @objc(RookStepRecords) public class RookStepRecords : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+public typealias NetworkRouterCompletion = (_ data: Foundation.Data?, _ response: Foundation.URLResponse?, _ error: Swift.Error?) -> ()
+public protocol TrainingTypeStorageProtocol {
+  func createTrainingType(trainingType: RookMotionWatchLink.RWRookTrainingType, context: RookMotionWatchLink.ContextType)
+  func deleteTrainingType(trainingType: RookMotionWatchLink.RWRookTrainingType, context: RookMotionWatchLink.ContextType)
+  func updateTrainingType(trainingType: RookMotionWatchLink.RWRookTrainingType, context: RookMotionWatchLink.ContextType)
+  func readTrainingTypes(context: RookMotionWatchLink.ContextType) -> [RookMotionWatchLink.RWRookTrainingType]
+}
+public enum TrainingTypeErrors : Swift.Error {
+  case trainingTypeNotFound
+  public static func == (a: RookMotionWatchLink.TrainingTypeErrors, b: RookMotionWatchLink.TrainingTypeErrors) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class TrainingTypeStorage : RookMotionWatchLink.TrainingTypeStorageProtocol {
+  public init()
+  public func createTrainingType(trainingType: RookMotionWatchLink.RWRookTrainingType, context: RookMotionWatchLink.ContextType)
+  public func deleteTrainingType(trainingType: RookMotionWatchLink.RWRookTrainingType, context: RookMotionWatchLink.ContextType)
+  public func updateTrainingType(trainingType: RookMotionWatchLink.RWRookTrainingType, context: RookMotionWatchLink.ContextType)
+  public func readTrainingTypes(context: RookMotionWatchLink.ContextType) -> [RookMotionWatchLink.RWRookTrainingType]
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(RookUseSteps) public class RookUseSteps : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
 public class CalculateDeltaTime {
   public init()
   public func setNewTimeStampReference()
@@ -970,30 +1524,7 @@ public class CalculateDeltaTime {
   public func calculate_dt() -> Swift.Float
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers public class RMSensorAPI : RealmSwift.Object, Swift.Codable {
-  @objc dynamic public var sensorName: Swift.String?
-  @objc dynamic public var sensorUUID: Swift.String?
-  @objc dynamic public var sensorMAC: Swift.String?
-  @objc dynamic public var updatedAt: Swift.String?
-  @objc dynamic public var ownershipType: Swift.String?
-  @objc override public static func primaryKey() -> Swift.String?
-  public func createSensorFromPeripheral(_ sensor: CoreBluetooth.CBPeripheral) -> RookMotionWatchLink.RMSensorAPI
-  public func createSensorFromWatch(uuid: Swift.String) -> RookMotionWatchLink.RMSensorAPI
-  @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
-  @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-}
-@objc @_inheritsConvenienceInitializers public class RWTrainingSummary : RealmSwift.Object, Swift.Codable {
-  @objc dynamic public var summaryTypeID: Swift.Int
-  @objc dynamic public var value: Swift.Int
-  @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
-  @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-}
-public struct RemoteClass {
-  public let id: Swift.Int
+public struct RWRookRemoteClass {
   public let uuid: Swift.String
   public let name: Swift.String
   public let trainingType: Swift.String
@@ -1007,53 +1538,57 @@ public struct RemoteClass {
   public let useSteps: Swift.Int
   public let typeSteps: Swift.String?
   public var waitingTimeRemaining: Swift.Int
-  public init(id: Swift.Int, uuid: Swift.String, name: Swift.String, trainingType: Swift.String, trainingTypeUUID: Swift.String, configurationUUID: Swift.String, channel: Swift.String, duration: Swift.Int, capacity: Swift.Int, classDelay: Swift.Int, dataOrder: Swift.String, useSteps: Swift.Int, typeSteps: Swift.String?, waitingTimeRemaining: Swift.Int = 0)
-}
-extension RWStorageManager {
-  public func storeUserInfo(user: RookMotionWatchLink.RMUser) throws
-  public func deleteUserInfo()
-  public func readUserInfo() -> RookMotionWatchLink.RMUser?
-  public func getUserUUID() -> Swift.String?
-  public func getUserToken() -> Swift.String?
-  public func getUserPseudonym() -> Swift.String?
+  public init(uuid: Swift.String, name: Swift.String, trainingType: Swift.String, trainingTypeUUID: Swift.String, configurationUUID: Swift.String, channel: Swift.String, duration: Swift.Int, capacity: Swift.Int, classDelay: Swift.Int, dataOrder: Swift.String, useSteps: Swift.Int, typeSteps: Swift.String?, waitingTimeRemaining: Swift.Int = 0)
 }
 extension RookMotionWatchLink.RoundingPrecision : Swift.Equatable {}
 extension RookMotionWatchLink.RoundingPrecision : Swift.Hashable {}
-extension RookMotionWatchLink.RWTrainingInfo.CodingKeys : Swift.Equatable {}
-extension RookMotionWatchLink.RWTrainingInfo.CodingKeys : Swift.Hashable {}
-extension RookMotionWatchLink.RWTrainingInfo.CodingKeys : Swift.RawRepresentable {}
+extension RookMotionWatchLink.SensorResponse.CodingKeys : Swift.Equatable {}
+extension RookMotionWatchLink.SensorResponse.CodingKeys : Swift.Hashable {}
+extension RookMotionWatchLink.SensorResponse.CodingKeys : Swift.RawRepresentable {}
 extension RookMotionWatchLink.AddUserToRoomResponse.CodingKeys : Swift.Equatable {}
 extension RookMotionWatchLink.AddUserToRoomResponse.CodingKeys : Swift.Hashable {}
 extension RookMotionWatchLink.AddUserToRoomResponse.CodingKeys : Swift.RawRepresentable {}
-extension RookMotionWatchLink.TrainingType.CodingKeys : Swift.Equatable {}
-extension RookMotionWatchLink.TrainingType.CodingKeys : Swift.Hashable {}
-extension RookMotionWatchLink.TrainingType.CodingKeys : Swift.RawRepresentable {}
-extension RookMotionWatchLink.UseStepsResponse.CodingKeys : Swift.Equatable {}
-extension RookMotionWatchLink.UseStepsResponse.CodingKeys : Swift.Hashable {}
-extension RookMotionWatchLink.UseStepsResponse.CodingKeys : Swift.RawRepresentable {}
+extension RookMotionWatchLink.RWRookTrainingType.CodingKeys : Swift.Equatable {}
+extension RookMotionWatchLink.RWRookTrainingType.CodingKeys : Swift.Hashable {}
+extension RookMotionWatchLink.RWRookTrainingType.CodingKeys : Swift.RawRepresentable {}
+extension RookMotionWatchLink.RWRookUseSteps.CodingKeys : Swift.Equatable {}
+extension RookMotionWatchLink.RWRookUseSteps.CodingKeys : Swift.Hashable {}
+extension RookMotionWatchLink.RWRookUseSteps.CodingKeys : Swift.RawRepresentable {}
+extension RookMotionWatchLink.SensorAddedResponse.CodingKeys : Swift.Equatable {}
+extension RookMotionWatchLink.SensorAddedResponse.CodingKeys : Swift.Hashable {}
+extension RookMotionWatchLink.SensorAddedResponse.CodingKeys : Swift.RawRepresentable {}
 extension RookMotionWatchLink.NetworkError : Swift.Equatable {}
 extension RookMotionWatchLink.NetworkError : Swift.Hashable {}
 extension RookMotionWatchLink.NetworkError : Swift.RawRepresentable {}
+extension RookMotionWatchLink.HeartRateRecordsDTO.CodingKeys : Swift.Equatable {}
+extension RookMotionWatchLink.HeartRateRecordsDTO.CodingKeys : Swift.Hashable {}
+extension RookMotionWatchLink.HeartRateRecordsDTO.CodingKeys : Swift.RawRepresentable {}
+extension RookMotionWatchLink.RWRookTrainingRecordsDTO.CodingKeys : Swift.Equatable {}
+extension RookMotionWatchLink.RWRookTrainingRecordsDTO.CodingKeys : Swift.Hashable {}
+extension RookMotionWatchLink.RWRookTrainingRecordsDTO.CodingKeys : Swift.RawRepresentable {}
+extension RookMotionWatchLink.SensorErrors : Swift.Equatable {}
+extension RookMotionWatchLink.SensorErrors : Swift.Hashable {}
 extension RookMotionWatchLink.NetworkResponse : Swift.Equatable {}
 extension RookMotionWatchLink.NetworkResponse : Swift.Hashable {}
 extension RookMotionWatchLink.NetworkResponse : Swift.RawRepresentable {}
-extension RookMotionWatchLink.RWTrainingStoragedRecords.CodingKeys : Swift.Equatable {}
-extension RookMotionWatchLink.RWTrainingStoragedRecords.CodingKeys : Swift.Hashable {}
-extension RookMotionWatchLink.RWTrainingStoragedRecords.CodingKeys : Swift.RawRepresentable {}
 extension RookMotionWatchLink.MetaResponse.CodingKeys : Swift.Equatable {}
 extension RookMotionWatchLink.MetaResponse.CodingKeys : Swift.Hashable {}
 extension RookMotionWatchLink.MetaResponse.CodingKeys : Swift.RawRepresentable {}
 extension RookMotionWatchLink.WorkoutState : Swift.Equatable {}
 extension RookMotionWatchLink.WorkoutState : Swift.Hashable {}
+extension RookMotionWatchLink.ContextType : Swift.Equatable {}
+extension RookMotionWatchLink.ContextType : Swift.Hashable {}
 extension RookMotionWatchLink.TypeMessage : Swift.Equatable {}
 extension RookMotionWatchLink.TypeMessage : Swift.Hashable {}
 extension RookMotionWatchLink.TypeMessage : Swift.RawRepresentable {}
 extension RookMotionWatchLink.WatchMessage.CodingKeys : Swift.Equatable {}
 extension RookMotionWatchLink.WatchMessage.CodingKeys : Swift.Hashable {}
 extension RookMotionWatchLink.WatchMessage.CodingKeys : Swift.RawRepresentable {}
-extension RookMotionWatchLink.RWHeartRateDataRecords.CodingKeys : Swift.Equatable {}
-extension RookMotionWatchLink.RWHeartRateDataRecords.CodingKeys : Swift.Hashable {}
-extension RookMotionWatchLink.RWHeartRateDataRecords.CodingKeys : Swift.RawRepresentable {}
+extension RookMotionWatchLink.RWRookTrainingDTO.CodingKeys : Swift.Equatable {}
+extension RookMotionWatchLink.RWRookTrainingDTO.CodingKeys : Swift.Hashable {}
+extension RookMotionWatchLink.RWRookTrainingDTO.CodingKeys : Swift.RawRepresentable {}
 extension RookMotionWatchLink.HTTPMethod : Swift.Equatable {}
 extension RookMotionWatchLink.HTTPMethod : Swift.Hashable {}
 extension RookMotionWatchLink.HTTPMethod : Swift.RawRepresentable {}
+extension RookMotionWatchLink.TrainingTypeErrors : Swift.Equatable {}
+extension RookMotionWatchLink.TrainingTypeErrors : Swift.Hashable {}
