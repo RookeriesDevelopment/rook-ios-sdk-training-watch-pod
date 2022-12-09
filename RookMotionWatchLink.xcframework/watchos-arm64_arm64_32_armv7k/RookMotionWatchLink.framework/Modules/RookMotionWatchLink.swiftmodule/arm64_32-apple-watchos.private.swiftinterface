@@ -12,6 +12,17 @@ import WatchConnectivity
 import WatchKit
 import _Concurrency
 import _StringProcessing
+public struct RWRemoteClassTransfer : RookMotionWatchLink.Convertable {
+  public let classUUID: Swift.String
+  public let roomUUID: Swift.String
+  public let trainingName: Swift.String
+  public let classDelay: Swift.Int
+  public let useSteps: Swift.Int
+  public let stepOptions: Swift.String
+  public init(classUUID: Swift.String, roomUUID: Swift.String, trainingName: Swift.String, classDelay: Swift.Int, useSteps: Swift.Int, stepOptions: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
 extension RookMotionWatchLink.RookHeartRateRecords {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<RookMotionWatchLink.RookHeartRateRecords>
   @objc @NSManaged dynamic public var timeStamp: Swift.String? {
@@ -88,7 +99,7 @@ public enum RoundingPrecision {
   }
 }
 public func preciseRound(_ value: Swift.Float, precision: RookMotionWatchLink.RoundingPrecision = .ones) -> Swift.Float
-public func getWatchSensorName() -> Swift.String
+public func getWatchSensorName(uuid: Swift.String) -> Swift.String
 public func getHours(from lastRecordTime: Swift.String?) -> Swift.Int
 public func goToSync()
 @_inheritsConvenienceInitializers @objc(RookRemoteClass) public class RookRemoteClass : CoreData.NSManagedObject {
@@ -107,6 +118,7 @@ public func goToSync()
   @objc override dynamic public init()
   public func configureSession()
   public func sendInfo(_ info: [Swift.String : Any])
+  public func sendPendingTraining(_ unfinishTraining: RookMotionWatchLink.RWRookTrainingDTO)
   @objc deinit
 }
 extension RookMotionWatchLink.RWCommunicationManager : WatchConnectivity.WCSessionDelegate {
@@ -235,6 +247,9 @@ public struct RMRegisteredRooms : Swift.Decodable {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
+extension RookMotionWatchLink.WorkoutManager {
+  public func finishTraining(_ end: Swift.String? = nil)
+}
 public struct RWRookTrainingSummaryById : Swift.Encodable {
   public let summaryTypeID: Swift.Int
   public let value: Swift.Int
@@ -271,6 +286,7 @@ public class RookTrainingStorage {
   public init()
   public func getUnfinishedTrainings(context: RookMotionWatchLink.ContextType) -> [RookMotionWatchLink.RWRookTrainingDTO]
   public func getPendingTrainings(context: RookMotionWatchLink.ContextType) -> [RookMotionWatchLink.RWRookTrainingDTO]
+  public func getPendingTrainings(with start: Swift.String?, context: RookMotionWatchLink.ContextType) -> RookMotionWatchLink.RWRookTrainingDTO?
   public func deleteTraining(_ training: RookMotionWatchLink.RWRookTrainingDTO, context: RookMotionWatchLink.ContextType)
   @objc deinit
 }
@@ -470,6 +486,31 @@ public struct StepRecordsDTO : Swift.Encodable {
   public let steps: Swift.Int64
   public let start: Swift.String?
   public func encode(to encoder: Swift.Encoder) throws
+}
+public struct RWTrainingStoragedRecordsTransfer : RookMotionWatchLink.Convertable {
+  public init(hrRecords: [RookMotionWatchLink.RWHeartRateDataRecordsTrasnfer], stepRecords: [RookMotionWatchLink.RWStepDataRecordsTransfer])
+  public init()
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct RWHeartRateDataRecordsTrasnfer : Swift.Codable {
+  public let timestamp: Swift.String
+  public let heartRate: Swift.Int
+  public let calories: Swift.Float
+  public let effort: Swift.Float
+  public let start: Swift.String
+  public let heart_rate_variability: Swift.Float
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct RWStepDataRecordsTransfer : Swift.Codable {
+  public let timestamp: Swift.String
+  public let cadence: Swift.Float
+  public let steps: Swift.Int
+  public let start: Swift.String
+  public init(timestamp: Swift.String, cadence: Swift.Float, steps: Swift.Int, start: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct RMStepDerivedRecord : RookMotionWatchLink.Convertable {
   public var timestamp: Swift.String
@@ -895,6 +936,7 @@ public let kTrainingPlayNotification: Swift.String
   public func resumenTraining()
   public func restoreTraining(with pendingTraining: RookMotionWatchLink.RWRookTrainingDTO)
   public func stop()
+  public func resumenLater()
   @objc deinit
 }
 extension RookMotionWatchLink.WorkoutManager : HealthKit.HKWorkoutSessionDelegate {
@@ -952,6 +994,44 @@ public enum ContextType {
   public var hashValue: Swift.Int {
     get
   }
+}
+public struct RWTrainingSummariesTransfer : RookMotionWatchLink.Convertable {
+  public let duration_time_tot: Swift.Int
+  public let z1_time: Swift.Float
+  public let z2_time: Swift.Float
+  public let z3_time: Swift.Float
+  public let z4_time: Swift.Float
+  public let z5_time: Swift.Float
+  public let hr_max: Swift.Int
+  public let hr_min: Swift.Int
+  public let hr_avg: Swift.Int
+  public let effort_max: Swift.Int
+  public let effort_min: Swift.Int
+  public let effort_avg: Swift.Int
+  public let calories: Swift.Int
+  public let z1_calories_tot: Swift.Float
+  public let z2_calories_tot: Swift.Float
+  public let z3_calories_tot: Swift.Float
+  public let z4_calories_tot: Swift.Float
+  public let z5_calories_tot: Swift.Float
+  public let steptsTotal: Swift.Int
+  public let z1_steps_tot: Swift.Int
+  public let z2_steps_tot: Swift.Int
+  public let z3_steps_tot: Swift.Int
+  public let z4_steps_tot: Swift.Int
+  public let z5_steps_tot: Swift.Int
+  public let cadence_max: Swift.Float
+  public let cadence_min: Swift.Float
+  public let cadence_avg: Swift.Float
+  public let z1_cadence_tot: Swift.Int
+  public let z2_cadence_tot: Swift.Int
+  public let z3_cadence_tot: Swift.Int
+  public let z4_cadence_tot: Swift.Int
+  public let z5_cadence_tot: Swift.Int
+  public init(duration_time_tot: Swift.Int, z1_time: Swift.Float, z2_time: Swift.Float, z3_time: Swift.Float, z4_time: Swift.Float, z5_time: Swift.Float, hr_max: Swift.Int, hr_min: Swift.Int, hr_avg: Swift.Int, effort_max: Swift.Int, effort_min: Swift.Int, effort_avg: Swift.Int, calories: Swift.Int, z1_calories_tot: Swift.Float, z2_calories_tot: Swift.Float, z3_calories_tot: Swift.Float, z4_calories_tot: Swift.Float, z5_calories_tot: Swift.Float, steptsTotal: Swift.Int, z1_steps_tot: Swift.Int, z2_steps_tot: Swift.Int, z3_steps_tot: Swift.Int, z4_steps_tot: Swift.Int, z5_steps_tot: Swift.Int, cadence_max: Swift.Float, cadence_min: Swift.Float, cadence_avg: Swift.Float, z1_cadence_tot: Swift.Int, z2_cadence_tot: Swift.Int, z3_cadence_tot: Swift.Int, z4_cadence_tot: Swift.Int, z5_cadence_tot: Swift.Int)
+  public init()
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 extension RookMotionWatchLink.RookTraining {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<RookMotionWatchLink.RookTraining>
@@ -1054,6 +1134,7 @@ public enum TypeMessage : Swift.String {
   case refreshToken
   case logout
   case training
+  case unfinishTraining
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -1079,7 +1160,7 @@ public struct WatchMessage : RookMotionWatchLink.Convertable {
       get
     }
   }
-  public init(type: Swift.String, data: [Swift.String : Any])
+  public init(type: RookMotionWatchLink.TypeMessage, data: [Swift.String : Any])
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
@@ -1328,6 +1409,24 @@ public struct RWRookAuxiliarSummaryDTO {
   public let cadenceElements: Swift.Int32
   public let cadenceAccumulated: Swift.Int64
 }
+public struct RWTrainingTransfer : RookMotionWatchLink.Convertable {
+  public let start: Swift.String
+  public let end: Swift.String
+  public let trainingTypeUUID: Swift.String
+  public let sensorUUID: Swift.String?
+  public let sensorName: Swift.String
+  public let deviceType: Swift.String
+  public let uploadedAt: Swift.String
+  public let groupalMode: Swift.Int
+  public let offset: Swift.String
+  public let auxSummary: RookMotionWatchLink.RWAuxSummaryTransfer
+  public let summary: RookMotionWatchLink.RWTrainingSummariesTransfer
+  public let records: RookMotionWatchLink.RWTrainingStoragedRecordsTransfer
+  public let remoteClass: RookMotionWatchLink.RWRemoteClassTransfer?
+  public init(start: Swift.String, end: Swift.String, trainingTypeUUID: Swift.String, sensorUUID: Swift.String?, sensorName: Swift.String, deviceType: Swift.String, uploadedAt: Swift.String, groupalMode: Swift.Int, offset: Swift.String, auxSummary: RookMotionWatchLink.RWAuxSummaryTransfer, summary: RookMotionWatchLink.RWTrainingSummariesTransfer, records: RookMotionWatchLink.RWTrainingStoragedRecordsTransfer, remoteClass: RookMotionWatchLink.RWRemoteClassTransfer?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
 public struct RMHrDerivedRecord : RookMotionWatchLink.Convertable {
   public var timeStamp: Swift.String
   public var heartRate: Swift.Int
@@ -1539,6 +1638,17 @@ public struct RWRookRemoteClass {
   public let typeSteps: Swift.String?
   public var waitingTimeRemaining: Swift.Int
   public init(uuid: Swift.String, name: Swift.String, trainingType: Swift.String, trainingTypeUUID: Swift.String, configurationUUID: Swift.String, channel: Swift.String, duration: Swift.Int, capacity: Swift.Int, classDelay: Swift.Int, dataOrder: Swift.String, useSteps: Swift.Int, typeSteps: Swift.String?, waitingTimeRemaining: Swift.Int = 0)
+}
+public struct RWAuxSummaryTransfer : RookMotionWatchLink.Convertable {
+  public let hrElements: Swift.Int
+  public let hrAccumulated: Swift.Int
+  public let effortElements: Swift.Int
+  public let effortAccumulated: Swift.Int
+  public let cadenceElements: Swift.Int
+  public let cadenceAccumulated: Swift.Int
+  public init(hrElements: Swift.Int, hrAccumulated: Swift.Int, effortElements: Swift.Int, effortAccumulated: Swift.Int, cadenceElements: Swift.Int, cadenceAccumulated: Swift.Int)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 extension RookMotionWatchLink.RoundingPrecision : Swift.Equatable {}
 extension RookMotionWatchLink.RoundingPrecision : Swift.Hashable {}

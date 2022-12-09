@@ -32,6 +32,425 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "RWRemoteClassTransfer",
+        "printedName": "RWRemoteClassTransfer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "classUUID",
+            "printedName": "classUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV9classUUIDSSvp",
+            "mangledName": "$s19RookMotionWatchLink21RWRemoteClassTransferV9classUUIDSSvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV9classUUIDSSvg",
+                "mangledName": "$s19RookMotionWatchLink21RWRemoteClassTransferV9classUUIDSSvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "roomUUID",
+            "printedName": "roomUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV8roomUUIDSSvp",
+            "mangledName": "$s19RookMotionWatchLink21RWRemoteClassTransferV8roomUUIDSSvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV8roomUUIDSSvg",
+                "mangledName": "$s19RookMotionWatchLink21RWRemoteClassTransferV8roomUUIDSSvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "trainingName",
+            "printedName": "trainingName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV12trainingNameSSvp",
+            "mangledName": "$s19RookMotionWatchLink21RWRemoteClassTransferV12trainingNameSSvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV12trainingNameSSvg",
+                "mangledName": "$s19RookMotionWatchLink21RWRemoteClassTransferV12trainingNameSSvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "classDelay",
+            "printedName": "classDelay",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV10classDelaySivp",
+            "mangledName": "$s19RookMotionWatchLink21RWRemoteClassTransferV10classDelaySivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV10classDelaySivg",
+                "mangledName": "$s19RookMotionWatchLink21RWRemoteClassTransferV10classDelaySivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "useSteps",
+            "printedName": "useSteps",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV8useStepsSivp",
+            "mangledName": "$s19RookMotionWatchLink21RWRemoteClassTransferV8useStepsSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV8useStepsSivg",
+                "mangledName": "$s19RookMotionWatchLink21RWRemoteClassTransferV8useStepsSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stepOptions",
+            "printedName": "stepOptions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV11stepOptionsSSvp",
+            "mangledName": "$s19RookMotionWatchLink21RWRemoteClassTransferV11stepOptionsSSvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV11stepOptionsSSvg",
+                "mangledName": "$s19RookMotionWatchLink21RWRemoteClassTransferV11stepOptionsSSvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(classUUID:roomUUID:trainingName:classDelay:useSteps:stepOptions:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWRemoteClassTransfer",
+                "printedName": "RookMotionWatchLink.RWRemoteClassTransfer",
+                "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV9classUUID04roomI012trainingName0H5Delay8useSteps11stepOptionsACSS_S2SS2iSStcfc",
+            "mangledName": "$s19RookMotionWatchLink21RWRemoteClassTransferV9classUUID04roomI012trainingName0H5Delay8useSteps11stepOptionsACSS_S2SS2iSStcfc",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWRemoteClassTransfer",
+                "printedName": "RookMotionWatchLink.RWRemoteClassTransfer",
+                "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s19RookMotionWatchLink21RWRemoteClassTransferV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookMotionWatchLink",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s19RookMotionWatchLink21RWRemoteClassTransferV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookMotionWatchLink",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV",
+        "mangledName": "$s19RookMotionWatchLink21RWRemoteClassTransferV",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Convertable",
+            "printedName": "Convertable",
+            "usr": "s:19RookMotionWatchLink11ConvertableP",
+            "mangledName": "$s19RookMotionWatchLink11ConvertableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "CoreData",
         "printedName": "CoreData",
@@ -414,8 +833,14 @@
       {
         "kind": "Function",
         "name": "getWatchSensorName",
-        "printedName": "getWatchSensorName()",
+        "printedName": "getWatchSensorName(uuid:)",
         "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
           {
             "kind": "TypeNominal",
             "name": "String",
@@ -424,8 +849,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "s:19RookMotionWatchLink03getC10SensorNameSSyF",
-        "mangledName": "$s19RookMotionWatchLink03getC10SensorNameSSyF",
+        "usr": "s:19RookMotionWatchLink03getC10SensorName4uuidS2S_tF",
+        "mangledName": "$s19RookMotionWatchLink03getC10SensorName4uuidS2S_tF",
         "moduleName": "RookMotionWatchLink",
         "declAttributes": [
           "AccessControl"
@@ -1862,6 +2287,33 @@
             "moduleName": "RookMotionWatchLink",
             "declAttributes": [
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendPendingTraining",
+            "printedName": "sendPendingTraining(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RWRookTrainingDTO",
+                "printedName": "RookMotionWatchLink.RWRookTrainingDTO",
+                "usr": "s:19RookMotionWatchLink17RWRookTrainingDTOV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink22RWCommunicationManagerC19sendPendingTrainingyyAA06RWRookI3DTOVF",
+            "mangledName": "$s19RookMotionWatchLink22RWCommunicationManagerC19sendPendingTrainingyyAA06RWRookI3DTOVF",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -11915,6 +12367,55 @@
           },
           {
             "kind": "Function",
+            "name": "getPendingTrainings",
+            "printedName": "getPendingTrainings(with:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RookMotionWatchLink.RWRookTrainingDTO?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RWRookTrainingDTO",
+                    "printedName": "RookMotionWatchLink.RWRookTrainingDTO",
+                    "usr": "s:19RookMotionWatchLink17RWRookTrainingDTOV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ContextType",
+                "printedName": "RookMotionWatchLink.ContextType",
+                "usr": "s:19RookMotionWatchLink11ContextTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink0A15TrainingStorageC19getPendingTrainings4with7contextAA06RWRookE3DTOVSgSSSg_AA11ContextTypeOtF",
+            "mangledName": "$s19RookMotionWatchLink0A15TrainingStorageC19getPendingTrainings4with7contextAA06RWRookE3DTOVSgSSSg_AA11ContextTypeOtF",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "deleteTraining",
             "printedName": "deleteTraining(_:context:)",
             "children": [
@@ -11955,6 +12456,23 @@
           "AccessControl",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "RookMotionWatchLink"
       },
       {
         "kind": "Import",
@@ -14435,6 +14953,13 @@
       },
       {
         "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "RookMotionWatchLink"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -16529,6 +17054,821 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RWTrainingStoragedRecordsTransfer",
+        "printedName": "RWTrainingStoragedRecordsTransfer",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(hrRecords:stepRecords:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWTrainingStoragedRecordsTransfer",
+                "printedName": "RookMotionWatchLink.RWTrainingStoragedRecordsTransfer",
+                "usr": "s:19RookMotionWatchLink33RWTrainingStoragedRecordsTransferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[RookMotionWatchLink.RWHeartRateDataRecordsTrasnfer]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RWHeartRateDataRecordsTrasnfer",
+                    "printedName": "RookMotionWatchLink.RWHeartRateDataRecordsTrasnfer",
+                    "usr": "s:19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[RookMotionWatchLink.RWStepDataRecordsTransfer]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RWStepDataRecordsTransfer",
+                    "printedName": "RookMotionWatchLink.RWStepDataRecordsTransfer",
+                    "usr": "s:19RookMotionWatchLink25RWStepDataRecordsTransferV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19RookMotionWatchLink33RWTrainingStoragedRecordsTransferV02hrG004stepG0ACSayAA015RWHeartRateDataG8TrasnferVG_SayAA06RWStepmgH0VGtcfc",
+            "mangledName": "$s19RookMotionWatchLink33RWTrainingStoragedRecordsTransferV02hrG004stepG0ACSayAA015RWHeartRateDataG8TrasnferVG_SayAA06RWStepmgH0VGtcfc",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWTrainingStoragedRecordsTransfer",
+                "printedName": "RookMotionWatchLink.RWTrainingStoragedRecordsTransfer",
+                "usr": "s:19RookMotionWatchLink33RWTrainingStoragedRecordsTransferV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19RookMotionWatchLink33RWTrainingStoragedRecordsTransferVACycfc",
+            "mangledName": "$s19RookMotionWatchLink33RWTrainingStoragedRecordsTransferVACycfc",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWTrainingStoragedRecordsTransfer",
+                "printedName": "RookMotionWatchLink.RWTrainingStoragedRecordsTransfer",
+                "usr": "s:19RookMotionWatchLink33RWTrainingStoragedRecordsTransferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19RookMotionWatchLink33RWTrainingStoragedRecordsTransferV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s19RookMotionWatchLink33RWTrainingStoragedRecordsTransferV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookMotionWatchLink",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink33RWTrainingStoragedRecordsTransferV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s19RookMotionWatchLink33RWTrainingStoragedRecordsTransferV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookMotionWatchLink",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19RookMotionWatchLink33RWTrainingStoragedRecordsTransferV",
+        "mangledName": "$s19RookMotionWatchLink33RWTrainingStoragedRecordsTransferV",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Convertable",
+            "printedName": "Convertable",
+            "usr": "s:19RookMotionWatchLink11ConvertableP",
+            "mangledName": "$s19RookMotionWatchLink11ConvertableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RWHeartRateDataRecordsTrasnfer",
+        "printedName": "RWHeartRateDataRecordsTrasnfer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV9timestampSSvp",
+            "mangledName": "$s19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV9timestampSSvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV9timestampSSvg",
+                "mangledName": "$s19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV9timestampSSvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "heartRate",
+            "printedName": "heartRate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV05heartF0Sivp",
+            "mangledName": "$s19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV05heartF0Sivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV05heartF0Sivg",
+                "mangledName": "$s19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV05heartF0Sivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "calories",
+            "printedName": "calories",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV8caloriesSfvp",
+            "mangledName": "$s19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV8caloriesSfvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV8caloriesSfvg",
+                "mangledName": "$s19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV8caloriesSfvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "effort",
+            "printedName": "effort",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV6effortSfvp",
+            "mangledName": "$s19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV6effortSfvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV6effortSfvg",
+                "mangledName": "$s19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV6effortSfvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "start",
+            "printedName": "start",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV5startSSvp",
+            "mangledName": "$s19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV5startSSvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV5startSSvg",
+                "mangledName": "$s19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV5startSSvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "heart_rate_variability",
+            "printedName": "heart_rate_variability",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV22heart_rate_variabilitySfvp",
+            "mangledName": "$s19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV22heart_rate_variabilitySfvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV22heart_rate_variabilitySfvg",
+                "mangledName": "$s19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV22heart_rate_variabilitySfvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWHeartRateDataRecordsTrasnfer",
+                "printedName": "RookMotionWatchLink.RWHeartRateDataRecordsTrasnfer",
+                "usr": "s:19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookMotionWatchLink",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookMotionWatchLink",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV",
+        "mangledName": "$s19RookMotionWatchLink30RWHeartRateDataRecordsTrasnferV",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RWStepDataRecordsTransfer",
+        "printedName": "RWStepDataRecordsTransfer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink25RWStepDataRecordsTransferV9timestampSSvp",
+            "mangledName": "$s19RookMotionWatchLink25RWStepDataRecordsTransferV9timestampSSvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink25RWStepDataRecordsTransferV9timestampSSvg",
+                "mangledName": "$s19RookMotionWatchLink25RWStepDataRecordsTransferV9timestampSSvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cadence",
+            "printedName": "cadence",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink25RWStepDataRecordsTransferV7cadenceSfvp",
+            "mangledName": "$s19RookMotionWatchLink25RWStepDataRecordsTransferV7cadenceSfvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink25RWStepDataRecordsTransferV7cadenceSfvg",
+                "mangledName": "$s19RookMotionWatchLink25RWStepDataRecordsTransferV7cadenceSfvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "steps",
+            "printedName": "steps",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink25RWStepDataRecordsTransferV5stepsSivp",
+            "mangledName": "$s19RookMotionWatchLink25RWStepDataRecordsTransferV5stepsSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink25RWStepDataRecordsTransferV5stepsSivg",
+                "mangledName": "$s19RookMotionWatchLink25RWStepDataRecordsTransferV5stepsSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "start",
+            "printedName": "start",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink25RWStepDataRecordsTransferV5startSSvp",
+            "mangledName": "$s19RookMotionWatchLink25RWStepDataRecordsTransferV5startSSvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink25RWStepDataRecordsTransferV5startSSvg",
+                "mangledName": "$s19RookMotionWatchLink25RWStepDataRecordsTransferV5startSSvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(timestamp:cadence:steps:start:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWStepDataRecordsTransfer",
+                "printedName": "RookMotionWatchLink.RWStepDataRecordsTransfer",
+                "usr": "s:19RookMotionWatchLink25RWStepDataRecordsTransferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19RookMotionWatchLink25RWStepDataRecordsTransferV9timestamp7cadence5steps5startACSS_SfSiSStcfc",
+            "mangledName": "$s19RookMotionWatchLink25RWStepDataRecordsTransferV9timestamp7cadence5steps5startACSS_SfSiSStcfc",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWStepDataRecordsTransfer",
+                "printedName": "RookMotionWatchLink.RWStepDataRecordsTransfer",
+                "usr": "s:19RookMotionWatchLink25RWStepDataRecordsTransferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19RookMotionWatchLink25RWStepDataRecordsTransferV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s19RookMotionWatchLink25RWStepDataRecordsTransferV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookMotionWatchLink",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink25RWStepDataRecordsTransferV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s19RookMotionWatchLink25RWStepDataRecordsTransferV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookMotionWatchLink",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19RookMotionWatchLink25RWStepDataRecordsTransferV",
+        "mangledName": "$s19RookMotionWatchLink25RWStepDataRecordsTransferV",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -28736,6 +30076,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
@@ -30478,6 +31828,62 @@
           },
           {
             "kind": "Function",
+            "name": "resumenLater",
+            "printedName": "resumenLater()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink14WorkoutManagerC12resumenLateryyF",
+            "mangledName": "$s19RookMotionWatchLink14WorkoutManagerC12resumenLateryyF",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "finishTraining",
+            "printedName": "finishTraining(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink14WorkoutManagerC14finishTrainingyySSSgF",
+            "mangledName": "$s19RookMotionWatchLink14WorkoutManagerC14finishTrainingyySSSgF",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "workoutSession",
             "printedName": "workoutSession(_:didChangeTo:from:date:)",
             "children": [
@@ -30981,6 +32387,1746 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "RWTrainingSummariesTransfer",
+        "printedName": "RWTrainingSummariesTransfer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "duration_time_tot",
+            "printedName": "duration_time_tot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV17duration_time_totSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV17duration_time_totSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV17duration_time_totSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV17duration_time_totSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z1_time",
+            "printedName": "z1_time",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV7z1_timeSfvp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV7z1_timeSfvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV7z1_timeSfvg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV7z1_timeSfvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z2_time",
+            "printedName": "z2_time",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV7z2_timeSfvp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV7z2_timeSfvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV7z2_timeSfvg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV7z2_timeSfvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z3_time",
+            "printedName": "z3_time",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV7z3_timeSfvp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV7z3_timeSfvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV7z3_timeSfvg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV7z3_timeSfvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z4_time",
+            "printedName": "z4_time",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV7z4_timeSfvp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV7z4_timeSfvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV7z4_timeSfvg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV7z4_timeSfvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z5_time",
+            "printedName": "z5_time",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV7z5_timeSfvp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV7z5_timeSfvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV7z5_timeSfvg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV7z5_timeSfvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hr_max",
+            "printedName": "hr_max",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV6hr_maxSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV6hr_maxSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV6hr_maxSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV6hr_maxSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hr_min",
+            "printedName": "hr_min",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV6hr_minSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV6hr_minSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV6hr_minSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV6hr_minSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hr_avg",
+            "printedName": "hr_avg",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV6hr_avgSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV6hr_avgSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV6hr_avgSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV6hr_avgSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "effort_max",
+            "printedName": "effort_max",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV10effort_maxSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV10effort_maxSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV10effort_maxSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV10effort_maxSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "effort_min",
+            "printedName": "effort_min",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV10effort_minSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV10effort_minSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV10effort_minSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV10effort_minSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "effort_avg",
+            "printedName": "effort_avg",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV10effort_avgSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV10effort_avgSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV10effort_avgSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV10effort_avgSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "calories",
+            "printedName": "calories",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV8caloriesSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV8caloriesSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV8caloriesSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV8caloriesSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z1_calories_tot",
+            "printedName": "z1_calories_tot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV15z1_calories_totSfvp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV15z1_calories_totSfvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV15z1_calories_totSfvg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV15z1_calories_totSfvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z2_calories_tot",
+            "printedName": "z2_calories_tot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV15z2_calories_totSfvp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV15z2_calories_totSfvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV15z2_calories_totSfvg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV15z2_calories_totSfvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z3_calories_tot",
+            "printedName": "z3_calories_tot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV15z3_calories_totSfvp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV15z3_calories_totSfvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV15z3_calories_totSfvg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV15z3_calories_totSfvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z4_calories_tot",
+            "printedName": "z4_calories_tot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV15z4_calories_totSfvp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV15z4_calories_totSfvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV15z4_calories_totSfvg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV15z4_calories_totSfvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z5_calories_tot",
+            "printedName": "z5_calories_tot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV15z5_calories_totSfvp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV15z5_calories_totSfvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV15z5_calories_totSfvg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV15z5_calories_totSfvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "steptsTotal",
+            "printedName": "steptsTotal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV11steptsTotalSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV11steptsTotalSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV11steptsTotalSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV11steptsTotalSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z1_steps_tot",
+            "printedName": "z1_steps_tot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV12z1_steps_totSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV12z1_steps_totSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV12z1_steps_totSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV12z1_steps_totSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z2_steps_tot",
+            "printedName": "z2_steps_tot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV12z2_steps_totSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV12z2_steps_totSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV12z2_steps_totSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV12z2_steps_totSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z3_steps_tot",
+            "printedName": "z3_steps_tot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV12z3_steps_totSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV12z3_steps_totSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV12z3_steps_totSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV12z3_steps_totSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z4_steps_tot",
+            "printedName": "z4_steps_tot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV12z4_steps_totSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV12z4_steps_totSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV12z4_steps_totSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV12z4_steps_totSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z5_steps_tot",
+            "printedName": "z5_steps_tot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV12z5_steps_totSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV12z5_steps_totSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV12z5_steps_totSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV12z5_steps_totSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cadence_max",
+            "printedName": "cadence_max",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV11cadence_maxSfvp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV11cadence_maxSfvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV11cadence_maxSfvg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV11cadence_maxSfvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cadence_min",
+            "printedName": "cadence_min",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV11cadence_minSfvp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV11cadence_minSfvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV11cadence_minSfvg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV11cadence_minSfvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cadence_avg",
+            "printedName": "cadence_avg",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV11cadence_avgSfvp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV11cadence_avgSfvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV11cadence_avgSfvg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV11cadence_avgSfvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z1_cadence_tot",
+            "printedName": "z1_cadence_tot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV14z1_cadence_totSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV14z1_cadence_totSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV14z1_cadence_totSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV14z1_cadence_totSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z2_cadence_tot",
+            "printedName": "z2_cadence_tot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV14z2_cadence_totSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV14z2_cadence_totSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV14z2_cadence_totSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV14z2_cadence_totSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z3_cadence_tot",
+            "printedName": "z3_cadence_tot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV14z3_cadence_totSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV14z3_cadence_totSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV14z3_cadence_totSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV14z3_cadence_totSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z4_cadence_tot",
+            "printedName": "z4_cadence_tot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV14z4_cadence_totSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV14z4_cadence_totSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV14z4_cadence_totSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV14z4_cadence_totSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z5_cadence_tot",
+            "printedName": "z5_cadence_tot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV14z5_cadence_totSivp",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV14z5_cadence_totSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV14z5_cadence_totSivg",
+                "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV14z5_cadence_totSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(duration_time_tot:z1_time:z2_time:z3_time:z4_time:z5_time:hr_max:hr_min:hr_avg:effort_max:effort_min:effort_avg:calories:z1_calories_tot:z2_calories_tot:z3_calories_tot:z4_calories_tot:z5_calories_tot:steptsTotal:z1_steps_tot:z2_steps_tot:z3_steps_tot:z4_steps_tot:z5_steps_tot:cadence_max:cadence_min:cadence_avg:z1_cadence_tot:z2_cadence_tot:z3_cadence_tot:z4_cadence_tot:z5_cadence_tot:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWTrainingSummariesTransfer",
+                "printedName": "RookMotionWatchLink.RWTrainingSummariesTransfer",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV17duration_time_tot03z1_I003z2_I003z3_I003z4_I003z5_I06hr_max0P4_min0P4_avg07effort_Q00t1_R00t1_S08calories0k1_u1_J00l1_u1_J00m1_u1_J00n1_u1_J00o1_u1_J011steptsTotal0k7_steps_J00l1_x1_J00m1_x1_J00n1_x1_J00o1_x1_J008cadence_Q00y1_R00y1_S00k1_y1_J00l1_y1_J00m1_y1_J00n1_y1_J00o1_y1_J0ACSi_S5fS7iS5fS6iS3fS5itcfc",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV17duration_time_tot03z1_I003z2_I003z3_I003z4_I003z5_I06hr_max0P4_min0P4_avg07effort_Q00t1_R00t1_S08calories0k1_u1_J00l1_u1_J00m1_u1_J00n1_u1_J00o1_u1_J011steptsTotal0k7_steps_J00l1_x1_J00m1_x1_J00n1_x1_J00o1_x1_J008cadence_Q00y1_R00y1_S00k1_y1_J00l1_y1_J00m1_y1_J00n1_y1_J00o1_y1_J0ACSi_S5fS7iS5fS6iS3fS5itcfc",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWTrainingSummariesTransfer",
+                "printedName": "RookMotionWatchLink.RWTrainingSummariesTransfer",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferVACycfc",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferVACycfc",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWTrainingSummariesTransfer",
+                "printedName": "RookMotionWatchLink.RWTrainingSummariesTransfer",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookMotionWatchLink",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookMotionWatchLink",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV",
+        "mangledName": "$s19RookMotionWatchLink27RWTrainingSummariesTransferV",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Convertable",
+            "printedName": "Convertable",
+            "usr": "s:19RookMotionWatchLink11ConvertableP",
+            "mangledName": "$s19RookMotionWatchLink11ConvertableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "CoreData",
         "printedName": "CoreData",
@@ -31165,6 +34311,43 @@
             "declKind": "EnumElement",
             "usr": "s:19RookMotionWatchLink11TypeMessageO8trainingyA2CmF",
             "mangledName": "$s19RookMotionWatchLink11TypeMessageO8trainingyA2CmF",
+            "moduleName": "RookMotionWatchLink"
+          },
+          {
+            "kind": "Var",
+            "name": "unfinishTraining",
+            "printedName": "unfinishTraining",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookMotionWatchLink.TypeMessage.Type) -> RookMotionWatchLink.TypeMessage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TypeMessage",
+                    "printedName": "RookMotionWatchLink.TypeMessage",
+                    "usr": "s:19RookMotionWatchLink11TypeMessageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookMotionWatchLink.TypeMessage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TypeMessage",
+                        "printedName": "RookMotionWatchLink.TypeMessage",
+                        "usr": "s:19RookMotionWatchLink11TypeMessageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19RookMotionWatchLink11TypeMessageO16unfinishTrainingyA2CmF",
+            "mangledName": "$s19RookMotionWatchLink11TypeMessageO16unfinishTrainingyA2CmF",
             "moduleName": "RookMotionWatchLink"
           },
           {
@@ -31806,9 +34989,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "TypeMessage",
+                "printedName": "RookMotionWatchLink.TypeMessage",
+                "usr": "s:19RookMotionWatchLink11TypeMessageO"
               },
               {
                 "kind": "TypeNominal",
@@ -31831,8 +35014,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19RookMotionWatchLink0C7MessageV4type4dataACSS_SDySSypGtcfc",
-            "mangledName": "$s19RookMotionWatchLink0C7MessageV4type4dataACSS_SDySSypGtcfc",
+            "usr": "s:19RookMotionWatchLink0C7MessageV4type4dataAcA04TypeE0O_SDySSypGtcfc",
+            "mangledName": "$s19RookMotionWatchLink0C7MessageV4type4dataAcA04TypeE0O_SDySSypGtcfc",
             "moduleName": "RookMotionWatchLink",
             "declAttributes": [
               "AccessControl"
@@ -35841,6 +39024,824 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "RWTrainingTransfer",
+        "printedName": "RWTrainingTransfer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "start",
+            "printedName": "start",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink18RWTrainingTransferV5startSSvp",
+            "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV5startSSvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink18RWTrainingTransferV5startSSvg",
+                "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV5startSSvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "end",
+            "printedName": "end",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink18RWTrainingTransferV3endSSvp",
+            "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV3endSSvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink18RWTrainingTransferV3endSSvg",
+                "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV3endSSvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "trainingTypeUUID",
+            "printedName": "trainingTypeUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink18RWTrainingTransferV16trainingTypeUUIDSSvp",
+            "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV16trainingTypeUUIDSSvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink18RWTrainingTransferV16trainingTypeUUIDSSvg",
+                "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV16trainingTypeUUIDSSvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sensorUUID",
+            "printedName": "sensorUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink18RWTrainingTransferV10sensorUUIDSSSgvp",
+            "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV10sensorUUIDSSSgvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink18RWTrainingTransferV10sensorUUIDSSSgvg",
+                "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV10sensorUUIDSSSgvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sensorName",
+            "printedName": "sensorName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink18RWTrainingTransferV10sensorNameSSvp",
+            "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV10sensorNameSSvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink18RWTrainingTransferV10sensorNameSSvg",
+                "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV10sensorNameSSvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deviceType",
+            "printedName": "deviceType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink18RWTrainingTransferV10deviceTypeSSvp",
+            "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV10deviceTypeSSvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink18RWTrainingTransferV10deviceTypeSSvg",
+                "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV10deviceTypeSSvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "uploadedAt",
+            "printedName": "uploadedAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink18RWTrainingTransferV10uploadedAtSSvp",
+            "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV10uploadedAtSSvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink18RWTrainingTransferV10uploadedAtSSvg",
+                "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV10uploadedAtSSvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "groupalMode",
+            "printedName": "groupalMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink18RWTrainingTransferV11groupalModeSivp",
+            "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV11groupalModeSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink18RWTrainingTransferV11groupalModeSivg",
+                "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV11groupalModeSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "offset",
+            "printedName": "offset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink18RWTrainingTransferV6offsetSSvp",
+            "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV6offsetSSvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink18RWTrainingTransferV6offsetSSvg",
+                "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV6offsetSSvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "auxSummary",
+            "printedName": "auxSummary",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWAuxSummaryTransfer",
+                "printedName": "RookMotionWatchLink.RWAuxSummaryTransfer",
+                "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink18RWTrainingTransferV10auxSummaryAA05RWAuxhF0Vvp",
+            "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV10auxSummaryAA05RWAuxhF0Vvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RWAuxSummaryTransfer",
+                    "printedName": "RookMotionWatchLink.RWAuxSummaryTransfer",
+                    "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink18RWTrainingTransferV10auxSummaryAA05RWAuxhF0Vvg",
+                "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV10auxSummaryAA05RWAuxhF0Vvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "summary",
+            "printedName": "summary",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWTrainingSummariesTransfer",
+                "printedName": "RookMotionWatchLink.RWTrainingSummariesTransfer",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink18RWTrainingTransferV7summaryAA0e9SummariesF0Vvp",
+            "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV7summaryAA0e9SummariesF0Vvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RWTrainingSummariesTransfer",
+                    "printedName": "RookMotionWatchLink.RWTrainingSummariesTransfer",
+                    "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink18RWTrainingTransferV7summaryAA0e9SummariesF0Vvg",
+                "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV7summaryAA0e9SummariesF0Vvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "records",
+            "printedName": "records",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWTrainingStoragedRecordsTransfer",
+                "printedName": "RookMotionWatchLink.RWTrainingStoragedRecordsTransfer",
+                "usr": "s:19RookMotionWatchLink33RWTrainingStoragedRecordsTransferV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink18RWTrainingTransferV7recordsAA0e15StoragedRecordsF0Vvp",
+            "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV7recordsAA0e15StoragedRecordsF0Vvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RWTrainingStoragedRecordsTransfer",
+                    "printedName": "RookMotionWatchLink.RWTrainingStoragedRecordsTransfer",
+                    "usr": "s:19RookMotionWatchLink33RWTrainingStoragedRecordsTransferV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink18RWTrainingTransferV7recordsAA0e15StoragedRecordsF0Vvg",
+                "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV7recordsAA0e15StoragedRecordsF0Vvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "remoteClass",
+            "printedName": "remoteClass",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RookMotionWatchLink.RWRemoteClassTransfer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RWRemoteClassTransfer",
+                    "printedName": "RookMotionWatchLink.RWRemoteClassTransfer",
+                    "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink18RWTrainingTransferV11remoteClassAA08RWRemotehF0VSgvp",
+            "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV11remoteClassAA08RWRemotehF0VSgvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RookMotionWatchLink.RWRemoteClassTransfer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RWRemoteClassTransfer",
+                        "printedName": "RookMotionWatchLink.RWRemoteClassTransfer",
+                        "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink18RWTrainingTransferV11remoteClassAA08RWRemotehF0VSgvg",
+                "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV11remoteClassAA08RWRemotehF0VSgvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(start:end:trainingTypeUUID:sensorUUID:sensorName:deviceType:uploadedAt:groupalMode:offset:auxSummary:summary:records:remoteClass:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWTrainingTransfer",
+                "printedName": "RookMotionWatchLink.RWTrainingTransfer",
+                "usr": "s:19RookMotionWatchLink18RWTrainingTransferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RWAuxSummaryTransfer",
+                "printedName": "RookMotionWatchLink.RWAuxSummaryTransfer",
+                "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RWTrainingSummariesTransfer",
+                "printedName": "RookMotionWatchLink.RWTrainingSummariesTransfer",
+                "usr": "s:19RookMotionWatchLink27RWTrainingSummariesTransferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RWTrainingStoragedRecordsTransfer",
+                "printedName": "RookMotionWatchLink.RWTrainingStoragedRecordsTransfer",
+                "usr": "s:19RookMotionWatchLink33RWTrainingStoragedRecordsTransferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RookMotionWatchLink.RWRemoteClassTransfer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RWRemoteClassTransfer",
+                    "printedName": "RookMotionWatchLink.RWRemoteClassTransfer",
+                    "usr": "s:19RookMotionWatchLink21RWRemoteClassTransferV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19RookMotionWatchLink18RWTrainingTransferV5start3end16trainingTypeUUID06sensorK00L4Name06deviceJ010uploadedAt11groupalMode6offset10auxSummary7summary7records11remoteClassACSS_S3SSgS3SSiSSAA05RWAuxuF0VAA0e9SummariesF0VAA0e15StoragedRecordsF0VAA08RWRemoteyF0VSgtcfc",
+            "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV5start3end16trainingTypeUUID06sensorK00L4Name06deviceJ010uploadedAt11groupalMode6offset10auxSummary7summary7records11remoteClassACSS_S3SSgS3SSiSSAA05RWAuxuF0VAA0e9SummariesF0VAA0e15StoragedRecordsF0VAA08RWRemoteyF0VSgtcfc",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWTrainingTransfer",
+                "printedName": "RookMotionWatchLink.RWTrainingTransfer",
+                "usr": "s:19RookMotionWatchLink18RWTrainingTransferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19RookMotionWatchLink18RWTrainingTransferV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookMotionWatchLink",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink18RWTrainingTransferV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookMotionWatchLink",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19RookMotionWatchLink18RWTrainingTransferV",
+        "mangledName": "$s19RookMotionWatchLink18RWTrainingTransferV",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Convertable",
+            "printedName": "Convertable",
+            "usr": "s:19RookMotionWatchLink11ConvertableP",
+            "mangledName": "$s19RookMotionWatchLink11ConvertableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -36691,6 +40692,13 @@
         "kind": "Import",
         "name": "WatchKit",
         "printedName": "WatchKit",
+        "declKind": "Import",
+        "moduleName": "RookMotionWatchLink"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
         "declKind": "Import",
         "moduleName": "RookMotionWatchLink"
       },
@@ -46445,6 +50453,425 @@
         "declAttributes": [
           "AccessControl"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RWAuxSummaryTransfer",
+        "printedName": "RWAuxSummaryTransfer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "hrElements",
+            "printedName": "hrElements",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV10hrElementsSivp",
+            "mangledName": "$s19RookMotionWatchLink20RWAuxSummaryTransferV10hrElementsSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV10hrElementsSivg",
+                "mangledName": "$s19RookMotionWatchLink20RWAuxSummaryTransferV10hrElementsSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hrAccumulated",
+            "printedName": "hrAccumulated",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV13hrAccumulatedSivp",
+            "mangledName": "$s19RookMotionWatchLink20RWAuxSummaryTransferV13hrAccumulatedSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV13hrAccumulatedSivg",
+                "mangledName": "$s19RookMotionWatchLink20RWAuxSummaryTransferV13hrAccumulatedSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "effortElements",
+            "printedName": "effortElements",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV14effortElementsSivp",
+            "mangledName": "$s19RookMotionWatchLink20RWAuxSummaryTransferV14effortElementsSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV14effortElementsSivg",
+                "mangledName": "$s19RookMotionWatchLink20RWAuxSummaryTransferV14effortElementsSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "effortAccumulated",
+            "printedName": "effortAccumulated",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV17effortAccumulatedSivp",
+            "mangledName": "$s19RookMotionWatchLink20RWAuxSummaryTransferV17effortAccumulatedSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV17effortAccumulatedSivg",
+                "mangledName": "$s19RookMotionWatchLink20RWAuxSummaryTransferV17effortAccumulatedSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cadenceElements",
+            "printedName": "cadenceElements",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV15cadenceElementsSivp",
+            "mangledName": "$s19RookMotionWatchLink20RWAuxSummaryTransferV15cadenceElementsSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV15cadenceElementsSivg",
+                "mangledName": "$s19RookMotionWatchLink20RWAuxSummaryTransferV15cadenceElementsSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cadenceAccumulated",
+            "printedName": "cadenceAccumulated",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV18cadenceAccumulatedSivp",
+            "mangledName": "$s19RookMotionWatchLink20RWAuxSummaryTransferV18cadenceAccumulatedSivp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV18cadenceAccumulatedSivg",
+                "mangledName": "$s19RookMotionWatchLink20RWAuxSummaryTransferV18cadenceAccumulatedSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(hrElements:hrAccumulated:effortElements:effortAccumulated:cadenceElements:cadenceAccumulated:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWAuxSummaryTransfer",
+                "printedName": "RookMotionWatchLink.RWAuxSummaryTransfer",
+                "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV10hrElements0H11Accumulated06effortI00kJ007cadenceI00lJ0ACSi_S5itcfc",
+            "mangledName": "$s19RookMotionWatchLink20RWAuxSummaryTransferV10hrElements0H11Accumulated06effortI00kJ007cadenceI00lJ0ACSi_S5itcfc",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RWAuxSummaryTransfer",
+                "printedName": "RookMotionWatchLink.RWAuxSummaryTransfer",
+                "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s19RookMotionWatchLink20RWAuxSummaryTransferV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "RookMotionWatchLink",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s19RookMotionWatchLink20RWAuxSummaryTransferV6encode2toys7Encoder_p_tKF",
+            "moduleName": "RookMotionWatchLink",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19RookMotionWatchLink20RWAuxSummaryTransferV",
+        "mangledName": "$s19RookMotionWatchLink20RWAuxSummaryTransferV",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Convertable",
+            "printedName": "Convertable",
+            "usr": "s:19RookMotionWatchLink11ConvertableP",
+            "mangledName": "$s19RookMotionWatchLink11ConvertableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -46516,14 +50943,14 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/TrainingRemote\/RemoteRouter.swift",
       "kind": "BooleanLiteral",
-      "offset": 1013,
+      "offset": 1007,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/RWCommunicationManager.swift",
       "kind": "Dictionary",
-      "offset": 3909,
+      "offset": 4718,
       "length": 3,
       "value": "[]"
     },
@@ -46850,6 +51277,13 @@
       "value": "\"summary_type_id\""
     },
     {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/RookTrainingSessionStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 305,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookAvgSummaries.swift",
       "kind": "IntegerLiteral",
       "offset": 192,
@@ -47167,14 +51601,14 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Helpers\/BackGroundTasks.swift",
       "kind": "IntegerLiteral",
-      "offset": 479,
+      "offset": 529,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Helpers\/BackGroundTasks.swift",
       "kind": "BooleanLiteral",
-      "offset": 757,
+      "offset": 807,
       "length": 4,
       "value": "true"
     },
@@ -47818,184 +52252,205 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2196,
+      "offset": 2355,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2233,
+      "offset": 2392,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2276,
+      "offset": 2435,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2318,
+      "offset": 2477,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2360,
+      "offset": 2519,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2400,
+      "offset": 2559,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2436,
+      "offset": 2595,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "FloatLiteral",
-      "offset": 2468,
+      "offset": 2627,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2491,
+      "offset": 2650,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 2583,
+      "offset": 2742,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 2632,
+      "offset": 2791,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 2677,
+      "offset": 2836,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 2726,
+      "offset": 2885,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2774,
+      "offset": 2933,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2824,
+      "offset": 2983,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2865,
+      "offset": 3024,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2910,
+      "offset": 3069,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2936,
+      "offset": 3095,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3126,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
-      "offset": 189,
+      "offset": 187,
       "length": 10,
       "value": "\"syncUser\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
-      "offset": 224,
+      "offset": 220,
       "length": 14,
       "value": "\"refreshToken\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
-      "offset": 257,
+      "offset": 251,
       "length": 8,
       "value": "\"logout\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
-      "offset": 286,
+      "offset": 278,
       "length": 10,
       "value": "\"training\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
-      "offset": 189,
+      "offset": 315,
+      "length": 18,
+      "value": "\"unfinishTraining\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 187,
       "length": 10,
       "value": "\"syncUser\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
-      "offset": 224,
+      "offset": 220,
       "length": 14,
       "value": "\"refreshToken\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
-      "offset": 257,
+      "offset": 251,
       "length": 8,
       "value": "\"logout\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
-      "offset": 286,
+      "offset": 278,
       "length": 10,
       "value": "\"training\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 315,
+      "length": 18,
+      "value": "\"unfinishTraining\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
