@@ -355,6 +355,29 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink23RepositoryTrainingTypes")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+/// The <code>RepositoryUser</code> class handle the request and storage of the user information in the local data base and the rook API.
+/// some of the methods of this class need a user stored in the local data base
+/// The  methos available in this class are:
+/// <ol>
+///   <li>
+///     checkUserRookMotion
+///   </li>
+///   <li>
+///     getUserInfo
+///   </li>
+///   <li>
+///     updateUser
+///   </li>
+///   <li>
+///     addUserPhysiologicalVariables
+///   </li>
+/// </ol>
+SWIFT_CLASS("_TtC19RookMotionWatchLink14RepositoryUser")
+@interface RepositoryUser : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
@@ -471,18 +494,18 @@ SWIFT_CLASS_NAMED("RookTraining")
 @class NSSet;
 
 @interface RookTraining (SWIFT_EXTENSION(RookMotionWatchLink))
-- (void)addRookStepRecordsObject:(RookStepRecords * _Nonnull)value;
-- (void)removeRookStepRecordsObject:(RookStepRecords * _Nonnull)value;
-- (void)addRookStepRecords:(NSSet * _Nonnull)values;
-- (void)removeRookStepRecords:(NSSet * _Nonnull)values;
-@end
-
-
-@interface RookTraining (SWIFT_EXTENSION(RookMotionWatchLink))
 - (void)addRookHeartRateRecordsObject:(RookHeartRateRecords * _Nonnull)value;
 - (void)removeRookHeartRateRecordsObject:(RookHeartRateRecords * _Nonnull)value;
 - (void)addRookHeartRateRecords:(NSSet * _Nonnull)values;
 - (void)removeRookHeartRateRecords:(NSSet * _Nonnull)values;
+@end
+
+
+@interface RookTraining (SWIFT_EXTENSION(RookMotionWatchLink))
+- (void)addRookStepRecordsObject:(RookStepRecords * _Nonnull)value;
+- (void)removeRookStepRecordsObject:(RookStepRecords * _Nonnull)value;
+- (void)addRookStepRecords:(NSSet * _Nonnull)values;
+- (void)removeRookStepRecords:(NSSet * _Nonnull)values;
 @end
 
 @class RookTrainingSummaries;
@@ -624,7 +647,6 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink14WorkoutManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
 @class HKWorkoutSession;
 @class HKWorkoutEvent;
 
@@ -634,7 +656,6 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink14WorkoutManager")
 - (void)workoutSession:(HKWorkoutSession * _Nonnull)workoutSession didGenerateEvent:(HKWorkoutEvent * _Nonnull)event;
 @end
 
-
 @class HKLiveWorkoutBuilder;
 @class HKSampleType;
 
@@ -642,6 +663,8 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink14WorkoutManager")
 - (void)workoutBuilder:(HKLiveWorkoutBuilder * _Nonnull)workoutBuilder didCollectDataOfTypes:(NSSet<HKSampleType *> * _Nonnull)collectedTypes;
 - (void)workoutBuilderDidCollectEvent:(HKLiveWorkoutBuilder * _Nonnull)workoutBuilder;
 @end
+
+
 
 
 @interface WorkoutManager (SWIFT_EXTENSION(RookMotionWatchLink)) <RemoteEvents>
@@ -1016,6 +1039,29 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink23RepositoryTrainingTypes")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+/// The <code>RepositoryUser</code> class handle the request and storage of the user information in the local data base and the rook API.
+/// some of the methods of this class need a user stored in the local data base
+/// The  methos available in this class are:
+/// <ol>
+///   <li>
+///     checkUserRookMotion
+///   </li>
+///   <li>
+///     getUserInfo
+///   </li>
+///   <li>
+///     updateUser
+///   </li>
+///   <li>
+///     addUserPhysiologicalVariables
+///   </li>
+/// </ol>
+SWIFT_CLASS("_TtC19RookMotionWatchLink14RepositoryUser")
+@interface RepositoryUser : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
@@ -1132,18 +1178,18 @@ SWIFT_CLASS_NAMED("RookTraining")
 @class NSSet;
 
 @interface RookTraining (SWIFT_EXTENSION(RookMotionWatchLink))
-- (void)addRookStepRecordsObject:(RookStepRecords * _Nonnull)value;
-- (void)removeRookStepRecordsObject:(RookStepRecords * _Nonnull)value;
-- (void)addRookStepRecords:(NSSet * _Nonnull)values;
-- (void)removeRookStepRecords:(NSSet * _Nonnull)values;
-@end
-
-
-@interface RookTraining (SWIFT_EXTENSION(RookMotionWatchLink))
 - (void)addRookHeartRateRecordsObject:(RookHeartRateRecords * _Nonnull)value;
 - (void)removeRookHeartRateRecordsObject:(RookHeartRateRecords * _Nonnull)value;
 - (void)addRookHeartRateRecords:(NSSet * _Nonnull)values;
 - (void)removeRookHeartRateRecords:(NSSet * _Nonnull)values;
+@end
+
+
+@interface RookTraining (SWIFT_EXTENSION(RookMotionWatchLink))
+- (void)addRookStepRecordsObject:(RookStepRecords * _Nonnull)value;
+- (void)removeRookStepRecordsObject:(RookStepRecords * _Nonnull)value;
+- (void)addRookStepRecords:(NSSet * _Nonnull)values;
+- (void)removeRookStepRecords:(NSSet * _Nonnull)values;
 @end
 
 @class RookTrainingSummaries;
@@ -1285,7 +1331,6 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink14WorkoutManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
 @class HKWorkoutSession;
 @class HKWorkoutEvent;
 
@@ -1295,7 +1340,6 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink14WorkoutManager")
 - (void)workoutSession:(HKWorkoutSession * _Nonnull)workoutSession didGenerateEvent:(HKWorkoutEvent * _Nonnull)event;
 @end
 
-
 @class HKLiveWorkoutBuilder;
 @class HKSampleType;
 
@@ -1303,6 +1347,8 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink14WorkoutManager")
 - (void)workoutBuilder:(HKLiveWorkoutBuilder * _Nonnull)workoutBuilder didCollectDataOfTypes:(NSSet<HKSampleType *> * _Nonnull)collectedTypes;
 - (void)workoutBuilderDidCollectEvent:(HKLiveWorkoutBuilder * _Nonnull)workoutBuilder;
 @end
+
+
 
 
 @interface WorkoutManager (SWIFT_EXTENSION(RookMotionWatchLink)) <RemoteEvents>
@@ -1677,6 +1723,29 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink23RepositoryTrainingTypes")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+/// The <code>RepositoryUser</code> class handle the request and storage of the user information in the local data base and the rook API.
+/// some of the methods of this class need a user stored in the local data base
+/// The  methos available in this class are:
+/// <ol>
+///   <li>
+///     checkUserRookMotion
+///   </li>
+///   <li>
+///     getUserInfo
+///   </li>
+///   <li>
+///     updateUser
+///   </li>
+///   <li>
+///     addUserPhysiologicalVariables
+///   </li>
+/// </ol>
+SWIFT_CLASS("_TtC19RookMotionWatchLink14RepositoryUser")
+@interface RepositoryUser : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
@@ -1793,18 +1862,18 @@ SWIFT_CLASS_NAMED("RookTraining")
 @class NSSet;
 
 @interface RookTraining (SWIFT_EXTENSION(RookMotionWatchLink))
-- (void)addRookStepRecordsObject:(RookStepRecords * _Nonnull)value;
-- (void)removeRookStepRecordsObject:(RookStepRecords * _Nonnull)value;
-- (void)addRookStepRecords:(NSSet * _Nonnull)values;
-- (void)removeRookStepRecords:(NSSet * _Nonnull)values;
-@end
-
-
-@interface RookTraining (SWIFT_EXTENSION(RookMotionWatchLink))
 - (void)addRookHeartRateRecordsObject:(RookHeartRateRecords * _Nonnull)value;
 - (void)removeRookHeartRateRecordsObject:(RookHeartRateRecords * _Nonnull)value;
 - (void)addRookHeartRateRecords:(NSSet * _Nonnull)values;
 - (void)removeRookHeartRateRecords:(NSSet * _Nonnull)values;
+@end
+
+
+@interface RookTraining (SWIFT_EXTENSION(RookMotionWatchLink))
+- (void)addRookStepRecordsObject:(RookStepRecords * _Nonnull)value;
+- (void)removeRookStepRecordsObject:(RookStepRecords * _Nonnull)value;
+- (void)addRookStepRecords:(NSSet * _Nonnull)values;
+- (void)removeRookStepRecords:(NSSet * _Nonnull)values;
 @end
 
 @class RookTrainingSummaries;
@@ -1946,7 +2015,6 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink14WorkoutManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
 @class HKWorkoutSession;
 @class HKWorkoutEvent;
 
@@ -1956,7 +2024,6 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink14WorkoutManager")
 - (void)workoutSession:(HKWorkoutSession * _Nonnull)workoutSession didGenerateEvent:(HKWorkoutEvent * _Nonnull)event;
 @end
 
-
 @class HKLiveWorkoutBuilder;
 @class HKSampleType;
 
@@ -1964,6 +2031,8 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink14WorkoutManager")
 - (void)workoutBuilder:(HKLiveWorkoutBuilder * _Nonnull)workoutBuilder didCollectDataOfTypes:(NSSet<HKSampleType *> * _Nonnull)collectedTypes;
 - (void)workoutBuilderDidCollectEvent:(HKLiveWorkoutBuilder * _Nonnull)workoutBuilder;
 @end
+
+
 
 
 @interface WorkoutManager (SWIFT_EXTENSION(RookMotionWatchLink)) <RemoteEvents>

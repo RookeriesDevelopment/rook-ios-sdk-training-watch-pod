@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RookMotionWatchLink-Swift.h</key>
 		<data>
-		5vSOA0LZPhpAsZWJbpu+e5K/0PM=
+		XKOQWocjt0P5zv2vWQsGThVOG3A=
 		</data>
 		<key>Headers/RookMotionWatchLink.h</key>
 		<data>
@@ -18,63 +18,63 @@
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos.abi.json</key>
 		<data>
-		vOM0hz9HztsAPkNAMRFYCaMcokE=
+		0+MaCRWrBpPcaekl4Cl7SR2KIvo=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<data>
-		YOdig3SOBh+w4b316kOKavpVHjI=
+		cIOYYCOma0vH0FmvkXJgRFPoyOw=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos.swiftdoc</key>
 		<data>
-		/ADbqoz5+TRUfX8JqQMW7jk1vc8=
+		Ds/amDcmkUxAOzEAZ4AcyeTDoPk=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos.swiftinterface</key>
 		<data>
-		YOdig3SOBh+w4b316kOKavpVHjI=
+		cIOYYCOma0vH0FmvkXJgRFPoyOw=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos.swiftmodule</key>
 		<data>
-		hD+d4481X6/ZVWbJzFXFcQBfFM4=
+		9EFMjbhzJAn4MJBxh6O8sD56K8Y=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<data>
-		vOM0hz9HztsAPkNAMRFYCaMcokE=
+		0+MaCRWrBpPcaekl4Cl7SR2KIvo=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<data>
-		TgmRE6UtSYTV6rw0zHGa+Sx5lOk=
+		daVy2WVtMK+dxcAR8moD/ruK4VM=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<data>
-		rPUrFuDyvYn7Eodur37URLUNQbY=
+		BbhT07j2NWaH8f8/C5H8M8EpoUw=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<data>
-		TgmRE6UtSYTV6rw0zHGa+Sx5lOk=
+		daVy2WVtMK+dxcAR8moD/ruK4VM=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64_32-apple-watchos.swiftmodule</key>
 		<data>
-		LG0OSuEOerKVJZhDvogOtp/Z7AQ=
+		rJ1lcZ3eSAlL5QeyOuEfKnvH7dQ=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/armv7k-apple-watchos.abi.json</key>
 		<data>
-		vOM0hz9HztsAPkNAMRFYCaMcokE=
+		0+MaCRWrBpPcaekl4Cl7SR2KIvo=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/armv7k-apple-watchos.private.swiftinterface</key>
 		<data>
-		mrqB6tFly3thl8ls0qKCbRZMYgg=
+		yNvlXFBkF48ZLNNBbdrVCvtsGVo=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/armv7k-apple-watchos.swiftdoc</key>
 		<data>
-		S33i4F0fQvDAUX9fMnb4l3/+x8A=
+		DFfswp1tp6DY7xbLyiVVVhxgBuo=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/armv7k-apple-watchos.swiftinterface</key>
 		<data>
-		mrqB6tFly3thl8ls0qKCbRZMYgg=
+		yNvlXFBkF48ZLNNBbdrVCvtsGVo=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/armv7k-apple-watchos.swiftmodule</key>
 		<data>
-		2Nv6ZBGhU9C3bG012z/lMgY+fFs=
+		boX0uLMpU7SIe9kDOlGwEWyAgpk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -95,11 +95,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5vSOA0LZPhpAsZWJbpu+e5K/0PM=
+			XKOQWocjt0P5zv2vWQsGThVOG3A=
 			</data>
 			<key>hash2</key>
 			<data>
-			pUQIK7qvIgzAOCpMXk7VtNnWU6hM2cI6v0RYiej/Vbw=
+			PGPYiJJ7xMfxLfl2ZrvQINeAK55Aal8JQD/oCnASB9A=
 			</data>
 		</dict>
 		<key>Headers/RookMotionWatchLink.h</key>
@@ -117,165 +117,165 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vOM0hz9HztsAPkNAMRFYCaMcokE=
+			0+MaCRWrBpPcaekl4Cl7SR2KIvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			g0fr6V5S+PDM4egJ+fDToKHsDqJ3DThF+KdmJsh3660=
+			mq3ET2UL7urGYP41Tf5CgAKwCoa21E6QW4RAG2ZKHII=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YOdig3SOBh+w4b316kOKavpVHjI=
+			cIOYYCOma0vH0FmvkXJgRFPoyOw=
 			</data>
 			<key>hash2</key>
 			<data>
-			NKeNqzq/jmBmis4TbLTAIuEO/NmPBzsvYsn5PSWW+Ns=
+			AxHlp9eYo7PTE2fP1sYcrkbl7JYzbSw7FVZQ8QJkpY8=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/ADbqoz5+TRUfX8JqQMW7jk1vc8=
+			Ds/amDcmkUxAOzEAZ4AcyeTDoPk=
 			</data>
 			<key>hash2</key>
 			<data>
-			W8y1WlKenLfLGfn8ixNImnsLRb+JtI5q+WpfpJ05J24=
+			qjVdmLWh7cMDYJRuTM838nGDCeI3akQTTDLcVgXlinI=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YOdig3SOBh+w4b316kOKavpVHjI=
+			cIOYYCOma0vH0FmvkXJgRFPoyOw=
 			</data>
 			<key>hash2</key>
 			<data>
-			NKeNqzq/jmBmis4TbLTAIuEO/NmPBzsvYsn5PSWW+Ns=
+			AxHlp9eYo7PTE2fP1sYcrkbl7JYzbSw7FVZQ8QJkpY8=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hD+d4481X6/ZVWbJzFXFcQBfFM4=
+			9EFMjbhzJAn4MJBxh6O8sD56K8Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			oRzHgJlHQZ9UZqmkJyYS+46ZGTpJZUMEIYo99jpR3fg=
+			wjIxCEjFWCEOnU58FxdiA8ON21TX44t6tFpjvuJoilI=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vOM0hz9HztsAPkNAMRFYCaMcokE=
+			0+MaCRWrBpPcaekl4Cl7SR2KIvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			g0fr6V5S+PDM4egJ+fDToKHsDqJ3DThF+KdmJsh3660=
+			mq3ET2UL7urGYP41Tf5CgAKwCoa21E6QW4RAG2ZKHII=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TgmRE6UtSYTV6rw0zHGa+Sx5lOk=
+			daVy2WVtMK+dxcAR8moD/ruK4VM=
 			</data>
 			<key>hash2</key>
 			<data>
-			SXAPgrX/ZsX6K5SluQv0p2NfGSXcdEE00GzWPWut4HQ=
+			fvM9/GEoZi93cNcfiRBd0w5PysL1owHVj8+5QyWaLMo=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rPUrFuDyvYn7Eodur37URLUNQbY=
+			BbhT07j2NWaH8f8/C5H8M8EpoUw=
 			</data>
 			<key>hash2</key>
 			<data>
-			2VsZXMW1VDVw2WoAVkVUKfUX2HZhEyF4LmrN8fvFgh8=
+			WSNzVpYz94EpM4+ecw3eEGH5i2yPyhyUaPRY7qF9Fio=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TgmRE6UtSYTV6rw0zHGa+Sx5lOk=
+			daVy2WVtMK+dxcAR8moD/ruK4VM=
 			</data>
 			<key>hash2</key>
 			<data>
-			SXAPgrX/ZsX6K5SluQv0p2NfGSXcdEE00GzWPWut4HQ=
+			fvM9/GEoZi93cNcfiRBd0w5PysL1owHVj8+5QyWaLMo=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64_32-apple-watchos.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LG0OSuEOerKVJZhDvogOtp/Z7AQ=
+			rJ1lcZ3eSAlL5QeyOuEfKnvH7dQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			H1VI5Ux2zmXKR7IGOlQTTbE3gdv2Sqy9xQjjmblX/gQ=
+			1LuPQhU+f0qxyfYv5bfcVpUkTf5fQyQC0qcmQgd5xaY=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/armv7k-apple-watchos.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vOM0hz9HztsAPkNAMRFYCaMcokE=
+			0+MaCRWrBpPcaekl4Cl7SR2KIvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			g0fr6V5S+PDM4egJ+fDToKHsDqJ3DThF+KdmJsh3660=
+			mq3ET2UL7urGYP41Tf5CgAKwCoa21E6QW4RAG2ZKHII=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/armv7k-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mrqB6tFly3thl8ls0qKCbRZMYgg=
+			yNvlXFBkF48ZLNNBbdrVCvtsGVo=
 			</data>
 			<key>hash2</key>
 			<data>
-			WuE4GCNadphUf9duwPt2/bJuOHsTB/uJww8YPBwUz6A=
+			J2jXkYDbBdpyNs5iHTR96GTpgK5r3jr8YJ2uA/RF9Bk=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/armv7k-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			S33i4F0fQvDAUX9fMnb4l3/+x8A=
+			DFfswp1tp6DY7xbLyiVVVhxgBuo=
 			</data>
 			<key>hash2</key>
 			<data>
-			gWCJQNAyxU0HYSafLpiyKZwWoeBUJPaxuVIF/GNRSKY=
+			9PUOqVFfW/LjYYytemtAeJV4q6/9SfIiPdJu+m6ZDj4=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/armv7k-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mrqB6tFly3thl8ls0qKCbRZMYgg=
+			yNvlXFBkF48ZLNNBbdrVCvtsGVo=
 			</data>
 			<key>hash2</key>
 			<data>
-			WuE4GCNadphUf9duwPt2/bJuOHsTB/uJww8YPBwUz6A=
+			J2jXkYDbBdpyNs5iHTR96GTpgK5r3jr8YJ2uA/RF9Bk=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/armv7k-apple-watchos.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2Nv6ZBGhU9C3bG012z/lMgY+fFs=
+			boX0uLMpU7SIe9kDOlGwEWyAgpk=
 			</data>
 			<key>hash2</key>
 			<data>
-			ElSvJ5Ofovy0MIvd5w1IGtlyM43bl69Wg/TFa9L/5hg=
+			kDTyG/5TGzcPuO64Dv6wu6Q0m9JcVVnXXarAhq/h6sE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
