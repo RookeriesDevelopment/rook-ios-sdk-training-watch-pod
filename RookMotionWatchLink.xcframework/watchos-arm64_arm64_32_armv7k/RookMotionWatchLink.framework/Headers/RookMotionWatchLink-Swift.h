@@ -290,12 +290,8 @@ SWIFT_PROTOCOL("_TtP19RookMotionWatchLink23RWCommunicationDelegate_")
 
 
 SWIFT_CLASS("_TtC19RookMotionWatchLink22RWCommunicationManager")
-@interface RWCommunicationManager : NSObject
+@interface RWCommunicationManager : NSObject <WCSessionDelegate>
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface RWCommunicationManager (SWIFT_EXTENSION(RookMotionWatchLink)) <WCSessionDelegate>
 - (void)session:(WCSession * _Nonnull)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(NSError * _Nullable)error;
 - (void)session:(WCSession * _Nonnull)session didReceiveUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;
 - (void)session:(WCSession * _Nonnull)session didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message replyHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))replyHandler;
@@ -974,12 +970,8 @@ SWIFT_PROTOCOL("_TtP19RookMotionWatchLink23RWCommunicationDelegate_")
 
 
 SWIFT_CLASS("_TtC19RookMotionWatchLink22RWCommunicationManager")
-@interface RWCommunicationManager : NSObject
+@interface RWCommunicationManager : NSObject <WCSessionDelegate>
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface RWCommunicationManager (SWIFT_EXTENSION(RookMotionWatchLink)) <WCSessionDelegate>
 - (void)session:(WCSession * _Nonnull)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(NSError * _Nullable)error;
 - (void)session:(WCSession * _Nonnull)session didReceiveUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;
 - (void)session:(WCSession * _Nonnull)session didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message replyHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))replyHandler;
@@ -1658,12 +1650,8 @@ SWIFT_PROTOCOL("_TtP19RookMotionWatchLink23RWCommunicationDelegate_")
 
 
 SWIFT_CLASS("_TtC19RookMotionWatchLink22RWCommunicationManager")
-@interface RWCommunicationManager : NSObject
+@interface RWCommunicationManager : NSObject <WCSessionDelegate>
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface RWCommunicationManager (SWIFT_EXTENSION(RookMotionWatchLink)) <WCSessionDelegate>
 - (void)session:(WCSession * _Nonnull)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(NSError * _Nullable)error;
 - (void)session:(WCSession * _Nonnull)session didReceiveUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;
 - (void)session:(WCSession * _Nonnull)session didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message replyHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))replyHandler;

@@ -112,19 +112,18 @@ public func goToSync()
   @objc optional func session(_ session: WatchConnectivity.WCSession, message: [Swift.String : Any])
   @objc optional func userInfoSaved(_ session: WatchConnectivity.WCSession, watchMessage: [Swift.String : Any])
 }
-@objc @_inheritsConvenienceInitializers public class RWCommunicationManager : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers public class RWCommunicationManager : ObjectiveC.NSObject, WatchConnectivity.WCSessionDelegate {
   public static let shared: RookMotionWatchLink.RWCommunicationManager
+  final public let session: WatchConnectivity.WCSession
   weak public var delegate: RookMotionWatchLink.RWCommunicationDelegate?
   @objc override dynamic public init()
   public func configureSession()
   public func sendInfo(_ info: [Swift.String : Any])
   public func sendPendingTraining(_ unfinishTraining: RookMotionWatchLink.RWRookTrainingDTO)
+  @objc public func session(_ session: WatchConnectivity.WCSession, activationDidCompleteWith activationState: WatchConnectivity.WCSessionActivationState, error: Swift.Error?)
+  @objc public func session(_ session: WatchConnectivity.WCSession, didReceiveUserInfo userInfo: [Swift.String : Any] = [:])
+  @objc public func session(_ session: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any], replyHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
   @objc deinit
-}
-extension RookMotionWatchLink.RWCommunicationManager : WatchConnectivity.WCSessionDelegate {
-  @objc dynamic public func session(_ session: WatchConnectivity.WCSession, activationDidCompleteWith activationState: WatchConnectivity.WCSessionActivationState, error: Swift.Error?)
-  @objc dynamic public func session(_ session: WatchConnectivity.WCSession, didReceiveUserInfo userInfo: [Swift.String : Any] = [:])
-  @objc dynamic public func session(_ session: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any], replyHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
 }
 public struct RWRookPhysiologicalVariablesDTO {
   public let weight: Swift.String

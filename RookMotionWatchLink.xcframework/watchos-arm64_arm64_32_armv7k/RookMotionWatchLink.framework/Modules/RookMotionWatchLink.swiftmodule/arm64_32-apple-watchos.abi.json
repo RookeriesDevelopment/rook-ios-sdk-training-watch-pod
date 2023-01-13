@@ -2102,6 +2102,55 @@
           },
           {
             "kind": "Var",
+            "name": "session",
+            "printedName": "session",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WCSession",
+                "printedName": "WatchConnectivity.WCSession",
+                "usr": "c:objc(cs)WCSession"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink22RWCommunicationManagerC7sessionSo9WCSessionCvp",
+            "mangledName": "$s19RookMotionWatchLink22RWCommunicationManagerC7sessionSo9WCSessionCvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WCSession",
+                    "printedName": "WatchConnectivity.WCSession",
+                    "usr": "c:objc(cs)WCSession"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink22RWCommunicationManagerC7sessionSo9WCSessionCvg",
+                "mangledName": "$s19RookMotionWatchLink22RWCommunicationManagerC7sessionSo9WCSessionCvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "delegate",
             "printedName": "delegate",
             "children": [
@@ -2355,16 +2404,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@RookMotionWatchLink@objc(cs)RWCommunicationManager(im)session:activationDidCompleteWithState:error:",
+            "usr": "c:@M@RookMotionWatchLink@objc(cs)RWCommunicationManager(im)session:activationDidCompleteWithState:error:",
             "mangledName": "$s19RookMotionWatchLink22RWCommunicationManagerC7session_25activationDidCompleteWith5errorySo9WCSessionC_So0M15ActivationStateVs5Error_pSgtF",
             "moduleName": "RookMotionWatchLink",
             "objc_name": "session:activationDidCompleteWithState:error:",
             "declAttributes": [
-              "Dynamic",
               "ObjC",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
-            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -2405,16 +2453,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@RookMotionWatchLink@objc(cs)RWCommunicationManager(im)session:didReceiveUserInfo:",
+            "usr": "c:@M@RookMotionWatchLink@objc(cs)RWCommunicationManager(im)session:didReceiveUserInfo:",
             "mangledName": "$s19RookMotionWatchLink22RWCommunicationManagerC7session_18didReceiveUserInfoySo9WCSessionC_SDySSypGtF",
             "moduleName": "RookMotionWatchLink",
             "objc_name": "session:didReceiveUserInfo:",
             "declAttributes": [
-              "Dynamic",
               "ObjC",
               "AccessControl"
             ],
-            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -2485,16 +2531,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@RookMotionWatchLink@objc(cs)RWCommunicationManager(im)session:didReceiveMessage:replyHandler:",
+            "usr": "c:@M@RookMotionWatchLink@objc(cs)RWCommunicationManager(im)session:didReceiveMessage:replyHandler:",
             "mangledName": "$s19RookMotionWatchLink22RWCommunicationManagerC7session_17didReceiveMessage12replyHandlerySo9WCSessionC_SDySSypGyAIctF",
             "moduleName": "RookMotionWatchLink",
             "objc_name": "session:didReceiveMessage:replyHandler:",
             "declAttributes": [
-              "Dynamic",
               "ObjC",
               "AccessControl"
             ],
-            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -57045,7 +57089,7 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/RWCommunicationManager.swift",
       "kind": "Dictionary",
-      "offset": 4718,
+      "offset": 4712,
       "length": 3,
       "value": "[]"
     },
