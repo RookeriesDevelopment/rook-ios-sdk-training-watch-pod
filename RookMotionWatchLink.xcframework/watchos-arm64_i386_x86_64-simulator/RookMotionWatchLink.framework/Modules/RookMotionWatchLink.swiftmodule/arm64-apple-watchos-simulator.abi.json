@@ -2540,6 +2540,81 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "session",
+            "printedName": "session(_:didReceiveMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSession",
+                "printedName": "WatchConnectivity.WCSession",
+                "usr": "c:objc(cs)WCSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookMotionWatchLink@objc(cs)RWCommunicationManager(im)session:didReceiveMessage:",
+            "mangledName": "$s19RookMotionWatchLink22RWCommunicationManagerC7session_17didReceiveMessageySo9WCSessionC_SDySSypGtF",
+            "moduleName": "RookMotionWatchLink",
+            "objc_name": "session:didReceiveMessage:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sessionReachabilityDidChange",
+            "printedName": "sessionReachabilityDidChange(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSession",
+                "printedName": "WatchConnectivity.WCSession",
+                "usr": "c:objc(cs)WCSession"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookMotionWatchLink@objc(cs)RWCommunicationManager(im)sessionReachabilityDidChange:",
+            "mangledName": "$s19RookMotionWatchLink22RWCommunicationManagerC28sessionReachabilityDidChangeyySo9WCSessionCF",
+            "moduleName": "RookMotionWatchLink",
+            "objc_name": "sessionReachabilityDidChange:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",

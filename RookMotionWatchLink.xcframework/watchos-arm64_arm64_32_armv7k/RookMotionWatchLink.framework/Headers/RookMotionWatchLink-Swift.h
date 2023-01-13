@@ -295,6 +295,8 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink22RWCommunicationManager")
 - (void)session:(WCSession * _Nonnull)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(NSError * _Nullable)error;
 - (void)session:(WCSession * _Nonnull)session didReceiveUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;
 - (void)session:(WCSession * _Nonnull)session didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message replyHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))replyHandler;
+- (void)session:(WCSession * _Nonnull)session didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message;
+- (void)sessionReachabilityDidChange:(WCSession * _Nonnull)session;
 @end
 
 
@@ -975,6 +977,8 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink22RWCommunicationManager")
 - (void)session:(WCSession * _Nonnull)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(NSError * _Nullable)error;
 - (void)session:(WCSession * _Nonnull)session didReceiveUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;
 - (void)session:(WCSession * _Nonnull)session didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message replyHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))replyHandler;
+- (void)session:(WCSession * _Nonnull)session didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message;
+- (void)sessionReachabilityDidChange:(WCSession * _Nonnull)session;
 @end
 
 
@@ -1655,6 +1659,8 @@ SWIFT_CLASS("_TtC19RookMotionWatchLink22RWCommunicationManager")
 - (void)session:(WCSession * _Nonnull)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(NSError * _Nullable)error;
 - (void)session:(WCSession * _Nonnull)session didReceiveUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;
 - (void)session:(WCSession * _Nonnull)session didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message replyHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))replyHandler;
+- (void)session:(WCSession * _Nonnull)session didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message;
+- (void)sessionReachabilityDidChange:(WCSession * _Nonnull)session;
 @end
 
 

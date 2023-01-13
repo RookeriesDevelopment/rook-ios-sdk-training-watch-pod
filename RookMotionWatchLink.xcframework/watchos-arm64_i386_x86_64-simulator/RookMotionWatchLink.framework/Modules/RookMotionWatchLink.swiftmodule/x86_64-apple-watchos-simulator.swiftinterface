@@ -123,6 +123,8 @@ public func goToSync()
   @objc public func session(_ session: WatchConnectivity.WCSession, activationDidCompleteWith activationState: WatchConnectivity.WCSessionActivationState, error: Swift.Error?)
   @objc public func session(_ session: WatchConnectivity.WCSession, didReceiveUserInfo userInfo: [Swift.String : Any] = [:])
   @objc public func session(_ session: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any], replyHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
+  @objc public func session(_ session: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any])
+  @objc public func sessionReachabilityDidChange(_ session: WatchConnectivity.WCSession)
   @objc deinit
 }
 public struct RWRookPhysiologicalVariablesDTO {
