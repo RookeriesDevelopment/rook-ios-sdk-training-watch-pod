@@ -46893,6 +46893,84 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendTrainingToWS",
+            "printedName": "sendTrainingToWS(_:_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RWRookTrainingDTO",
+                "printedName": "RookMotionWatchLink.RWRookTrainingDTO",
+                "usr": "s:19RookMotionWatchLink17RWRookTrainingDTOV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookMotionWatchLink.RMWResponse, Swift.String?, RookMotionWatchLink.RWRookTrainingSummaryDTO) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(RookMotionWatchLink.RMWResponse, Swift.String?, RookMotionWatchLink.RWRookTrainingSummaryDTO)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RMWResponse",
+                        "printedName": "RookMotionWatchLink.RMWResponse",
+                        "usr": "s:19RookMotionWatchLink11RMWResponseV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RWRookTrainingSummaryDTO",
+                        "printedName": "RookMotionWatchLink.RWRookTrainingSummaryDTO",
+                        "usr": "s:19RookMotionWatchLink24RWRookTrainingSummaryDTOV"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink18RepositoryTrainingC04sendF4ToWS__10completionyAA06RWRookF3DTOV_SbyAA11RMWResponseV_SSSgAA0kf7SummaryL0VtctF",
+            "mangledName": "$s19RookMotionWatchLink18RepositoryTrainingC04sendF4ToWS__10completionyAA06RWRookF3DTOV_SbyAA11RMWResponseV_SSSgAA0kf7SummaryL0VtctF",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",

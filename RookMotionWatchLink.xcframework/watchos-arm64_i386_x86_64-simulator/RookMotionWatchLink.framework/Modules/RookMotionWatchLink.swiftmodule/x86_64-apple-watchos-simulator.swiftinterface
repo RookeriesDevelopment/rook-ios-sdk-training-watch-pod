@@ -1661,6 +1661,7 @@ public enum HTTPMethod : Swift.String {
   public func getUserSensors(completion: @escaping (RookMotionWatchLink.RMWResponse, [RookMotionWatchLink.RWRookSensorDTO]?) -> Swift.Void)
   public func getSensorUUID(sensorName: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
   public func uploadPendingTrainings(delete: Swift.Bool, completion: @escaping (RookMotionWatchLink.RMWResponse) -> Swift.Void)
+  public func sendTrainingToWS(_ trainingToSend: RookMotionWatchLink.RWRookTrainingDTO, _ delete: Swift.Bool, completion: @escaping (RookMotionWatchLink.RMWResponse, Swift.String?, RookMotionWatchLink.RWRookTrainingSummaryDTO) -> Swift.Void)
   @objc deinit
 }
 extension RookMotionWatchLink.RookStepRecords {
