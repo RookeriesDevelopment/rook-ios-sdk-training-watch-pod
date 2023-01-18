@@ -22004,30 +22004,55 @@
             ]
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "AuthorizationManager",
                 "printedName": "RookMotionWatchLink.AuthorizationManager",
-                "usr": "c:@M@RookMotionWatchLink@objc(cs)AuthorizationManager"
+                "usr": "s:19RookMotionWatchLink20AuthorizationManagerC"
               }
             ],
-            "declKind": "Constructor",
-            "usr": "c:@M@RookMotionWatchLink@objc(cs)AuthorizationManager(im)init",
-            "mangledName": "$s19RookMotionWatchLink20AuthorizationManagerCACycfc",
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink20AuthorizationManagerC6sharedACvpZ",
+            "mangledName": "$s19RookMotionWatchLink20AuthorizationManagerC6sharedACvpZ",
             "moduleName": "RookMotionWatchLink",
-            "overriding": true,
-            "objc_name": "init",
+            "static": true,
             "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
               "AccessControl"
             ],
-            "init_kind": "Designated"
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthorizationManager",
+                    "printedName": "RookMotionWatchLink.AuthorizationManager",
+                    "usr": "s:19RookMotionWatchLink20AuthorizationManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink20AuthorizationManagerC6sharedACvgZ",
+                "mangledName": "$s19RookMotionWatchLink20AuthorizationManagerC6sharedACvgZ",
+                "moduleName": "RookMotionWatchLink",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Function",
@@ -22114,69 +22139,13 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@RookMotionWatchLink@objc(cs)AuthorizationManager",
+        "usr": "s:19RookMotionWatchLink20AuthorizationManagerC",
         "mangledName": "$s19RookMotionWatchLink20AuthorizationManagerC",
         "moduleName": "RookMotionWatchLink",
         "declAttributes": [
-          "AccessControl",
-          "ObjC"
+          "AccessControl"
         ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
+        "hasMissingDesignatedInitializers": true
       },
       {
         "kind": "Import",

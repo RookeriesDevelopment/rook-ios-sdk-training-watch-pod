@@ -256,12 +256,6 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 
-SWIFT_CLASS("_TtC19RookMotionWatchLink20AuthorizationManager")
-@interface AuthorizationManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC19RookMotionWatchLink15BackGroundTasks")
 @interface BackGroundTasks : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -938,12 +932,6 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 
-SWIFT_CLASS("_TtC19RookMotionWatchLink20AuthorizationManager")
-@interface AuthorizationManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC19RookMotionWatchLink15BackGroundTasks")
 @interface BackGroundTasks : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1619,12 +1607,6 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
-
-SWIFT_CLASS("_TtC19RookMotionWatchLink20AuthorizationManager")
-@interface AuthorizationManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 
 SWIFT_CLASS("_TtC19RookMotionWatchLink15BackGroundTasks")
 @interface BackGroundTasks : NSObject

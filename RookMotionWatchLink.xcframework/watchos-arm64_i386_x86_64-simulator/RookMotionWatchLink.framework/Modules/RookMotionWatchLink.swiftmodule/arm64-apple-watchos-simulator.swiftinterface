@@ -597,9 +597,9 @@ public struct RWRookRealTimeData : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
-@objc @_inheritsConvenienceInitializers public class AuthorizationManager : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers public class AuthorizationManager {
   final public let healthStore: HealthKit.HKHealthStore
-  @objc override dynamic public init()
+  public static let shared: RookMotionWatchLink.AuthorizationManager
   public func requestAuthorization(toShare: Swift.Set<HealthKit.HKSampleType>?, toRead: Swift.Set<HealthKit.HKSampleType>?, completionHandler: @escaping ((_ success: Swift.Bool) -> Swift.Void))
   @objc deinit
 }
