@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<data>
-		wx7hob0EwVfZJpqqyldbZGi9xeU=
+		l/kEOxSO7Nbn3wDHQ7YpBw71W28=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		Hddk6DuvXSELUQGjG1kamCMatok=
+		WYeLJHTbzMkJt2tSu14TlgkA2bI=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		Hddk6DuvXSELUQGjG1kamCMatok=
+		WYeLJHTbzMkJt2tSu14TlgkA2bI=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		jpF1hQrk3O0JcwQd8FJaiLmw/xA=
+		CB1Hwa1Mt0ngR+JG6tDCUzGpK+4=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/i386-apple-watchos-simulator.abi.json</key>
 		<data>
-		wx7hob0EwVfZJpqqyldbZGi9xeU=
+		l/kEOxSO7Nbn3wDHQ7YpBw71W28=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/i386-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		3Y6GLN/zCJyjEmTKZrpH4XugVwQ=
+		ChjOOQ4RUBRlk+/8Er2oSMLjOck=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/i386-apple-watchos-simulator.swiftdoc</key>
 		<data>
@@ -50,19 +50,19 @@
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/i386-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		3Y6GLN/zCJyjEmTKZrpH4XugVwQ=
+		ChjOOQ4RUBRlk+/8Er2oSMLjOck=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/i386-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		vEfaO/I9IdLn+bTbDx61A8/kIeI=
+		RXhCCR9YcBxHpNbRaQgbfdjvyfU=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<data>
-		wx7hob0EwVfZJpqqyldbZGi9xeU=
+		l/kEOxSO7Nbn3wDHQ7YpBw71W28=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		jR2PrKa0bboBzFmnl/Urmf24ni4=
+		SChH3xvvKIJmnhmaAj9edQSm3og=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<data>
@@ -70,11 +70,11 @@
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		jR2PrKa0bboBzFmnl/Urmf24ni4=
+		SChH3xvvKIJmnhmaAj9edQSm3og=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		k8khQLNN5qrSAiRvfg2MLp9g7e0=
+		CJXrvxP2yXSnR3aaRwJatH3/5ac=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -109,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kAiwMHQK+uhKTe501Vgk1+oy6/k5RRVnyKw/aXaj+pA=
+			LJeK6HEDZa0mUGtIINyR0ntoRNVPT4fGtlkhaePoWmM=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XaMcTyjbvjcFi88Tm/x4g5P070z0Bc4Ar7Pu0bFa8sA=
+			IxeJQSP3lXVFChearnn6TEl3KKWX6lh6W4eYRMC7iwo=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
@@ -130,28 +130,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XaMcTyjbvjcFi88Tm/x4g5P070z0Bc4Ar7Pu0bFa8sA=
+			IxeJQSP3lXVFChearnn6TEl3KKWX6lh6W4eYRMC7iwo=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wPOV9ics59E79OEj2ge/Ye44pgML4HhVDLwm6kglXjw=
+			ozN9ykY4dXDBrsxajQNwNOhsdYFANDg5Wtunr1l5w88=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/i386-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kAiwMHQK+uhKTe501Vgk1+oy6/k5RRVnyKw/aXaj+pA=
+			LJeK6HEDZa0mUGtIINyR0ntoRNVPT4fGtlkhaePoWmM=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/i386-apple-watchos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/fRfjw9O4XlYvzXfjL9oX5Sqhg1ksSjWXwss+8Aiyrc=
+			t00DxvpJ58FbOKGn7srkUZFsw4nRL7D0C4l10csI+1s=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/i386-apple-watchos-simulator.swiftdoc</key>
@@ -165,28 +165,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/fRfjw9O4XlYvzXfjL9oX5Sqhg1ksSjWXwss+8Aiyrc=
+			t00DxvpJ58FbOKGn7srkUZFsw4nRL7D0C4l10csI+1s=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/i386-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			enyk5RE40+cfS9pt+cENeNeciZsNOvZINZlUVornb9o=
+			jaQTrBHRgd7Ur++EHMZy1yURRNpCOh3/paGtLxHhaXQ=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kAiwMHQK+uhKTe501Vgk1+oy6/k5RRVnyKw/aXaj+pA=
+			LJeK6HEDZa0mUGtIINyR0ntoRNVPT4fGtlkhaePoWmM=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6F9nwnBL1zWLugnAiRZzFwtwkA5IC2rN05KWXlD8b38=
+			3YsOmixWRQkFd59NVXVbURuTWeTdAMk5PPJP4t3zOzc=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
@@ -200,14 +200,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6F9nwnBL1zWLugnAiRZzFwtwkA5IC2rN05KWXlD8b38=
+			3YsOmixWRQkFd59NVXVbURuTWeTdAMk5PPJP4t3zOzc=
 			</data>
 		</dict>
 		<key>Modules/RookMotionWatchLink.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mL93/PsNjGN0ILGXEusjXJdQuyB0GX3ifLtyEypa14o=
+			kHv1HTXoalUHNZCClqCD0UZx5aD9h/bj8vGFL5nntCo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

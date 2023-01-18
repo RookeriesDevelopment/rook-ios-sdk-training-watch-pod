@@ -600,7 +600,7 @@ public struct RWRookRealTimeData : Swift.Codable {
 @objc @_inheritsConvenienceInitializers public class AuthorizationManager : ObjectiveC.NSObject {
   final public let healthStore: HealthKit.HKHealthStore
   @objc override dynamic public init()
-  public func requestAuthorization(completionHandler: @escaping ((_ success: Swift.Bool) -> Swift.Void))
+  public func requestAuthorization(toShare: Swift.Set<HealthKit.HKSampleType>?, toRead: Swift.Set<HealthKit.HKSampleType>?, completionHandler: @escaping ((_ success: Swift.Bool) -> Swift.Void))
   @objc deinit
 }
 public struct SensorAddedResponse : Swift.Decodable {

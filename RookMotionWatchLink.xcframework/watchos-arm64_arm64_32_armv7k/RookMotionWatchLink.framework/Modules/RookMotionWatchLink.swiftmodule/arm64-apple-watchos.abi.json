@@ -22032,12 +22032,56 @@
           {
             "kind": "Function",
             "name": "requestAuthorization",
-            "printedName": "requestAuthorization(completionHandler:)",
+            "printedName": "requestAuthorization(toShare:toRead:completionHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Set<HealthKit.HKSampleType>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<HealthKit.HKSampleType>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HKSampleType",
+                        "printedName": "HealthKit.HKSampleType",
+                        "usr": "c:objc(cs)HKSampleType"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Set<HealthKit.HKSampleType>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<HealthKit.HKSampleType>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HKSampleType",
+                        "printedName": "HealthKit.HKSampleType",
+                        "usr": "c:objc(cs)HKSampleType"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -22059,8 +22103,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:19RookMotionWatchLink20AuthorizationManagerC07requestE017completionHandleryySbc_tF",
-            "mangledName": "$s19RookMotionWatchLink20AuthorizationManagerC07requestE017completionHandleryySbc_tF",
+            "usr": "s:19RookMotionWatchLink20AuthorizationManagerC07requestE07toShare0H4Read17completionHandleryShySo12HKSampleTypeCGSg_AKySbctF",
+            "mangledName": "$s19RookMotionWatchLink20AuthorizationManagerC07requestE07toShare0H4Read17completionHandleryShySo12HKSampleTypeCGSg_AKySbctF",
             "moduleName": "RookMotionWatchLink",
             "declAttributes": [
               "AccessControl",
