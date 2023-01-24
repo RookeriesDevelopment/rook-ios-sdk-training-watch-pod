@@ -2341,6 +2341,26 @@
           },
           {
             "kind": "Function",
+            "name": "syncRookUser",
+            "printedName": "syncRookUser()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink22RWCommunicationManagerC04syncA4UseryyF",
+            "mangledName": "$s19RookMotionWatchLink22RWCommunicationManagerC04syncA4UseryyF",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "sendPendingTraining",
             "printedName": "sendPendingTraining(_:)",
             "children": [
@@ -57255,7 +57275,7 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/RWCommunicationManager.swift",
       "kind": "Dictionary",
-      "offset": 4712,
+      "offset": 4955,
       "length": 3,
       "value": "[]"
     },
