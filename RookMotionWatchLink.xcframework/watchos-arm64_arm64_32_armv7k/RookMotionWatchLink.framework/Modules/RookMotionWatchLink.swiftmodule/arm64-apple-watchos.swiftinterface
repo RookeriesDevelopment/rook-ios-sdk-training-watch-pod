@@ -112,11 +112,10 @@ public func goToSync()
   @objc optional func session(_ session: WatchConnectivity.WCSession, message: [Swift.String : Any])
   @objc optional func userInfoSaved(_ session: WatchConnectivity.WCSession, watchMessage: [Swift.String : Any])
 }
-@objc @_inheritsConvenienceInitializers public class RWCommunicationManager : ObjectiveC.NSObject, WatchConnectivity.WCSessionDelegate {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class RWCommunicationManager : ObjectiveC.NSObject, WatchConnectivity.WCSessionDelegate {
   public static let shared: RookMotionWatchLink.RWCommunicationManager
   final public let session: WatchConnectivity.WCSession
   weak public var delegate: RookMotionWatchLink.RWCommunicationDelegate?
-  @objc override dynamic public init()
   public func configureSession()
   public func sendInfo(_ info: [Swift.String : Any])
   public func syncRookUser()
@@ -669,6 +668,11 @@ public struct HeartRateRecordsDTO : Swift.Encodable {
     }
   }
 }
+public class TrainingTransferFactory {
+  public init()
+  public func buildTrainingDictionary(key: Swift.String, unfinishTraining: RookMotionWatchLink.RWRookTrainingDTO) -> [Swift.String : Swift.String]?
+  @objc deinit
+}
 public struct RWRookTrainingRecordsDTO : Swift.Encodable {
   public let hrDerivedRecords: [RookMotionWatchLink.HeartRateRecordsDTO]
   public let stepsDerivedRecords: [RookMotionWatchLink.StepRecordsDTO]
@@ -1034,6 +1038,9 @@ public protocol WorkoutManagerDelegate : AnyObject {
   func workoutManager(_ manager: RookMotionWatchLink.WorkoutManager, didChangeStepCount stepData: RookMotionWatchLink.RMStepDerivedRecord)
   func didFinishWorkOut(_ manager: RookMotionWatchLink.WorkoutManager)
 }
+public protocol UnfinishWorkoutManagerDelegate : AnyObject {
+  func finishForLater(workout: RookMotionWatchLink.RWRookTrainingDTO)
+}
 public let kWorkoutHearRateData: Swift.String
 public let kWorkoutStepData: Swift.String
 public let kWorkoutDuration: Swift.String
@@ -1043,6 +1050,7 @@ public let kRemoteDataSended: Swift.String
 public let kTrainingPlayNotification: Swift.String
 @objc @_inheritsConvenienceInitializers public class WorkoutManager : ObjectiveC.NSObject {
   weak public var delegate: RookMotionWatchLink.WorkoutManagerDelegate?
+  weak public var unfinishDelegate: RookMotionWatchLink.UnfinishWorkoutManagerDelegate?
   public var state: RookMotionWatchLink.WorkoutState
   open var duration: Swift.Float
   public var trainingSummaries: RookMotionWatchLink.RookSummariesDTO {

@@ -2253,33 +2253,6 @@
             ]
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "RWCommunicationManager",
-                "printedName": "RookMotionWatchLink.RWCommunicationManager",
-                "usr": "c:@M@RookMotionWatchLink@objc(cs)RWCommunicationManager"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@RookMotionWatchLink@objc(cs)RWCommunicationManager(im)init",
-            "mangledName": "$s19RookMotionWatchLink22RWCommunicationManagerCACycfc",
-            "moduleName": "RookMotionWatchLink",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
             "kind": "Function",
             "name": "configureSession",
             "printedName": "configureSession()",
@@ -2646,6 +2619,7 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
@@ -23883,6 +23857,108 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "TrainingTransferFactory",
+        "printedName": "TrainingTransferFactory",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrainingTransferFactory",
+                "printedName": "RookMotionWatchLink.TrainingTransferFactory",
+                "usr": "s:19RookMotionWatchLink23TrainingTransferFactoryC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19RookMotionWatchLink23TrainingTransferFactoryCACycfc",
+            "mangledName": "$s19RookMotionWatchLink23TrainingTransferFactoryCACycfc",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "buildTrainingDictionary",
+            "printedName": "buildTrainingDictionary(key:unfinishTraining:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RWRookTrainingDTO",
+                "printedName": "RookMotionWatchLink.RWRookTrainingDTO",
+                "usr": "s:19RookMotionWatchLink17RWRookTrainingDTOV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink23TrainingTransferFactoryC05buildE10Dictionary3key08unfinishE0SDyS2SGSgSS_AA06RWRookE3DTOVtF",
+            "mangledName": "$s19RookMotionWatchLink23TrainingTransferFactoryC05buildE10Dictionary3key08unfinishE0SDyS2SGSgSS_AA06RWRookE3DTOVtF",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19RookMotionWatchLink23TrainingTransferFactoryC",
+        "mangledName": "$s19RookMotionWatchLink23TrainingTransferFactoryC",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "RWRookTrainingRecordsDTO",
         "printedName": "RWRookTrainingRecordsDTO",
         "children": [
@@ -35256,6 +35332,49 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "UnfinishWorkoutManagerDelegate",
+        "printedName": "UnfinishWorkoutManagerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "finishForLater",
+            "printedName": "finishForLater(workout:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RWRookTrainingDTO",
+                "printedName": "RookMotionWatchLink.RWRookTrainingDTO",
+                "usr": "s:19RookMotionWatchLink17RWRookTrainingDTOV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink30UnfinishWorkoutManagerDelegateP14finishForLater7workoutyAA17RWRookTrainingDTOV_tF",
+            "mangledName": "$s19RookMotionWatchLink30UnfinishWorkoutManagerDelegateP14finishForLater7workoutyAA17RWRookTrainingDTOV_tF",
+            "moduleName": "RookMotionWatchLink",
+            "genericSig": "<τ_0_0 where τ_0_0 : RookMotionWatchLink.UnfinishWorkoutManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : RookMotionWatchLink.UnfinishWorkoutManagerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:19RookMotionWatchLink30UnfinishWorkoutManagerDelegateP",
+        "mangledName": "$s19RookMotionWatchLink30UnfinishWorkoutManagerDelegateP",
+        "moduleName": "RookMotionWatchLink",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "Var",
         "name": "kWorkoutHearRateData",
         "printedName": "kWorkoutHearRateData",
@@ -35672,6 +35791,109 @@
                 "declKind": "Accessor",
                 "usr": "s:19RookMotionWatchLink14WorkoutManagerC8delegateAA0eF8Delegate_pSgvM",
                 "mangledName": "$s19RookMotionWatchLink14WorkoutManagerC8delegateAA0eF8Delegate_pSgvM",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unfinishDelegate",
+            "printedName": "unfinishDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "RookMotionWatchLink.UnfinishWorkoutManagerDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink14WorkoutManagerC16unfinishDelegateAA08UnfinishefH0_pSgvp",
+            "mangledName": "$s19RookMotionWatchLink14WorkoutManagerC16unfinishDelegateAA08UnfinishefH0_pSgvp",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RookMotionWatchLink.UnfinishWorkoutManagerDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnfinishWorkoutManagerDelegate",
+                        "printedName": "RookMotionWatchLink.UnfinishWorkoutManagerDelegate",
+                        "usr": "s:19RookMotionWatchLink30UnfinishWorkoutManagerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink14WorkoutManagerC16unfinishDelegateAA08UnfinishefH0_pSgvg",
+                "mangledName": "$s19RookMotionWatchLink14WorkoutManagerC16unfinishDelegateAA08UnfinishefH0_pSgvg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RookMotionWatchLink.UnfinishWorkoutManagerDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnfinishWorkoutManagerDelegate",
+                        "printedName": "RookMotionWatchLink.UnfinishWorkoutManagerDelegate",
+                        "usr": "s:19RookMotionWatchLink30UnfinishWorkoutManagerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink14WorkoutManagerC16unfinishDelegateAA08UnfinishefH0_pSgvs",
+                "mangledName": "$s19RookMotionWatchLink14WorkoutManagerC16unfinishDelegateAA08UnfinishefH0_pSgvs",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink14WorkoutManagerC16unfinishDelegateAA08UnfinishefH0_pSgvM",
+                "mangledName": "$s19RookMotionWatchLink14WorkoutManagerC16unfinishDelegateAA08UnfinishefH0_pSgvM",
                 "moduleName": "RookMotionWatchLink",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -57275,7 +57497,7 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/RWCommunicationManager.swift",
       "kind": "Dictionary",
-      "offset": 4955,
+      "offset": 5022,
       "length": 3,
       "value": "[]"
     },
@@ -58675,189 +58897,189 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 889,
+      "offset": 1002,
       "length": 22,
       "value": "\"kWorkoutHearRateData\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 942,
+      "offset": 1055,
       "length": 18,
       "value": "\"kWorkoutStepData\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 991,
+      "offset": 1104,
       "length": 18,
       "value": "\"kWorkoutDuration\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 1038,
+      "offset": 1151,
       "length": 16,
       "value": "\"kWorkoutFinish\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 1089,
+      "offset": 1202,
       "length": 22,
       "value": "\"kRemoteBadConnection\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 1143,
+      "offset": 1256,
       "length": 19,
       "value": "\"kRemoteDataSended\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 1202,
+      "offset": 1315,
       "length": 26,
       "value": "\"TrainingPlayNotification\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2426,
+      "offset": 2612,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2463,
+      "offset": 2649,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2506,
+      "offset": 2692,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2548,
+      "offset": 2734,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2590,
+      "offset": 2776,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2630,
+      "offset": 2816,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2666,
+      "offset": 2852,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "FloatLiteral",
-      "offset": 2698,
+      "offset": 2884,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2721,
+      "offset": 2907,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 2813,
+      "offset": 2999,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 2868,
+      "offset": 3054,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 2919,
+      "offset": 3105,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 2974,
+      "offset": 3160,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3028,
+      "offset": 3214,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3084,
+      "offset": 3270,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3131,
+      "offset": 3317,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3182,
+      "offset": 3368,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3208,
+      "offset": 3394,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3242,
+      "offset": 3428,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3286,
+      "offset": 3472,
       "length": 5,
       "value": "false"
     },
