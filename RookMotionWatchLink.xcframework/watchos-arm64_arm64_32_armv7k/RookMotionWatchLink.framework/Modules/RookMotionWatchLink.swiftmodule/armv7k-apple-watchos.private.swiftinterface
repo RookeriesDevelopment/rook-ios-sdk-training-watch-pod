@@ -288,6 +288,7 @@ public class RookTrainingStorage {
   public func getPendingTrainings(with start: Swift.String?, context: RookMotionWatchLink.ContextType) -> RookMotionWatchLink.RWRookTrainingDTO?
   public func getPendingTrainings(with start: Swift.String?, context: RookMotionWatchLink.ContextType, completion: @escaping (RookMotionWatchLink.RWRookTrainingDTO?) -> Swift.Void)
   public func deleteTraining(_ training: RookMotionWatchLink.RWRookTrainingDTO, context: RookMotionWatchLink.ContextType)
+  public func deleteTraining(with start: Swift.String?, context: RookMotionWatchLink.ContextType, completion: @escaping () -> Swift.Void)
   @objc deinit
 }
 public struct AddUserToRoomResponse : Swift.Decodable {
@@ -1062,6 +1063,7 @@ public let kTrainingPlayNotification: Swift.String
   public func resumenTraining()
   public func restoreTraining(with pendingTraining: RookMotionWatchLink.RWRookTrainingDTO)
   public func stop()
+  public func cancel()
   public func stopTraining(completion: @escaping (RookMotionWatchLink.RWTrainingUploadResponse) -> Swift.Void)
   public func resumenLater()
   @objc deinit

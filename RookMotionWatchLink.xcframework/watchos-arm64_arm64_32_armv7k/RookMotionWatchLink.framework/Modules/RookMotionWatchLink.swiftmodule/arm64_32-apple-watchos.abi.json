@@ -12678,6 +12678,63 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteTraining",
+            "printedName": "deleteTraining(with:context:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ContextType",
+                "printedName": "RookMotionWatchLink.ContextType",
+                "usr": "s:19RookMotionWatchLink11ContextTypeO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink0A15TrainingStorageC06deleteE04with7context10completionySSSg_AA11ContextTypeOyyctF",
+            "mangledName": "$s19RookMotionWatchLink0A15TrainingStorageC06deleteE04with7context10completionySSSg_AA11ContextTypeOyyctF",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -36254,6 +36311,26 @@
           },
           {
             "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink14WorkoutManagerC6cancelyyF",
+            "mangledName": "$s19RookMotionWatchLink14WorkoutManagerC6cancelyyF",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "stopTraining",
             "printedName": "stopTraining(completion:)",
             "children": [
@@ -58897,189 +58974,196 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 1002,
+      "offset": 1003,
       "length": 22,
       "value": "\"kWorkoutHearRateData\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 1055,
+      "offset": 1056,
       "length": 18,
       "value": "\"kWorkoutStepData\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 1104,
+      "offset": 1105,
       "length": 18,
       "value": "\"kWorkoutDuration\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 1151,
+      "offset": 1152,
       "length": 16,
       "value": "\"kWorkoutFinish\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 1202,
+      "offset": 1203,
       "length": 22,
       "value": "\"kRemoteBadConnection\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 1256,
+      "offset": 1257,
       "length": 19,
       "value": "\"kRemoteDataSended\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 1315,
+      "offset": 1316,
       "length": 26,
       "value": "\"TrainingPlayNotification\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2612,
+      "offset": 2613,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2649,
+      "offset": 2650,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2692,
+      "offset": 2693,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2734,
+      "offset": 2735,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2776,
+      "offset": 2777,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2816,
+      "offset": 2817,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2852,
+      "offset": 2853,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "FloatLiteral",
-      "offset": 2884,
+      "offset": 2885,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2907,
+      "offset": 2908,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 2999,
+      "offset": 3000,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 3054,
+      "offset": 3055,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 3105,
+      "offset": 3106,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
-      "offset": 3160,
+      "offset": 3161,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3214,
+      "offset": 3215,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3270,
+      "offset": 3271,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3317,
+      "offset": 3318,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3368,
+      "offset": 3369,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3394,
+      "offset": 3395,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3428,
+      "offset": 3429,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3472,
+      "offset": 3473,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3506,
       "length": 5,
       "value": "false"
     },
