@@ -27197,6 +27197,59 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "readUser",
+            "printedName": "readUser(context:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ContextType",
+                "printedName": "RookMotionWatchLink.ContextType",
+                "usr": "s:19RookMotionWatchLink11ContextTypeO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookMotionWatchLink.RWRookUserDTO?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RookMotionWatchLink.RWRookUserDTO?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RWRookUserDTO",
+                        "printedName": "RookMotionWatchLink.RWRookUserDTO",
+                        "usr": "s:19RookMotionWatchLink13RWRookUserDTOV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink0A19UserStorageProtocolP04readE07context10completionyAA11ContextTypeO_yAA06RWRookE3DTOVSgctF",
+            "mangledName": "$s19RookMotionWatchLink0A19UserStorageProtocolP04readE07context10completionyAA11ContextTypeO_yAA06RWRookE3DTOVSgctF",
+            "moduleName": "RookMotionWatchLink",
+            "genericSig": "<τ_0_0 where τ_0_0 : RookMotionWatchLink.RookUserStorageProtocol>",
+            "sugared_genericSig": "<Self where Self : RookMotionWatchLink.RookUserStorageProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -43947,8 +44000,7 @@
               "Dynamic",
               "ObjC",
               "Override",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "init_kind": "Designated"
           },
@@ -44014,10 +44066,102 @@
             "usr": "s:19RookMotionWatchLink23RepositoryTrainingTypesC03getfG010completionyySayAA06RWRookF4TypeVG_s5Error_pSgtc_tF",
             "mangledName": "$s19RookMotionWatchLink23RepositoryTrainingTypesC03getfG010completionyySayAA06RWRookF4TypeVG_s5Error_pSgtc_tF",
             "moduleName": "RookMotionWatchLink",
+            "deprecated": true,
             "declAttributes": [
               "AccessControl",
+              "Available",
               "RawDocComment"
             ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTrainingTypes",
+            "printedName": "getTrainingTypes(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[RookMotionWatchLink.RWRookTrainingType], Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[RookMotionWatchLink.RWRookTrainingType], Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[RookMotionWatchLink.RWRookTrainingType]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RWRookTrainingType",
+                            "printedName": "RookMotionWatchLink.RWRookTrainingType",
+                            "usr": "s:19RookMotionWatchLink18RWRookTrainingTypeV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink23RepositoryTrainingTypesC03getfG010completionyys6ResultOySayAA06RWRookF4TypeVGs5Error_pGc_tF",
+            "mangledName": "$s19RookMotionWatchLink23RepositoryTrainingTypesC03getfG010completionyys6ResultOySayAA06RWRookF4TypeVGs5Error_pGc_tF",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTrainingTypesAsync",
+            "printedName": "getTrainingTypesAsync()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[RookMotionWatchLink.RWRookTrainingType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RWRookTrainingType",
+                    "printedName": "RookMotionWatchLink.RWRookTrainingType",
+                    "usr": "s:19RookMotionWatchLink18RWRookTrainingTypeV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink23RepositoryTrainingTypesC03getfG5AsyncSayAA06RWRookF4TypeVGyYaKF",
+            "mangledName": "$s19RookMotionWatchLink23RepositoryTrainingTypesC03getfG5AsyncSayAA06RWRookF4TypeVGyYaKF",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -44098,6 +44242,7 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
@@ -45349,6 +45494,282 @@
             "usr": "s:SE",
             "mangledName": "$sSE"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RWTrainingTypesError",
+        "printedName": "RWTrainingTypesError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "fetchingError",
+            "printedName": "fetchingError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookMotionWatchLink.RWTrainingTypesError.Type) -> RookMotionWatchLink.RWTrainingTypesError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RWTrainingTypesError",
+                    "printedName": "RookMotionWatchLink.RWTrainingTypesError",
+                    "usr": "s:19RookMotionWatchLink20RWTrainingTypesErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookMotionWatchLink.RWTrainingTypesError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RWTrainingTypesError",
+                        "printedName": "RookMotionWatchLink.RWTrainingTypesError",
+                        "usr": "s:19RookMotionWatchLink20RWTrainingTypesErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19RookMotionWatchLink20RWTrainingTypesErrorO08fetchingG0yA2CmF",
+            "mangledName": "$s19RookMotionWatchLink20RWTrainingTypesErrorO08fetchingG0yA2CmF",
+            "moduleName": "RookMotionWatchLink"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RWTrainingTypesError",
+                "printedName": "RookMotionWatchLink.RWTrainingTypesError",
+                "usr": "s:19RookMotionWatchLink20RWTrainingTypesErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RWTrainingTypesError",
+                "printedName": "RookMotionWatchLink.RWTrainingTypesError",
+                "usr": "s:19RookMotionWatchLink20RWTrainingTypesErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink20RWTrainingTypesErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s19RookMotionWatchLink20RWTrainingTypesErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "RookMotionWatchLink",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19RookMotionWatchLink20RWTrainingTypesErrorO9hashValueSivp",
+            "mangledName": "$s19RookMotionWatchLink20RWTrainingTypesErrorO9hashValueSivp",
+            "moduleName": "RookMotionWatchLink",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19RookMotionWatchLink20RWTrainingTypesErrorO9hashValueSivg",
+                "mangledName": "$s19RookMotionWatchLink20RWTrainingTypesErrorO9hashValueSivg",
+                "moduleName": "RookMotionWatchLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink20RWTrainingTypesErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s19RookMotionWatchLink20RWTrainingTypesErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "RookMotionWatchLink",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:19RookMotionWatchLink20RWTrainingTypesErrorO",
+        "mangledName": "$s19RookMotionWatchLink20RWTrainingTypesErrorO",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RWTrainingTypesNetworkingProtocol",
+        "printedName": "RWTrainingTypesNetworkingProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchTrainingTypes",
+            "printedName": "fetchTrainingTypes(userToken:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[RookMotionWatchLink.RWRookTrainingType], Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[RookMotionWatchLink.RWRookTrainingType], Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[RookMotionWatchLink.RWRookTrainingType]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RWRookTrainingType",
+                            "printedName": "RookMotionWatchLink.RWRookTrainingType",
+                            "usr": "s:19RookMotionWatchLink18RWRookTrainingTypeV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink33RWTrainingTypesNetworkingProtocolP013fetchTrainingF09userToken10completionySSSg_ys6ResultOySayAA06RWRookJ4TypeVGs5Error_pGctF",
+            "mangledName": "$s19RookMotionWatchLink33RWTrainingTypesNetworkingProtocolP013fetchTrainingF09userToken10completionySSSg_ys6ResultOySayAA06RWRookJ4TypeVGs5Error_pGctF",
+            "moduleName": "RookMotionWatchLink",
+            "genericSig": "<τ_0_0 where τ_0_0 : RookMotionWatchLink.RWTrainingTypesNetworkingProtocol>",
+            "sugared_genericSig": "<Self where Self : RookMotionWatchLink.RWTrainingTypesNetworkingProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:19RookMotionWatchLink33RWTrainingTypesNetworkingProtocolP",
+        "mangledName": "$s19RookMotionWatchLink33RWTrainingTypesNetworkingProtocolP",
+        "moduleName": "RookMotionWatchLink",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -55327,6 +55748,73 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "readTrainignTypes",
+            "printedName": "readTrainignTypes(context:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ContextType",
+                "printedName": "RookMotionWatchLink.ContextType",
+                "usr": "s:19RookMotionWatchLink11ContextTypeO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[RookMotionWatchLink.RWRookTrainingType], Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[RookMotionWatchLink.RWRookTrainingType], Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[RookMotionWatchLink.RWRookTrainingType]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RWRookTrainingType",
+                            "printedName": "RookMotionWatchLink.RWRookTrainingType",
+                            "usr": "s:19RookMotionWatchLink18RWRookTrainingTypeV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink27TrainingTypeStorageProtocolP17readTrainignTypes7context10completionyAA07ContextF0O_ys6ResultOySayAA06RWRookeF0VGs5Error_pGctF",
+            "mangledName": "$s19RookMotionWatchLink27TrainingTypeStorageProtocolP17readTrainignTypes7context10completionyAA07ContextF0O_ys6ResultOySayAA06RWRookeF0VGs5Error_pGctF",
+            "moduleName": "RookMotionWatchLink",
+            "genericSig": "<τ_0_0 where τ_0_0 : RookMotionWatchLink.TrainingTypeStorageProtocol>",
+            "sugared_genericSig": "<Self where Self : RookMotionWatchLink.TrainingTypeStorageProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -55673,6 +56161,72 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "readTrainignTypes",
+            "printedName": "readTrainignTypes(context:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ContextType",
+                "printedName": "RookMotionWatchLink.ContextType",
+                "usr": "s:19RookMotionWatchLink11ContextTypeO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[RookMotionWatchLink.RWRookTrainingType], Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[RookMotionWatchLink.RWRookTrainingType], Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[RookMotionWatchLink.RWRookTrainingType]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RWRookTrainingType",
+                            "printedName": "RookMotionWatchLink.RWRookTrainingType",
+                            "usr": "s:19RookMotionWatchLink18RWRookTrainingTypeV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink19TrainingTypeStorageC17readTrainignTypes7context10completionyAA07ContextF0O_ys6ResultOySayAA06RWRookeF0VGs5Error_pGctF",
+            "mangledName": "$s19RookMotionWatchLink19TrainingTypeStorageC17readTrainignTypes7context10completionyAA07ContextF0O_ys6ResultOySayAA06RWRookeF0VGs5Error_pGctF",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           }

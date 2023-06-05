@@ -777,6 +777,7 @@ public protocol RookUserStorageProtocol {
   func createUser(userToStore: RookMotionWatchLink.RWRookUserDTO, context: RookMotionWatchLink.ContextType, completion: @escaping () -> Swift.Void)
   func deleteUser(context: RookMotionWatchLink.ContextType)
   func readUser(context: RookMotionWatchLink.ContextType) -> RookMotionWatchLink.RWRookUserDTO?
+  func readUser(context: RookMotionWatchLink.ContextType, completion: @escaping (RookMotionWatchLink.RWRookUserDTO?) -> Swift.Void)
 }
 public class RookUserStorage : RookMotionWatchLink.RookUserStorageProtocol {
   public init()
@@ -1558,9 +1559,14 @@ extension RookMotionWatchLink.RookTrainingSummaries {
 extension RookMotionWatchLink.RookTrainingSummaries : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
-@objc @_inheritsConvenienceInitializers public class RepositoryTrainingTypes : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class RepositoryTrainingTypes : ObjectiveC.NSObject {
   @objc override dynamic public init()
+  @available(*, deprecated, message: "This method will be deprecated insted use getTrainingTypes(completion: @escaping(Result<[RWRookTrainingType],Error>) -> Void) or getTrainingTypesAsync")
   public func getTrainingTypes(completion: @escaping ([RookMotionWatchLink.RWRookTrainingType], Swift.Error?) -> Swift.Void)
+  public func getTrainingTypes(completion: @escaping (Swift.Result<[RookMotionWatchLink.RWRookTrainingType], Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getTrainingTypesAsync() async throws -> [RookMotionWatchLink.RWRookTrainingType]
+  #endif
   public func getRemoteClasses(completion: @escaping ([RookMotionWatchLink.RWRookRemoteClass], Swift.Error?) -> Swift.Void)
   @objc deinit
 }
@@ -1592,6 +1598,17 @@ public struct RWTrainingTransfer : RookMotionWatchLink.Convertable {
   public init(start: Swift.String, end: Swift.String, trainingTypeUUID: Swift.String, sensorUUID: Swift.String?, sensorName: Swift.String, deviceType: Swift.String, uploadedAt: Swift.String, groupalMode: Swift.Int, offset: Swift.String, auxSummary: RookMotionWatchLink.RWAuxSummaryTransfer, summary: RookMotionWatchLink.RWTrainingSummariesTransfer, records: RookMotionWatchLink.RWTrainingStoragedRecordsTransfer, remoteClass: RookMotionWatchLink.RWRemoteClassTransfer?)
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
+}
+public enum RWTrainingTypesError : Swift.Error {
+  case fetchingError
+  public static func == (a: RookMotionWatchLink.RWTrainingTypesError, b: RookMotionWatchLink.RWTrainingTypesError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol RWTrainingTypesNetworkingProtocol {
+  func fetchTrainingTypes(userToken: Swift.String?, completion: @escaping (Swift.Result<[RookMotionWatchLink.RWRookTrainingType], Swift.Error>) -> Swift.Void)
 }
 public struct AddUserPysiolocalRequest : RookMotionWatchLink.Convertable {
   public let weight: Swift.Float
@@ -1793,6 +1810,7 @@ public protocol TrainingTypeStorageProtocol {
   func deleteTrainingType(trainingType: RookMotionWatchLink.RWRookTrainingType, context: RookMotionWatchLink.ContextType)
   func updateTrainingType(trainingType: RookMotionWatchLink.RWRookTrainingType, context: RookMotionWatchLink.ContextType)
   func readTrainingTypes(context: RookMotionWatchLink.ContextType) -> [RookMotionWatchLink.RWRookTrainingType]
+  func readTrainignTypes(context: RookMotionWatchLink.ContextType, completion: @escaping (Swift.Result<[RookMotionWatchLink.RWRookTrainingType], Swift.Error>) -> Swift.Void)
 }
 public enum TrainingTypeErrors : Swift.Error {
   case trainingTypeNotFound
@@ -1808,6 +1826,7 @@ public class TrainingTypeStorage : RookMotionWatchLink.TrainingTypeStorageProtoc
   public func deleteTrainingType(trainingType: RookMotionWatchLink.RWRookTrainingType, context: RookMotionWatchLink.ContextType)
   public func updateTrainingType(trainingType: RookMotionWatchLink.RWRookTrainingType, context: RookMotionWatchLink.ContextType)
   public func readTrainingTypes(context: RookMotionWatchLink.ContextType) -> [RookMotionWatchLink.RWRookTrainingType]
+  public func readTrainignTypes(context: RookMotionWatchLink.ContextType, completion: @escaping (Swift.Result<[RookMotionWatchLink.RWRookTrainingType], Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(RookUseSteps) public class RookUseSteps : CoreData.NSManagedObject {
@@ -1912,6 +1931,8 @@ extension RookMotionWatchLink.AddTrainingResponse.CodingKeys : Swift.RawRepresen
 extension RookMotionWatchLink.RWRookTrainingDTO.CodingKeys : Swift.Equatable {}
 extension RookMotionWatchLink.RWRookTrainingDTO.CodingKeys : Swift.Hashable {}
 extension RookMotionWatchLink.RWRookTrainingDTO.CodingKeys : Swift.RawRepresentable {}
+extension RookMotionWatchLink.RWTrainingTypesError : Swift.Equatable {}
+extension RookMotionWatchLink.RWTrainingTypesError : Swift.Hashable {}
 extension RookMotionWatchLink.AddUserPysiolocalRequest.CodingKeys : Swift.Equatable {}
 extension RookMotionWatchLink.AddUserPysiolocalRequest.CodingKeys : Swift.Hashable {}
 extension RookMotionWatchLink.AddUserPysiolocalRequest.CodingKeys : Swift.RawRepresentable {}
