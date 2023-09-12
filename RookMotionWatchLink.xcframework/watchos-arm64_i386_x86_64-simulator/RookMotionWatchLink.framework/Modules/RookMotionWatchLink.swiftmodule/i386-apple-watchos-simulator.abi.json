@@ -28194,6 +28194,58 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSensorWithoutUUID",
+            "printedName": "getSensorWithoutUUID(context:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ContextType",
+                "printedName": "RookMotionWatchLink.ContextType",
+                "usr": "s:19RookMotionWatchLink11ContextTypeO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([RookMotionWatchLink.RWRookSensorDTO]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookMotionWatchLink.RWRookSensorDTO]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RWRookSensorDTO",
+                        "printedName": "RookMotionWatchLink.RWRookSensorDTO",
+                        "usr": "s:19RookMotionWatchLink15RWRookSensorDTOV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19RookMotionWatchLink0A13SensorStorageC03getE11WithoutUUID7context10completionyAA11ContextTypeO_ySayAA06RWRookE3DTOVGctF",
+            "mangledName": "$s19RookMotionWatchLink0A13SensorStorageC03getE11WithoutUUID7context10completionyAA11ContextTypeO_ySayAA06RWRookE3DTOVGctF",
+            "moduleName": "RookMotionWatchLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -58042,2275 +58094,2275 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Utils\/Extensions.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Utils\/Extensions.swift",
       "kind": "IntegerLiteral",
       "offset": 544,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Utils\/Extensions.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Utils\/Extensions.swift",
       "kind": "StringLiteral",
       "offset": 602,
       "length": 5,
       "value": "\"UTC\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Utils\/Extensions.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Utils\/Extensions.swift",
       "kind": "StringLiteral",
       "offset": 644,
       "length": 21,
       "value": "\"yyyy-MM-dd HH:mm:ss\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Utils\/Extensions.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Utils\/Extensions.swift",
       "kind": "IntegerLiteral",
       "offset": 879,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Utils\/Extensions.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Utils\/Extensions.swift",
       "kind": "StringLiteral",
       "offset": 916,
       "length": 12,
       "value": "\"yyyy-MM-dd\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Utils\/Extensions.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Utils\/Extensions.swift",
       "kind": "IntegerLiteral",
       "offset": 1148,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Utils\/Extensions.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Utils\/Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1206,
       "length": 5,
       "value": "\"UTC\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Utils\/Extensions.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Utils\/Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1248,
       "length": 21,
       "value": "\"yyyy-MM-dd HH:mm:ss\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Helpers\/GlobalFunctions.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Helpers\/GlobalFunctions.swift",
       "kind": "FloatLiteral",
       "offset": 231,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/TrainingRemote\/RemoteRouter.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/TrainingRemote\/RemoteRouter.swift",
       "kind": "IntegerLiteral",
       "offset": 485,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/TrainingRemote\/RemoteRouter.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/TrainingRemote\/RemoteRouter.swift",
       "kind": "BooleanLiteral",
       "offset": 566,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/TrainingRemote\/RemoteRouter.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/TrainingRemote\/RemoteRouter.swift",
       "kind": "BooleanLiteral",
       "offset": 1007,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/RWCommunicationManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/RWCommunicationManager.swift",
       "kind": "Dictionary",
       "offset": 5022,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
       "kind": "StringLiteral",
       "offset": 534,
       "length": 13,
       "value": "\"sensor_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
       "kind": "StringLiteral",
       "offset": 570,
       "length": 13,
       "value": "\"sensor_name\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
       "kind": "StringLiteral",
       "offset": 605,
       "length": 12,
       "value": "\"sensor_mac\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
       "kind": "StringLiteral",
       "offset": 643,
       "length": 16,
       "value": "\"ownership_type\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
       "kind": "StringLiteral",
       "offset": 681,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
       "kind": "StringLiteral",
       "offset": 534,
       "length": 13,
       "value": "\"sensor_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
       "kind": "StringLiteral",
       "offset": 570,
       "length": 13,
       "value": "\"sensor_name\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
       "kind": "StringLiteral",
       "offset": 605,
       "length": 12,
       "value": "\"sensor_mac\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
       "kind": "StringLiteral",
       "offset": 643,
       "length": 16,
       "value": "\"ownership_type\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SensorPaginationResponse.swift",
       "kind": "StringLiteral",
       "offset": 681,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 744,
       "length": 12,
       "value": "\"chain_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 782,
       "length": 12,
       "value": "\"chain_name\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 744,
       "length": 12,
       "value": "\"chain_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 782,
       "length": 12,
       "value": "\"chain_name\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 1352,
       "length": 6,
       "value": "\"uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 1385,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 1417,
       "length": 7,
       "value": "\"rooms\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 1447,
       "length": 8,
       "value": "\"status\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 1352,
       "length": 6,
       "value": "\"uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 1385,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 1417,
       "length": 7,
       "value": "\"rooms\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 1447,
       "length": 8,
       "value": "\"status\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3076,
       "length": 6,
       "value": "\"uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3107,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3163,
       "length": 11,
       "value": "\"type_room\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3203,
       "length": 15,
       "value": "\"training_type\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3251,
       "length": 20,
       "value": "\"training_type_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3305,
       "length": 20,
       "value": "\"configuration_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3417,
       "length": 13,
       "value": "\"class_delay\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3456,
       "length": 12,
       "value": "\"data_order\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3496,
       "length": 14,
       "value": "\"step_options\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3538,
       "length": 14,
       "value": "\"remote_state\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3577,
       "length": 11,
       "value": "\"use_steps\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3076,
       "length": 6,
       "value": "\"uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3107,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3163,
       "length": 11,
       "value": "\"type_room\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3203,
       "length": 15,
       "value": "\"training_type\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3251,
       "length": 20,
       "value": "\"training_type_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3305,
       "length": 20,
       "value": "\"configuration_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3417,
       "length": 13,
       "value": "\"class_delay\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3456,
       "length": 12,
       "value": "\"data_order\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3496,
       "length": 14,
       "value": "\"step_options\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3538,
       "length": 14,
       "value": "\"remote_state\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/RemoteRoomsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3577,
       "length": 11,
       "value": "\"use_steps\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingSummaryById.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingSummaryById.swift",
       "kind": "StringLiteral",
       "offset": 316,
       "length": 17,
       "value": "\"summary_type_id\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingSummaryById.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingSummaryById.swift",
       "kind": "StringLiteral",
       "offset": 316,
       "length": 17,
       "value": "\"summary_type_id\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookAvgSummaries.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookAvgSummaries.swift",
       "kind": "IntegerLiteral",
       "offset": 192,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookAvgSummaries.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookAvgSummaries.swift",
       "kind": "IntegerLiteral",
       "offset": 219,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookAvgSummaries.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookAvgSummaries.swift",
       "kind": "FloatLiteral",
       "offset": 247,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/AddUserToRoomResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/AddUserToRoomResponse.swift",
       "kind": "StringLiteral",
       "offset": 433,
       "length": 27,
       "value": "\"remaining_waiting_seconds\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/AddUserToRoomResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/AddUserToRoomResponse.swift",
       "kind": "StringLiteral",
       "offset": 492,
       "length": 18,
       "value": "\"remaining_places\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/AddUserToRoomResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/AddUserToRoomResponse.swift",
       "kind": "StringLiteral",
       "offset": 433,
       "length": 27,
       "value": "\"remaining_waiting_seconds\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/AddUserToRoomResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Remote\/AddUserToRoomResponse.swift",
       "kind": "StringLiteral",
       "offset": 492,
       "length": 18,
       "value": "\"remaining_places\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Validation\/RWRookSettings.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Validation\/RWRookSettings.swift",
       "kind": "StringLiteral",
       "offset": 259,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Validation\/RWRookSettings.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Validation\/RWRookSettings.swift",
       "kind": "StringLiteral",
       "offset": 298,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Validation\/RWRookSettings.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Validation\/RWRookSettings.swift",
       "kind": "StringLiteral",
       "offset": 339,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Validation\/RWRookSettings.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Validation\/RWRookSettings.swift",
       "kind": "StringLiteral",
       "offset": 382,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Validation\/RWRookSettings.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Validation\/RWRookSettings.swift",
       "kind": "StringLiteral",
       "offset": 418,
       "length": 16,
       "value": "\"isInvalidToken\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 222,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 264,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 306,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 348,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 390,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 432,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 473,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 513,
       "length": 3,
       "value": "101"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 553,
       "length": 3,
       "value": "102"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 600,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 644,
       "length": 3,
       "value": "301"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 688,
       "length": 3,
       "value": "302"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 732,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 774,
       "length": 3,
       "value": "402"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 816,
       "length": 3,
       "value": "403"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 858,
       "length": 3,
       "value": "404"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 900,
       "length": 3,
       "value": "405"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 942,
       "length": 3,
       "value": "406"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 989,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 1030,
       "length": 3,
       "value": "502"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 1071,
       "length": 3,
       "value": "503"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 1112,
       "length": 3,
       "value": "504"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 1153,
       "length": 3,
       "value": "505"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 1194,
       "length": 3,
       "value": "506"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 1240,
       "length": 3,
       "value": "600"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 1283,
       "length": 3,
       "value": "601"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 1326,
       "length": 3,
       "value": "602"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 1370,
       "length": 3,
       "value": "604"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 1411,
       "length": 3,
       "value": "605"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 1452,
       "length": 3,
       "value": "606"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 1493,
       "length": 3,
       "value": "607"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMSummariesID.swift",
       "kind": "IntegerLiteral",
       "offset": 1534,
       "length": 3,
       "value": "608"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Helpers\/BackGroundTasks.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Helpers\/BackGroundTasks.swift",
       "kind": "StringLiteral",
       "offset": 369,
       "length": 21,
       "value": "\"uploadTrainingQueue\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Helpers\/BackGroundTasks.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Helpers\/BackGroundTasks.swift",
       "kind": "BooleanLiteral",
       "offset": 742,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Training\/RWRealTimeAPI.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Training\/RWRealTimeAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 239,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/TrainingSummariesCalculator.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/TrainingSummariesCalculator.swift",
       "kind": "IntegerLiteral",
       "offset": 333,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/TrainingSummariesCalculator.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/TrainingSummariesCalculator.swift",
       "kind": "IntegerLiteral",
       "offset": 371,
       "length": 2,
       "value": "70"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/TrainingSummariesCalculator.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/TrainingSummariesCalculator.swift",
       "kind": "IntegerLiteral",
       "offset": 409,
       "length": 2,
       "value": "80"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/TrainingSummariesCalculator.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/TrainingSummariesCalculator.swift",
       "kind": "IntegerLiteral",
       "offset": 447,
       "length": 2,
       "value": "90"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMStepDerivedRecord.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMStepDerivedRecord.swift",
       "kind": "FloatLiteral",
       "offset": 412,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMStepDerivedRecord.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMStepDerivedRecord.swift",
       "kind": "IntegerLiteral",
       "offset": 442,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
       "kind": "StringLiteral",
       "offset": 989,
       "length": 20,
       "value": "\"training_type_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
       "kind": "StringLiteral",
       "offset": 1033,
       "length": 14,
       "value": "\"trainig_name\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
       "kind": "StringLiteral",
       "offset": 1072,
       "length": 16,
       "value": "\"use_heart_rate\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
       "kind": "StringLiteral",
       "offset": 1109,
       "length": 11,
       "value": "\"use_steps\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
       "kind": "StringLiteral",
       "offset": 1139,
       "length": 9,
       "value": "\"use_gps\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
       "kind": "StringLiteral",
       "offset": 1171,
       "length": 13,
       "value": "\"use_cycling\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
       "kind": "StringLiteral",
       "offset": 989,
       "length": 20,
       "value": "\"training_type_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
       "kind": "StringLiteral",
       "offset": 1033,
       "length": 14,
       "value": "\"trainig_name\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
       "kind": "StringLiteral",
       "offset": 1072,
       "length": 16,
       "value": "\"use_heart_rate\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
       "kind": "StringLiteral",
       "offset": 1109,
       "length": 11,
       "value": "\"use_steps\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
       "kind": "StringLiteral",
       "offset": 1139,
       "length": 9,
       "value": "\"use_gps\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
       "kind": "StringLiteral",
       "offset": 1171,
       "length": 13,
       "value": "\"use_cycling\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
       "kind": "StringLiteral",
       "offset": 1380,
       "length": 13,
       "value": "\"steps_types\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/Training\/RWRookTrainingType.swift",
       "kind": "StringLiteral",
       "offset": 1380,
       "length": 13,
       "value": "\"steps_types\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "BooleanLiteral",
       "offset": 456,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 524,
       "length": 11,
       "value": "\"user_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 557,
       "length": 11,
       "value": "\"pseudonym\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 586,
       "length": 7,
       "value": "\"email\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 615,
       "length": 12,
       "value": "\"image_user\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 648,
       "length": 11,
       "value": "\"steps_tot\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 683,
       "length": 14,
       "value": "\"calories_tot\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 712,
       "length": 4,
       "value": "\"hr\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 735,
       "length": 8,
       "value": "\"effort\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 774,
       "length": 27,
       "value": "\"answer_with_clusters_list\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 524,
       "length": 11,
       "value": "\"user_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 557,
       "length": 11,
       "value": "\"pseudonym\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 586,
       "length": 7,
       "value": "\"email\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 615,
       "length": 12,
       "value": "\"image_user\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 648,
       "length": 11,
       "value": "\"steps_tot\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 683,
       "length": 14,
       "value": "\"calories_tot\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 712,
       "length": 4,
       "value": "\"hr\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 735,
       "length": 8,
       "value": "\"effort\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIRequest\/Remote\/RWRookRealTimeData.swift",
       "kind": "StringLiteral",
       "offset": 774,
       "length": 27,
       "value": "\"answer_with_clusters_list\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SesorAddedResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SesorAddedResponse.swift",
       "kind": "StringLiteral",
       "offset": 279,
       "length": 13,
       "value": "\"sensor_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SesorAddedResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/Entities\/Responses\/SesorAddedResponse.swift",
       "kind": "StringLiteral",
       "offset": 279,
       "length": 13,
       "value": "\"sensor_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Encoding\/ParameterEncoding.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Encoding\/ParameterEncoding.swift",
       "kind": "StringLiteral",
       "offset": 391,
       "length": 22,
       "value": "\"Parameters were nil.\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Encoding\/ParameterEncoding.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Encoding\/ParameterEncoding.swift",
       "kind": "StringLiteral",
       "offset": 438,
       "length": 28,
       "value": "\"Parameter encoding failed.\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Encoding\/ParameterEncoding.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Encoding\/ParameterEncoding.swift",
       "kind": "StringLiteral",
       "offset": 487,
       "length": 13,
       "value": "\"URL is nil.\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Encoding\/ParameterEncoding.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Encoding\/ParameterEncoding.swift",
       "kind": "StringLiteral",
       "offset": 391,
       "length": 22,
       "value": "\"Parameters were nil.\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Encoding\/ParameterEncoding.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Encoding\/ParameterEncoding.swift",
       "kind": "StringLiteral",
       "offset": 438,
       "length": 28,
       "value": "\"Parameter encoding failed.\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Encoding\/ParameterEncoding.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Encoding\/ParameterEncoding.swift",
       "kind": "StringLiteral",
       "offset": 487,
       "length": 13,
       "value": "\"URL is nil.\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/HeartRateRecordsDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/HeartRateRecordsDTO.swift",
       "kind": "StringLiteral",
       "offset": 1282,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/HeartRateRecordsDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/HeartRateRecordsDTO.swift",
       "kind": "StringLiteral",
       "offset": 1315,
       "length": 12,
       "value": "\"heart_rate\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/HeartRateRecordsDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/HeartRateRecordsDTO.swift",
       "kind": "StringLiteral",
       "offset": 1360,
       "length": 24,
       "value": "\"heart_rate_variability\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/HeartRateRecordsDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/HeartRateRecordsDTO.swift",
       "kind": "StringLiteral",
       "offset": 1282,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/HeartRateRecordsDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/HeartRateRecordsDTO.swift",
       "kind": "StringLiteral",
       "offset": 1315,
       "length": 12,
       "value": "\"heart_rate\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/HeartRateRecordsDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/HeartRateRecordsDTO.swift",
       "kind": "StringLiteral",
       "offset": 1360,
       "length": 24,
       "value": "\"heart_rate_variability\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingRecordsDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingRecordsDTO.swift",
       "kind": "StringLiteral",
       "offset": 970,
       "length": 20,
       "value": "\"hr_derived_records\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingRecordsDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingRecordsDTO.swift",
       "kind": "StringLiteral",
       "offset": 1022,
       "length": 23,
       "value": "\"steps_derived_records\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingRecordsDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingRecordsDTO.swift",
       "kind": "StringLiteral",
       "offset": 970,
       "length": 20,
       "value": "\"hr_derived_records\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingRecordsDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingRecordsDTO.swift",
       "kind": "StringLiteral",
       "offset": 1022,
       "length": 23,
       "value": "\"steps_derived_records\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Training\/RWTrainingTypeAPI.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Training\/RWTrainingTypeAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 247,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/UpdateUser.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/UpdateUser.swift",
       "kind": "StringLiteral",
       "offset": 182,
       "length": 6,
       "value": "\"male\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/UpdateUser.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/UpdateUser.swift",
       "kind": "StringLiteral",
       "offset": 205,
       "length": 8,
       "value": "\"female\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/UpdateUser.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/UpdateUser.swift",
       "kind": "StringLiteral",
       "offset": 182,
       "length": 6,
       "value": "\"male\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/UpdateUser.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/UpdateUser.swift",
       "kind": "StringLiteral",
       "offset": 205,
       "length": 8,
       "value": "\"female\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/UpdateUser.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/UpdateUser.swift",
       "kind": "StringLiteral",
       "offset": 1483,
       "length": 11,
       "value": "\"last_name\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/UpdateUser.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/UpdateUser.swift",
       "kind": "StringLiteral",
       "offset": 1521,
       "length": 18,
       "value": "\"mother_last_name\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/UpdateUser.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/UpdateUser.swift",
       "kind": "StringLiteral",
       "offset": 1483,
       "length": 11,
       "value": "\"last_name\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/UpdateUser.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/UpdateUser.swift",
       "kind": "StringLiteral",
       "offset": 1521,
       "length": 18,
       "value": "\"mother_last_name\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMTrainingAuxiliarSummary.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMTrainingAuxiliarSummary.swift",
       "kind": "IntegerLiteral",
       "offset": 240,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMTrainingAuxiliarSummary.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMTrainingAuxiliarSummary.swift",
       "kind": "IntegerLiteral",
       "offset": 279,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMTrainingAuxiliarSummary.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMTrainingAuxiliarSummary.swift",
       "kind": "IntegerLiteral",
       "offset": 322,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMTrainingAuxiliarSummary.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMTrainingAuxiliarSummary.swift",
       "kind": "IntegerLiteral",
       "offset": 365,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMTrainingAuxiliarSummary.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMTrainingAuxiliarSummary.swift",
       "kind": "IntegerLiteral",
       "offset": 408,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMTrainingAuxiliarSummary.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMTrainingAuxiliarSummary.swift",
       "kind": "IntegerLiteral",
       "offset": 451,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/AddUserResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/AddUserResponse.swift",
       "kind": "StringLiteral",
       "offset": 257,
       "length": 11,
       "value": "\"user_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/AddUserResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/AddUserResponse.swift",
       "kind": "StringLiteral",
       "offset": 257,
       "length": 11,
       "value": "\"user_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 216,
       "length": 37,
       "value": "\"You need to be authenticated first.\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 274,
       "length": 13,
       "value": "\"Bad request\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 306,
       "length": 36,
       "value": "\"The url you requested is outdated.\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 359,
       "length": 25,
       "value": "\"Network request failed.\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 401,
       "length": 43,
       "value": "\"Response returned with no data to decode.\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 469,
       "length": 35,
       "value": "\"We could not decode the response.\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 216,
       "length": 37,
       "value": "\"You need to be authenticated first.\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 274,
       "length": 13,
       "value": "\"Bad request\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 306,
       "length": 36,
       "value": "\"The url you requested is outdated.\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 359,
       "length": 25,
       "value": "\"Network request failed.\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 401,
       "length": 43,
       "value": "\"Response returned with no data to decode.\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 469,
       "length": 35,
       "value": "\"We could not decode the response.\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Manager\/NetworkManager.swift",
       "kind": "IntegerLiteral",
       "offset": 10487,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
       "kind": "StringLiteral",
       "offset": 570,
       "length": 11,
       "value": "\"user_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
       "kind": "StringLiteral",
       "offset": 617,
       "length": 13,
       "value": "\"last_name_1\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
       "kind": "StringLiteral",
       "offset": 652,
       "length": 13,
       "value": "\"last_name_2\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
       "kind": "StringLiteral",
       "offset": 751,
       "length": 11,
       "value": "\"url_image\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
       "kind": "StringLiteral",
       "offset": 797,
       "length": 25,
       "value": "\"physiological_variables\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
       "kind": "StringLiteral",
       "offset": 570,
       "length": 11,
       "value": "\"user_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
       "kind": "StringLiteral",
       "offset": 617,
       "length": 13,
       "value": "\"last_name_1\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
       "kind": "StringLiteral",
       "offset": 652,
       "length": 13,
       "value": "\"last_name_2\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
       "kind": "StringLiteral",
       "offset": 751,
       "length": 11,
       "value": "\"url_image\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
       "kind": "StringLiteral",
       "offset": 797,
       "length": 25,
       "value": "\"physiological_variables\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
       "kind": "StringLiteral",
       "offset": 1085,
       "length": 20,
       "value": "\"resting_heart_rate\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/UserInfoResponse.swift",
       "kind": "StringLiteral",
       "offset": 1085,
       "length": 20,
       "value": "\"resting_heart_rate\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/PaginationResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/PaginationResponse.swift",
       "kind": "StringLiteral",
       "offset": 452,
       "length": 11,
       "value": "\"last_page\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/PaginationResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/PaginationResponse.swift",
       "kind": "StringLiteral",
       "offset": 487,
       "length": 14,
       "value": "\"current_page\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/PaginationResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/PaginationResponse.swift",
       "kind": "StringLiteral",
       "offset": 452,
       "length": 11,
       "value": "\"last_page\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/PaginationResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Domain\/Entities\/APIResponse\/PaginationResponse.swift",
       "kind": "StringLiteral",
       "offset": 487,
       "length": 14,
       "value": "\"current_page\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/RWSensorAPI.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Sensor\/RWSensorAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 467,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutExtension\/WorkoutRemoteExtension.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutExtension\/WorkoutRemoteExtension.swift",
       "kind": "BooleanLiteral",
       "offset": 1021,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
       "offset": 1003,
       "length": 22,
       "value": "\"kWorkoutHearRateData\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
       "offset": 1056,
       "length": 18,
       "value": "\"kWorkoutStepData\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
       "offset": 1105,
       "length": 18,
       "value": "\"kWorkoutDuration\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
       "offset": 1152,
       "length": 16,
       "value": "\"kWorkoutFinish\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
       "offset": 1203,
       "length": 22,
       "value": "\"kRemoteBadConnection\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
       "offset": 1257,
       "length": 19,
       "value": "\"kRemoteDataSended\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
       "offset": 1316,
       "length": 26,
       "value": "\"TrainingPlayNotification\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2613,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2650,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2693,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2735,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2777,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2817,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2853,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "FloatLiteral",
       "offset": 2885,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "BooleanLiteral",
       "offset": 2908,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
       "offset": 3000,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
       "offset": 3055,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
       "offset": 3106,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "StringLiteral",
       "offset": 3161,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
       "offset": 3215,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
       "offset": 3271,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
       "offset": 3318,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
       "offset": 3369,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "IntegerLiteral",
       "offset": 3395,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "BooleanLiteral",
       "offset": 3429,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "BooleanLiteral",
       "offset": 3473,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/WorkoutManager.swift",
       "kind": "BooleanLiteral",
       "offset": 3506,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
       "offset": 187,
       "length": 10,
       "value": "\"syncUser\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
       "offset": 220,
       "length": 14,
       "value": "\"refreshToken\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
       "offset": 251,
       "length": 8,
       "value": "\"logout\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
       "offset": 278,
       "length": 10,
       "value": "\"training\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
       "offset": 315,
       "length": 18,
       "value": "\"unfinishTraining\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
       "offset": 187,
       "length": 10,
       "value": "\"syncUser\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
       "offset": 220,
       "length": 14,
       "value": "\"refreshToken\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
       "offset": 251,
       "length": 8,
       "value": "\"logout\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
       "offset": 278,
       "length": 10,
       "value": "\"training\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Communication\/Entities\/WatchMessage.swift",
       "kind": "StringLiteral",
       "offset": 315,
       "length": 18,
       "value": "\"unfinishTraining\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Training\/Entities\/Responses\/AddTrainingResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Training\/Entities\/Responses\/AddTrainingResponse.swift",
       "kind": "StringLiteral",
       "offset": 278,
       "length": 15,
       "value": "\"training_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Training\/Entities\/Responses\/AddTrainingResponse.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/Training\/Entities\/Responses\/AddTrainingResponse.swift",
       "kind": "StringLiteral",
       "offset": 278,
       "length": 15,
       "value": "\"training_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
       "kind": "IntegerLiteral",
       "offset": 182,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
       "kind": "IntegerLiteral",
       "offset": 208,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
       "kind": "IntegerLiteral",
       "offset": 232,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
       "kind": "IntegerLiteral",
       "offset": 250,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
       "kind": "IntegerLiteral",
       "offset": 284,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
       "kind": "IntegerLiteral",
       "offset": 304,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
       "kind": "IntegerLiteral",
       "offset": 324,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
       "kind": "IntegerLiteral",
       "offset": 344,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
       "kind": "IntegerLiteral",
       "offset": 369,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/RWRookEquatios.swift",
       "kind": "BooleanLiteral",
       "offset": 392,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
       "kind": "StringLiteral",
       "offset": 2691,
       "length": 13,
       "value": "\"sensor_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
       "kind": "StringLiteral",
       "offset": 2733,
       "length": 20,
       "value": "\"training_type_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
       "kind": "StringLiteral",
       "offset": 2776,
       "length": 13,
       "value": "\"device_type\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
       "kind": "StringLiteral",
       "offset": 2813,
       "length": 14,
       "value": "\"groupal_mode\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
       "kind": "StringLiteral",
       "offset": 2884,
       "length": 11,
       "value": "\"room_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
       "kind": "StringLiteral",
       "offset": 2691,
       "length": 13,
       "value": "\"sensor_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
       "kind": "StringLiteral",
       "offset": 2733,
       "length": 20,
       "value": "\"training_type_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
       "kind": "StringLiteral",
       "offset": 2776,
       "length": 13,
       "value": "\"device_type\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
       "kind": "StringLiteral",
       "offset": 2813,
       "length": 14,
       "value": "\"groupal_mode\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Storage\/CoreData\/Training\/Entities\/TrainingDTO\/RWRookTrainingDTO.swift",
       "kind": "StringLiteral",
       "offset": 2884,
       "length": 11,
       "value": "\"room_uuid\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/AddUserPysiolocalRequest.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/AddUserPysiolocalRequest.swift",
       "kind": "StringLiteral",
       "offset": 597,
       "length": 20,
       "value": "\"resting_heart_rate\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/AddUserPysiolocalRequest.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/EndPoint\/User\/Entities\/Request\/AddUserPysiolocalRequest.swift",
       "kind": "StringLiteral",
       "offset": 597,
       "length": 20,
       "value": "\"resting_heart_rate\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMHrDerivedRecord.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMHrDerivedRecord.swift",
       "kind": "IntegerLiteral",
       "offset": 262,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMHrDerivedRecord.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMHrDerivedRecord.swift",
       "kind": "FloatLiteral",
       "offset": 295,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMHrDerivedRecord.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMHrDerivedRecord.swift",
       "kind": "FloatLiteral",
       "offset": 328,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMHrDerivedRecord.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMHrDerivedRecord.swift",
       "kind": "IntegerLiteral",
       "offset": 373,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMHrDerivedRecord.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/TrainingRecords\/RMHrDerivedRecord.swift",
       "kind": "IntegerLiteral",
       "offset": 547,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Service\/HTTPMethod.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Service\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 181,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Service\/HTTPMethod.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Service\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 201,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Service\/HTTPMethod.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Service\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 221,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Service\/HTTPMethod.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Service\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 181,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Service\/HTTPMethod.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Service\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 201,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Service\/HTTPMethod.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Data\/Networking\/Service\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 221,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 211,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "FloatLiteral",
       "offset": 242,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "FloatLiteral",
       "offset": 275,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "FloatLiteral",
       "offset": 308,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "FloatLiteral",
       "offset": 341,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "FloatLiteral",
       "offset": 374,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 409,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 439,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 469,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 509,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 543,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 577,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 616,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "FloatLiteral",
       "offset": 651,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "FloatLiteral",
       "offset": 688,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "FloatLiteral",
       "offset": 725,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "FloatLiteral",
       "offset": 762,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "FloatLiteral",
       "offset": 799,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 839,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 871,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 903,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 935,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 967,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 999,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "FloatLiteral",
       "offset": 1037,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "FloatLiteral",
       "offset": 1074,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "FloatLiteral",
       "offset": 1111,
       "length": 6,
       "value": "1000.0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 1153,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 1187,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 1221,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 1255,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/RookSummariesDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 1289,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/AuxiliarSummaryCalculatorDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/AuxiliarSummaryCalculatorDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 224,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/AuxiliarSummaryCalculatorDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/AuxiliarSummaryCalculatorDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 262,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/AuxiliarSummaryCalculatorDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/AuxiliarSummaryCalculatorDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 301,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/AuxiliarSummaryCalculatorDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/AuxiliarSummaryCalculatorDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 343,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/AuxiliarSummaryCalculatorDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/AuxiliarSummaryCalculatorDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 383,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/AuxiliarSummaryCalculatorDTO.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/AuxiliarSummaryCalculatorDTO.swift",
       "kind": "IntegerLiteral",
       "offset": 426,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/CalculateDeltaTime.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Helpers\/CalculateDeltaTime.swift",
       "kind": "IntegerLiteral",
       "offset": 364,
       "length": 4,
       "value": "3000"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/Remote\/RWRookRemoteClass.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/Remote\/RWRookRemoteClass.swift",
       "kind": "IntegerLiteral",
       "offset": 598,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/RookMotion\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/Remote\/RWRookRemoteClass.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookWatchSDK\/RookMotionWatchLink\/RookMotionWatchLink\/Source\/Training\/Entities\/Remote\/RWRookRemoteClass.swift",
       "kind": "IntegerLiteral",
       "offset": 1062,
       "length": 1,

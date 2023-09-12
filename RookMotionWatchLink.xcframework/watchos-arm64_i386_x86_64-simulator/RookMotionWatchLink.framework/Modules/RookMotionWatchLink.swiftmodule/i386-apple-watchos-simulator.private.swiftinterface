@@ -812,6 +812,7 @@ public class RookSensorStorage : RookMotionWatchLink.RookSensorStorageProtocol {
   public func readSensors(context: RookMotionWatchLink.ContextType) -> [RookMotionWatchLink.RWRookSensorDTO]
   public func readSensors(context: RookMotionWatchLink.ContextType, completion: @escaping ([RookMotionWatchLink.RWRookSensorDTO]) -> Swift.Void)
   public func getSensorsWithoutUUID(context: RookMotionWatchLink.ContextType) -> [RookMotionWatchLink.RWRookSensorDTO]
+  public func getSensorWithoutUUID(context: RookMotionWatchLink.ContextType, completion: @escaping ([RookMotionWatchLink.RWRookSensorDTO]) -> Swift.Void)
   @objc deinit
 }
 public enum NetworkResponse : Swift.String {
