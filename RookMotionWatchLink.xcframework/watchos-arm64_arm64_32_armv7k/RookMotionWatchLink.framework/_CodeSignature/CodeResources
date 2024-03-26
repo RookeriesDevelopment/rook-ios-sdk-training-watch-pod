@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aE96H9aC+khHke8dFI6781aYJOg=
+		9PjiaTykaBeVw83bQkaAD4Ny1tQ=
 		</data>
 		<key>Modules/RookMotionWatchLink.swiftmodule/arm64-apple-watchos.abi.json</key>
 		<data>
@@ -79,6 +79,10 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		EjfBwSFnDLvfYQeyH4g4M1H69l0=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		o8RC9VHfPEvA66TEgh5o4d/ZT+4=
 		</data>
 		<key>RWContainer.momd/RWContainer 2.mom</key>
 		<data>
@@ -295,6 +299,17 @@
 			<key>hash2</key>
 			<data>
 			9Hl8eiG+kvP2l8RKUrAxv4zqr0JwW6czUVCmADk0vCY=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o8RC9VHfPEvA66TEgh5o4d/ZT+4=
+			</data>
+			<key>hash2</key>
+			<data>
+			3auCUp8m8vdoISAEktM5Q0md95vO8ijdAfiqgEp3JVw=
 			</data>
 		</dict>
 		<key>RWContainer.momd/RWContainer 2.mom</key>
